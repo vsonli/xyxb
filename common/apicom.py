@@ -6,6 +6,7 @@ import requests
 from common.myConf import conf
 
 def get_token():
+    '''获得督导的token'''
     url = 'http://192.168.0.207:8081/xyxb/userCenter/login'
     head= {'content-type': 'application/x-www-form-urlencoded'}
     data = {
@@ -15,8 +16,7 @@ def get_token():
         'smsCode': '081588',
         'userName': '8826'
     }
-    timeout = 0.5
-    result = requests.post(url, headers=head, data=data, timeout=0.5)
+    result = requests.post(url, headers=head, data=data, timeout=60)
     try:
         sul = result.json()['data']['token']
     except:
@@ -25,6 +25,7 @@ def get_token():
 
 
 def get_student_token():
+    '''获得学员的token'''
     url = 'http://192.168.0.207:8081/xyxb/userCenter/login'
     head = {'content-type': 'application/x-www-form-urlencoded'}
     data = {
@@ -34,20 +35,23 @@ def get_student_token():
         'smsCode': '081588',
         'userName': '8826'
     }
-    timeout = 0.5
-    result = requests.post(url, headers=head, data=data, timeout=0.5)
+    result = requests.post(url, headers=head, data=data, timeout=60)
     try:
         sul = result.json()['data']['token']
     except:
         sul = result.text
     return sul
+
 def get_head(token):
+    '''获得带token的Header'''
     heard = {'content-type': 'application/x-www-form-urlencoded', 'cookie': 'AUTH-TOKEN=' + token}
     return heard
 
 def get_send_post(url,head,data,timeout):
+    '''发送post请求'''
     try:
         result = requests.post(url, headers=head, data=data, timeout=timeout)
+        response_time = result.elapsed.total_seconds()
     except:
         print(Exception,'失败啦')
     else:
@@ -55,15 +59,17 @@ def get_send_post(url,head,data,timeout):
         code = result.status_code
         if int(code) == 200 and result.json()['data'] != None:
             resu = result.text
-            print(item+'接口通过',resu)
+            print(item+'接口通过','接口响应时间：'+str(response_time)+'秒',resu)
         else:
             resu = result.text
-            print(item+'接口失败',resu)
+            print(item+'接口失败','接口响应时间：'+str(response_time)+'秒',resu)
 
 def get_course(url,head,data,timeout):
+    '''获得课程code'''
     try:
         result = requests.post(url, headers=head, data=data, timeout=timeout)
         code = result.status_code
+        response_time = result.elapsed.total_seconds()
     except:
         print(Exception)
         print('失败啦')
@@ -71,9 +77,9 @@ def get_course(url,head,data,timeout):
         item = url.split('/')[-1]
         if int(code) == 200 and result.json()['data'] != None:
             resu = result.text
-            print(item+'接口通过',resu)
+            print(item+'接口通过','接口响应时间：'+str(response_time)+'秒',resu)
             courseCode = result.json()['data']['courseCode']
             return courseCode
         else:
             resu = result.text
-            print(item+'接口失败',resu)
+            print(item+'接口失败','接口响应时间：'+str(response_time)+'秒',resu)
