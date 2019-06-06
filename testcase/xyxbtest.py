@@ -154,5 +154,8 @@ def xyxb_live():
 for i  in range(20):
     print('这是第' + str(i + 1) + '次')
     xyxb_live()
-    print('第' + str(i + 1) + '次执行结束，准备执行下一轮')
-    time.sleep(10)
+    if i == 20:
+        print('20次测试已结束')
+    else:
+        print('第' + str(i + 1) + '次执行结束，准备执行下一轮')
+        time.sleep(10)
