@@ -22,12 +22,6 @@ def get_token():
         sul = result.json()['data']['token']
     except:
         sul = result.text
-        try:
-            with open(path1, 'w') as f:
-                f.write('获取token接口发生了错误'+'            返回结果：'+sul)
-        except:
-            with open(path1, 'w') as f:
-                f.write(Exception)
         print(Exception,'失败啦')
     return sul
 
@@ -62,13 +56,10 @@ def get_send_post(url,head,data,timeout):
         resu = result.text
         item = url.split('/')[-1]
         response_time = result.elapsed.total_seconds()
+        if response_time >= 1:
+            with open('timelog.log','a+') as f:
+                f.write(item+'接口时间大于1秒，实际时间'+response_time+'\n')
     except:
-        try:
-            with open(path1, 'w') as f:
-                f.write(item + '接口发生了错误'+'            返回结果：'+resu)
-        except:
-            with open(path1, 'w') as f:
-                f.write(Exception)
         print(Exception,'失败啦')
     else:
         print(item+'请求参数：'+str(data))
@@ -92,13 +83,10 @@ def get_course(url,head,data,timeout):
         resu = result.text
         code = result.status_code
         response_time = result.elapsed.total_seconds()
+        if response_time >= 1:
+            with open('timelog.log','a+') as f:
+                f.write(item+'接口时间大于1秒，实际时间'+response_timen+'\n')
     except:
-        try:
-            with open(path1, 'w') as f:
-                f.write(item + '接口发生了错误'+'            返回结果：'+resu)
-        except:
-            with open(path1, 'w') as f:
-                f.write(Exception)
         print(Exception,'失败啦')
     else:
         if int(code) == 200 and result.json()['data'] != None:
