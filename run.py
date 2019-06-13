@@ -7,7 +7,7 @@ from HTMLTestRunnerNew import HTMLTestRunner
 from testcase.testcase import RegisterTestCase
 from common.myConf import conf
 
-path = conf.path1+'reports\\report.html'
+path = conf.path1+'xyxbs\\reports\\report.html'
 suite = unittest.TestSuite()
 loader = unittest.TestLoader()
 suite.addTest(loader.loadTestsFromTestCase(RegisterTestCase))
@@ -19,6 +19,6 @@ with open(path,'wb') as f:
                             stream=f,
                             verbosity=2,
                             title='test_report',
-                            description='这是第一份测试报告',
+                            description='直播相关接口的测试',
                             tester='Vson')
     runner.run(suite)

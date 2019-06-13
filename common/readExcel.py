@@ -20,8 +20,8 @@ class Read_r_excel(object):
         self.sheet = self.wb[sheet_name]
         self.file_name = file_name
 
-    def __del__(self):
-        self.wb.close()
+    # def __del__(self):
+    #     self.wb.close()
 
     def read_data_line(self):
         rows_data = list(self.sheet.rows)
@@ -134,7 +134,7 @@ class Read_r_excel(object):
 
     def write_data(self, row, column, msg):
         '''写入数据'''
-        print('我被调用了')
+        # print('我被调用了')
         self.sheet.cell(row=row, column=column, value=msg)
         self.wb.save(self.file_name)
 
@@ -143,9 +143,12 @@ if __name__ == '__main__':
     from common.apicom import *
     tokens = get_token()
     head = get_head(tokens)
-    r = Read_r_excel('D://Vson//xyxb//data//test1.xlsx','Sheet')
+    r = Read_r_excel('D://Vson//xyxbs//data//test1.xlsx','Sheet')
     vals = r.r_data_obj([1,2,3])
-    couse = get_course('',head,'',1)
+    # couse = get_course('',head,'',1)
     for item in vals:
-        result = res(item.url,head,item.data,1)
-        print(result)
+        # result = res(item.url,head,item.data,1)
+        print(item.data)
+        print(item.url)
+        print(item.case_id)
+        result = get_send_post(item.url, head, item.data, 60)

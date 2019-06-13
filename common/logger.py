@@ -4,12 +4,14 @@
 # @Author :Vsonli
 import logging
 from common.myConf import conf
+from common.constant import *
+
 log_name = conf.get('logs','logs_name')
 level = conf.get('logs','level')
 sh_level = conf.get('logs','sh_level')
 fh_level = conf.get('logs','fh_level')
 path_name = conf.get('logs','log_path_name')
-log_file_path = conf.path1+'logs\\'+path_name
+log_file_path = conf.path1+'\\xyxbs\\logs\\'+path_name
 class MyLogging(object):
     def __new__(cls, *args, **kwargs):
         my_log = logging.getLogger(log_name)

@@ -52,6 +52,7 @@ def get_head(token):
 def get_send_post(url,head,data,timeout):
     '''发送post请求'''
     try:
+        code = 0
         result = requests.post(url, headers=head, data=data, timeout=timeout)
         resu = result.text
         item = url.split('/')[-1]
@@ -59,20 +60,25 @@ def get_send_post(url,head,data,timeout):
         if response_time >= 1:
             with open('timelog.log','a+') as f:
                 f.write(item+'接口时间大于1秒，实际时间'+response_time+'\n')
-    except:
-        print(Exception,'失败啦')
+    except Exception as e:
+        # print(item, '失败了')
+        print(e)
     else:
         print(item+'请求参数：'+str(data))
         code = result.status_code
         if int(code) == 200 and result.json()['data'] != None:
-            print(item+'接口访问通过','接口响应时间：'+str(response_time)+'秒')
             print('返回结果为：' + resu)
+            print(item+'接口访问通过','接口响应时间：'+str(response_time)+'秒')
+            print('                                ')
+        elif int(code) == 200 and result.json() ['data'] == None:
+            print(item + '接口访问通过,data数据为空', '接口响应时间：' + str(response_time) + '秒', resu)
             print('                                ')
         else:
             resu = result.text
+            print('返回结果为：' + resu)
             print(item+'接口访问失败','接口响应时间：'+str(response_time)+'秒')
-            print('返回结果为：'+resu)
             print('                                ')
+        return int(code)
 
 
 def get_course(url,head,data,timeout):
@@ -86,14 +92,18 @@ def get_course(url,head,data,timeout):
         if response_time >= 1:
             with open('timelog.log','a+') as f:
                 f.write(item+'接口时间大于1秒，实际时间'+response_timen+'\n')
-    except:
-        print(Exception,'失败啦')
+    except Exception as e:
+        # print(item,'失败了')
+        print(e)
     else:
         if int(code) == 200 and result.json()['data'] != None:
             print(item+'接口访问通过','接口响应时间：'+str(response_time)+'秒',resu)
             print('                                ')
             courseCode = result.json()['data']['courseCode']
             return courseCode
+        elif int(code) == 200 and result.json() ['data'] == None:
+            print(item + '接口访问通过,data数据为空', '接口响应时间：' + str(response_time) + '秒', resu)
+            print('                                ')
         else:
             resu = result.text
             print(item+'接口访问失败','接口响应时间：'+str(response_time)+'秒',resu)
