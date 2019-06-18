@@ -1,4 +1,0 @@
-2019-06-12 19:11:30,171 - [testcase.py-->line:46] - ERROR: None != 200
-2019-06-12 19:12:11,379 - [testcase.py-->line:46] - ERROR: None != 200
-2019-06-12 19:13:43,266 - [testcase.py-->line:46] - ERROR: None != 200
-2019-06-12 19:14:59,956 - [testcase.py-->line:50] - INFO: 测试结果:pass

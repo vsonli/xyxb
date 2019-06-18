@@ -18,8 +18,8 @@ def xyxb_live():
     get_send_post(url,teacher_heads,mydata,timeout)
 
     url = 'https://www.xuegean.com/xyxb/specialColumnCenter/groupDetail'    #2
-    get_send_post(url,teacher_heads,mydata,timeout)
-
+    code = get_send_post(url,teacher_heads,mydata,timeout)
+    print(code)
 
     '''开启直播'''
     couse_data={'groupCode':'196F0b9C1b282Da069DA0488b64834C0','liveStatus':1}
@@ -161,3 +161,13 @@ for i  in range(20):
     else:
         print('第' + str(i + 1) + '次执行结束，准备执行下一轮')
         time.sleep(10)
+# url = 'https://www.xuegean.com/xyxb/specialColumnCenter/groupDetail'    #2
+# code = get_send_post(url,teacher_heads,mydata,timeout)
+# print(code)
+#
+# '''开启直播'''
+# couse_data={'groupCode':'196F0b9C1b282Da069DA0488b64834C0','liveStatus':1}
+# url = 'https://www.xuegean.com/xyxb/specialColumnCenter/setLiveStatus'      #3
+# course = get_course(url,teacher_heads,couse_data,timeout)
+xyxb_live()
+# print('course值:'+str(course))

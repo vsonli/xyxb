@@ -5,11 +5,11 @@
 import requests
 from common.myConf import conf
 import os
-path1 = os.path.abspath(os.path.dirname(os.getcwd()))+'\\'+'logs\\error.log'
+# path1 = os.path.abspath(os.path.dirname(os.getcwd()))+'\\'+'logs\\error.log'
 def get_token():
     '''获得督导的token'''
     url = 'https://www.xuegean.com/xyxb/userCenter/login'
-    head= {'content-type': 'application/x-www-form-urlencoded'}
+    head= {'content-type': 'application/x-www-form-urlencoded', 'Connection': 'close'}
     data = {
         'deviceCode': '481D3629d2d7978388365460dC5F91D2',
         'loginType': 1,
@@ -104,7 +104,10 @@ def get_course(url,head,data,timeout):
         elif int(code) == 200 and result.json() ['data'] == None:
             print(item + '接口访问通过,data数据为空', '接口响应时间：' + str(response_time) + '秒', resu)
             print('                                ')
-        else:
+        elif int(code) == 400:
             resu = result.text
             print(item+'接口访问失败','接口响应时间：'+str(response_time)+'秒',resu)
             print('                                ')
+            return result.json()['data']['courseCode']
+        else:
+            return result.text

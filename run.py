@@ -6,6 +6,7 @@ import unittest
 from HTMLTestRunnerNew import HTMLTestRunner
 from testcase.testcase import RegisterTestCase
 from common.myConf import conf
+from common.mail_send import *
 
 path = conf.path1+'xyxbs\\reports\\report.html'
 suite = unittest.TestSuite()
@@ -18,7 +19,14 @@ with open(path,'wb') as f:
     runner = HTMLTestRunner(
                             stream=f,
                             verbosity=2,
-                            title='test_report',
+                            title='API_test_report',
                             description='直播相关接口的测试',
                             tester='Vson')
     runner.run(suite)
+
+#260891020@qq.com,liulujian@xuegean.com
+sen_email(msg_to='1633979409@qq.com')
+
+
+
+
