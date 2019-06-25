@@ -9,7 +9,7 @@ from email.mime.application import MIMEApplication
 import datetime
 
 # 写成了一个通用的函数接口，想直接用的话，把参数的注释去掉就好
-def sen_email(msg_from='1633979409@qq.com', passwd='lkjdjuhqasyhehbi', msg_to=None, text_content='直播相关的接口测试报告', file_path='D:\\Vson\\xyxbs\\reports\\report.html'):
+def sen_email(msg_from='1633979409@qq.com', passwd='lkjdjuhqasyhehbi', msg_to=None, text_content='直播相关的接口测试报告', file_path=None):
     # msg_from = '1095133888@qq.com'  # 发送方邮箱
     # passwd = 'zjvoymwngfhigjss'  # 填入发送方邮箱的授权码（就是刚刚你拿到的那个授权码）
     # msg_to = '1095133998@qq.com'  # 收件人邮箱

@@ -1,10 +1,11 @@
 # -*- coding:utf-8 -*-
-# @Time   :2019/6/4 18:51
+# @Time   :2019/6/4 14:41
 # @File   :logger.py
 # @Author :Vsonli
 import logging
 from common.myConf import conf
 from common.constant import *
+
 
 log_name = conf.get('logs','logs_name')
 level = conf.get('logs','level')

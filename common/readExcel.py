@@ -1,9 +1,8 @@
 # -*- coding:utf-8 -*-
-# @Time   :2019/6/4 18:52
+# @Time   :2019/6/4 14:42
 # @File   :readExcel.py
 # @Author :Vsonli
 import openpyxl
-from regis import register as res
 
 class Case:
     def __init__(self, attrs):
@@ -16,14 +15,20 @@ class Case:
 
 class Read_r_excel(object):
     def __init__(self,file_name,sheet_name):
-        self.wb = openpyxl.load_workbook(file_name)
-        self.sheet = self.wb[sheet_name]
         self.file_name = file_name
+        self.sheet_name = sheet_name
 
+    def open(self):
+        self.wb = openpyxl.load_workbook(self.file_name)
+        self.sheet = self.wb[self.sheet_name]
+
+    def close(self):
+        self.wb.close()
     # def __del__(self):
     #     self.wb.close()
 
     def read_data_line(self):
+        self.open()
         rows_data = list(self.sheet.rows)
         titles = []
         for title in rows_data[0]:
@@ -43,9 +48,11 @@ class Read_r_excel(object):
             #获得数据后进行打包并放入大列表中
             case_data = dict(list(zip(titles,data)))
             cases.append(case_data)
+        self.close()
         return cases
 
     def read_data_obj(self):
+        self.open()
         rows_data = list(self.sheet.rows)
         titles = []
         for title in rows_data[0]:
@@ -68,6 +75,7 @@ class Read_r_excel(object):
                 setattr(case_obj,item[0],item[1])
             # print(case_obj.case_id,case_obj.data,case_obj.excepted)
             cases.append(case_obj)
+        self.close()
         return cases
 
     def r_data(self):
@@ -76,6 +84,7 @@ class Read_r_excel(object):
                 excel中的表头为对象的属性，对应的数据为属性值
                 :return: type:list--->[case_obj1,case_obj2....]，
                 """
+        self.open()
         # 按行获取数据转换成列表
         rows_data = list(self.sheet.rows)
         # 获取表单的表头信息
@@ -96,13 +105,15 @@ class Read_r_excel(object):
             # 创建一个Case类的对象，用来保存用例数据，
             case_obj = Case(case_data)
             cases.append(case_obj)
+        self.close()
         return cases
 
-    def r_data_obj(self, list1):
+    def r_data_obj(self, list1 = None):
         '''做了下改变,因为从配置文件读过来的是字符串，需要eval转换下，然后判断是否为空'''
-        # list1 = eval(list1)
-        # if list1 == None:
-        #     return self.r_data()
+        self.open()
+        list1 = eval(list1)
+        if list1 == None:
+            return self.r_data()
 
         # 获取最大行
         max_r = self.sheet.max_row
@@ -130,25 +141,21 @@ class Read_r_excel(object):
                     setattr(case_obj, i[0], i[1])
                 # 把字典加入cases中
                 cases.append(case_obj)
+        self.close()
         return cases
 
     def write_data(self, row, column, msg):
         '''写入数据'''
-        # print('我被调用了')
+        self.open()
         self.sheet.cell(row=row, column=column, value=msg)
         self.wb.save(self.file_name)
+        self.close()
 
 
 if __name__ == '__main__':
-    from common.apicom import *
-    tokens = get_token()
-    head = get_head(tokens)
-    r = Read_r_excel('D://Vson//xyxbs//data//test1.xlsx','Sheet')
-    vals = r.r_data_obj([1,2,3])
-    # couse = get_course('',head,'',1)
+    r = Read_r_excel('test1.xlsx','Sheet')
+    vals = r.r_data()
     for item in vals:
-        # result = res(item.url,head,item.data,1)
-        print(item.data)
-        print(item.url)
         print(item.case_id)
-        result = get_send_post(item.url, head, item.data, 60)
+        print(item.expected)
+        print(item.data)

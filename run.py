@@ -1,14 +1,15 @@
 # -*- coding:utf-8 -*-
-# @Time   :2019/6/4 18:54
+# @Time   :2019/6/4 14:44
 # @File   :run.py
 # @Author :Vsonli
-import unittest
-from HTMLTestRunnerNew import HTMLTestRunner
-from testcase.testcase import RegisterTestCase
+import unittest,time
+from librarys.HTMLTestRunnerNew import HTMLTestRunner
+from testcases.testcase import RegisterTestCase
+from common.constant import *
 from common.myConf import conf
-from common.mail_send import *
+new_time = time.strftime("%Y_%m_%d_%H_%M", time.localtime())
 
-path = conf.path1+'xyxbs\\reports\\report.html'
+path = os.path.join(REPORT_DIR,new_time+'.html')
 suite = unittest.TestSuite()
 loader = unittest.TestLoader()
 suite.addTest(loader.loadTestsFromTestCase(RegisterTestCase))
@@ -18,15 +19,9 @@ with open(path,'wb') as f:
     '''写入的文件名，写入的等级（2是最高的，0，1，2），报告名称，报告相关描述，测试者名称'''
     runner = HTMLTestRunner(
                             stream=f,
-                            verbosity=2,
-                            title='API_test_report',
-                            description='直播相关接口的测试',
-                            tester='Vson')
+                            verbosity=conf.getint('runs','verbosity'),
+                            title=conf.get('runs','title'),
+                            description=conf.get('runs','description'),
+                            tester=conf.get('runs','tester')
+                            )
     runner.run(suite)
-
-#260891020@qq.com,liulujian@xuegean.com
-sen_email(msg_to='1633979409@qq.com')
-
-
-
-

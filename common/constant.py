@@ -1,10 +1,10 @@
 # -*- coding:utf-8 -*-
-# @Time   :2019/6/12 18:53
+# @Time   :2019/6/6 16:40
 # @File   :constant.py
 # @Author :Vsonli
 '''常量配置'''
 
-import os
+import os,time
 
 #获取项目目录的根路径(获得当前文件的上级再上级目录)
 BASE_DIR = os.path.dirname(os.path.dirname(__file__))
@@ -23,3 +23,8 @@ CASE_DIR = os.path.join(BASE_DIR,'testcases')
 
 #测试报告存放的目录路径
 REPORT_DIR = os.path.join(BASE_DIR,'reports')
+
+
+#当前时间
+NEW_TIME = time.strftime("%Y-%m-%d %H:%M:%S", time.localtime())
+
