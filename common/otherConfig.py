@@ -5,6 +5,8 @@
 import re
 from common.myConf import *
 
+class ConText:
+    pass
 '''
 使用正则表达式替换参数的方法
     替换用例中的参数
@@ -22,11 +24,16 @@ def replace(data):
     :return:
     '''
     p = r'#(.+?)#'
-    #判断该用例参数中是否存在需要替换的数据
-    while re.search(p,data):
-        #去配置文件中获取要替换的数据
-        key = re.search(p,data).group(1)
-        value = conf.get('test_data',key)
-        #替换
-        data = re.sub(p,value,data,count=1)
+    # 判断该用例参数中是否存在需要替换的数据
+    while re.search(p, data):
+        # 去配置文件中获取要替换的数据
+        key = re.search(p, data).group(1)
+        try:
+            value = conf.get('test_data', key)
+        except:
+            # 获得临时生成的数据
+            value = getattr(ConText, key)
+        # 替换
+        data = re.sub(p, value, data, count=1)
     return data
+
