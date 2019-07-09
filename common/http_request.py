@@ -15,6 +15,7 @@ class HTTPRequest(object):
     def request(self,method,url,params=None,data=None,headers=None,cookies=None,json=None):
         method = method.lower() #转为小写
         print('传进来的参数：  ',data)
+        # print('传进来的head：  ',headers)
         if method == 'post':
             #判断post的参数是data还是json传参的
             if json:
@@ -59,10 +60,11 @@ class HTTPRequest(object):
         '''
         result = self.request(method='post',url=url,data=data,headers=head)
         try:
+            print(result.json()['data']['courseCode'])
             return result.json()['data']['courseCode']
         except Exception as e:
             print('直播已开启')
-            return None
+            return result.text
 
 
 
@@ -93,10 +95,11 @@ class HTTPRequestSession(object):
 
 if __name__ == '__main__':
     r = HTTPRequest()
-    head = r.get_head(url='http://192.168.0.105:8081/xyxb/userCenter/login',uname='8826',pwd='081588')
-    print(head)
-    result = r.request(method='post',url='http://192.168.0.105:8081/xyxb/comment/news/getCount',data={},headers=head)
-    print(result)
-    data = {'groupCode':'196F0b9C1b282Da069DA0488b64834C0','liveStatus':1}
-    course_code = r.get_course_code(url='http://192.168.0.105:8081/xyxb/specialColumnCenter/setLiveStatus',head=head,data=data)
+    head = r.get_head(url='http://www.xuegean.com/xyxb/userCenter/login',uname='8826',pwd='081588')
+    # print(head)
+    result = r.request(method='post',url='http://www.xuegean.com/xyxb/groupCenter/groupDetail',data={'groupCode':'196F0b9C1b282Da069DA0488b64834C0'},headers=head)
+    # print(result)
+    data = {'groupCode':'196F0b9C1b282Da069DA0488b64834C0','liveStatus':0}
+    course_code = r.get_course_code(url='http://www.xuegean.com/xyxb/specialColumnCenter/setLiveStatus',head=head,data=data)
     print(course_code)
+    print(result.text)

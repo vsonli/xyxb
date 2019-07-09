@@ -52,6 +52,7 @@ def xyxb_live():
     start_data={'duration':180,'groupCode':'196F0b9C1b282Da069DA0488b64834C0','courseCode':course}
     get_send_post(url, teacher_heads, start_data, timeout)
 
+    #查询核心小组
     urls = 'https://www.xuegean.com/xyxb/specialColumnCenter/listGroupKey'  #11
     get_send_post(urls,teacher_heads,couse_code,timeout)
 
@@ -73,7 +74,7 @@ def xyxb_live():
     get_send_post(surl,student_head,mydata,timeout)
 
     surl = 'https://www.xuegean.com/xyxb/specialColumnCenter/listQuestion'  #16
-    get_send_post(surl,student_head,mydata,timeout)
+    # get_send_post(surl,student_head,mydata,timeout)
 
     surl = 'https://www.xuegean.com/xyxb/specialColumnCenter/listGroupKey'  #17
     get_send_post(surl,student_head,couse_code,timeout)
@@ -153,11 +154,15 @@ def xyxb_live():
     urls = 'https://www.xuegean.com/xyxb/groupCenter/updateLastGroupSpeak'      #33
     get_send_post(urls,teacher_heads,mydata,timeout)
 
-for i  in range(20):
-    print('这是第' + str(i + 1) + '次')
-    xyxb_live()
-    if i == 20:
-        print('20次测试已结束')
-    else:
-        print('第' + str(i + 1) + '次执行结束，准备执行下一轮')
-        time.sleep(10)
+count = 0
+while True:
+    count = count + 1
+    for i  in range(20):
+        print('这是第' + str(i + 1) + '次')
+        xyxb_live()
+        if i == 20:
+            print('20次测试已结束')
+        else:
+            print('第' + str(i + 1) + '次执行结束，准备执行下一轮')
+            time.sleep(10)
+    print('无限循环第'+str(count)+'次')

@@ -24,6 +24,7 @@ def replace(data):
     :return:
     '''
     p = r'#(.+?)#'
+    data = str(data)
     # 判断该用例参数中是否存在需要替换的数据
     while re.search(p, data):
         # 去配置文件中获取要替换的数据

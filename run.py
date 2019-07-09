@@ -7,6 +7,7 @@ from librarys.HTMLTestRunnerNew import HTMLTestRunner
 from testcases.testcase import RegisterTestCase
 from common.constant import *
 from common.myConf import conf
+from common.mail_send import send_mail
 new_time = time.strftime("%Y_%m_%d_%H_%M", time.localtime())
 
 path = os.path.join(REPORT_DIR,new_time+'.html')
@@ -25,3 +26,4 @@ with open(path,'wb') as f:
                             tester=conf.get('runs','tester')
                             )
     runner.run(suite)
+send_mail(path)
