@@ -518,3 +518,818 @@
 2019-07-09 14:43:21,757 - [testcase.py-->line:86] - INFO: 					
 2019-07-09 17:14:19,478 - [http_request.py-->line:25] - INFO: 正在发送请求，url:https://www.xuegean.com/xyxb/userCenter/login，请求参数:{'deviceCode': '481D3629d2d7978388365460dC5F91D2', 'loginType': 1, 'networkType': 0, 'smsCode': '081588', 'userName': '8826'}
 2019-07-09 17:14:47,499 - [http_request.py-->line:25] - INFO: 正在发送请求，url:https://www.xuegean.com/xyxb/userCenter/login，请求参数:{'deviceCode': '481D3629d2d7978388365460dC5F91D2', 'loginType': 1, 'networkType': 0, 'smsCode': '081588', 'userName': '8826'}
+2019-07-09 17:26:55,146 - [http_request.py-->line:25] - INFO: 正在发送请求，url:https://www.xuegean.com/xyxb/userCenter/login，请求参数:{'deviceCode': '481D3629d2d7978388365460dC5F91D2', 'loginType': 1, 'networkType': 0, 'smsCode': '081588', 'userName': '8826'}
+2019-07-09 17:30:47,314 - [http_request.py-->line:25] - INFO: 正在发送请求，url:https://www.xuegean.com/xyxb/userCenter/login，请求参数:{'deviceCode': '481D3629d2d7978388365460dC5F91D2', 'loginType': 1, 'networkType': 0, 'smsCode': '081588', 'userName': '8826'}
+2019-07-09 17:30:47,547 - [http_request.py-->line:25] - INFO: 正在发送请求，url:https://www.xuegean.com/xyxb/userCenter/login，请求参数:{'deviceCode': '481D3629d2d7978388365460dC5F91D2', 'loginType': 1, 'networkType': 0, 'smsCode': '081588', 'userName': '8830'}
+2019-07-09 17:30:47,722 - [http_request.py-->line:25] - INFO: 正在发送请求，url:https://www.xuegean.com/xyxb/specialColumnCenter/setLiveStatus，请求参数:{'groupCode': '196F0b9C1b282Da069DA0488b64834C0', 'liveStatus': 1}
+2019-07-09 17:30:48,097 - [testcase.py-->line:43] - INFO: 2019-07-09 17:30:47
+2019-07-09 17:30:48,097 - [testcase.py-->line:44] - INFO: 					
+2019-07-09 17:30:48,097 - [http_request.py-->line:25] - INFO: 正在发送请求，url:https://www.xuegean.com/xyxb/specialColumnCenter/getStudyFinish，请求参数:{'groupCode': '196F0b9C1b282Da069DA0488b64834C0'}
+2019-07-09 17:30:48,250 - [testcase.py-->line:71] - INFO: -----测试用例：--用户有无未认证学时getStudyFinish--已通过----
+2019-07-09 17:30:48,408 - [http_request.py-->line:25] - INFO: 正在发送请求，url:https://www.xuegean.com/xyxb/groupCenter/groupDetail，请求参数:{'groupCode': '196F0b9C1b282Da069DA0488b64834C0'}
+2019-07-09 17:30:48,596 - [testcase.py-->line:66] - ERROR: '200' != '400'
+- 200
+? ^
++ 400
+? ^
+
+2019-07-09 17:30:48,764 - [http_request.py-->line:25] - INFO: 正在发送请求，url:https://www.xuegean.com/xyxb/groupCenter/updateLastGroupSpeak，请求参数:{'groupCode': '196F0b9C1b282Da069DA0488b64834C0'}
+2019-07-09 17:30:48,922 - [testcase.py-->line:71] - INFO: -----测试用例：--更新最后发言时间updateLastGroupSpeak--已通过----
+2019-07-09 17:30:49,062 - [http_request.py-->line:25] - INFO: 正在发送请求，url:https://www.xuegean.com/xyxb/specialColumnCenter/listGroupKey，请求参数:{'courseCode': 'af95F5d44aDCe580BF1E65Aa84877272'}
+2019-07-09 17:30:49,252 - [testcase.py-->line:71] - INFO: -----测试用例：--查询核心小组listGroupKey--已通过----
+2019-07-09 17:30:49,391 - [http_request.py-->line:25] - INFO: 正在发送请求，url:https://www.xuegean.com/xyxb/specialColumnCenter/listQuestion，请求参数:{'groupCode': '196F0b9C1b282Da069DA0488b64834C0'}
+2019-07-09 17:30:49,517 - [testcase.py-->line:71] - INFO: -----测试用例：--获取直播提问列表listQuestion--已通过----
+2019-07-09 17:30:49,708 - [http_request.py-->line:25] - INFO: 正在发送请求，url:https://www.xuegean.com/xyxb/specialColumnCenter/startSupervisor，请求参数:{'groupCode': '196F0b9C1b282Da069DA0488b64834C0'}
+2019-07-09 17:30:49,846 - [testcase.py-->line:71] - INFO: -----测试用例：--开启督导课程计时startSupervisor--已通过----
+2019-07-09 17:30:49,996 - [http_request.py-->line:25] - INFO: 正在发送请求，url:https://www.xuegean.com/xyxb/specialColumnCenter/userReckon，请求参数:{'duration': 180, 'groupCode': '196F0b9C1b282Da069DA0488b64834C0', 'courseCode': 'af95F5d44aDCe580BF1E65Aa84877272'}
+2019-07-09 17:30:50,120 - [testcase.py-->line:71] - INFO: -----测试用例：--用户督导计时登记userReckon--已通过----
+2019-07-09 17:30:50,264 - [http_request.py-->line:25] - INFO: 正在发送请求，url:https://www.xuegean.com/xyxb/specialColumnCenter/listGroupKey，请求参数:{'courseCode': 'af95F5d44aDCe580BF1E65Aa84877272'}
+2019-07-09 17:30:50,377 - [testcase.py-->line:71] - INFO: -----测试用例：--查询核心小组listGroupKey--已通过----
+2019-07-09 17:30:50,537 - [http_request.py-->line:25] - INFO: 正在发送请求，url:https://www.xuegean.com/xyxb/specialColumnCenter/getStudyFinish，请求参数:{'groupCode': '196F0b9C1b282Da069DA0488b64834C0'}
+2019-07-09 17:30:50,686 - [testcase.py-->line:71] - INFO: -----测试用例：--用户有无未认证学时getStudyFinish--已通过----
+2019-07-09 17:30:50,834 - [http_request.py-->line:25] - INFO: 正在发送请求，url:https://www.xuegean.com/xyxb/specialColumnCenter/groupDetail，请求参数:{'groupCode': '196F0b9C1b282Da069DA0488b64834C0'}
+2019-07-09 17:30:50,998 - [testcase.py-->line:71] - INFO: -----测试用例：--小组明细信息接口groupDetail--已通过----
+2019-07-09 17:30:51,167 - [http_request.py-->line:25] - INFO: 正在发送请求，url:https://www.xuegean.com/xyxb/groupLiveTicket/isUseTicket，请求参数:{'useType': 2, 'groupCode': '196F0b9C1b282Da069DA0488b64834C0'}
+2019-07-09 17:30:51,442 - [testcase.py-->line:71] - INFO: -----测试用例：--直播卷-查使用状态isUseTicket--已通过----
+2019-07-09 17:30:51,580 - [http_request.py-->line:25] - INFO: 正在发送请求，url:https://www.xuegean.com/xyxb/specialColumnCenter/listQuestion，请求参数:{'groupCode': '196F0b9C1b282Da069DA0488b64834C0'}
+2019-07-09 17:30:51,675 - [testcase.py-->line:71] - INFO: -----测试用例：--获取直播提问列表listQuestion--已通过----
+2019-07-09 17:30:51,812 - [http_request.py-->line:25] - INFO: 正在发送请求，url:https://www.xuegean.com/xyxb/specialColumnCenter/listGroupKey，请求参数:{'courseCode': 'af95F5d44aDCe580BF1E65Aa84877272'}
+2019-07-09 17:30:51,902 - [testcase.py-->line:71] - INFO: -----测试用例：--查询核心小组listGroupKey--已通过----
+2019-07-09 17:30:52,045 - [http_request.py-->line:25] - INFO: 正在发送请求，url:https://www.xuegean.com/xyxb/specialColumnCenter/addGroupKey，请求参数:{'sort': 1, 'courseCode': 'af95F5d44aDCe580BF1E65Aa84877272'}
+2019-07-09 17:30:52,241 - [testcase.py-->line:66] - ERROR: '200' != '400'
+- 200
+? ^
++ 400
+? ^
+
+2019-07-09 17:30:52,395 - [http_request.py-->line:25] - INFO: 正在发送请求，url:https://www.xuegean.com/xyxb/groupCenter/updateLastGroupSpeak，请求参数:{'groupCode': '196F0b9C1b282Da069DA0488b64834C0'}
+2019-07-09 17:30:52,524 - [testcase.py-->line:71] - INFO: -----测试用例：--更新最后发言时间updateLastGroupSpeak--已通过----
+2019-07-09 17:30:52,674 - [http_request.py-->line:25] - INFO: 正在发送请求，url:https://www.xuegean.com/xyxb/specialColumnCenter/editGroupKey，请求参数:{'status': 1, 'courseCode': 'af95F5d44aDCe580BF1E65Aa84877272'}
+2019-07-09 17:30:52,811 - [testcase.py-->line:71] - INFO: -----测试用例：--加入核心小组editGroupKey--已通过----
+2019-07-09 17:30:52,947 - [http_request.py-->line:25] - INFO: 正在发送请求，url:https://www.xuegean.com/xyxb/groupCenter/updateLastGroupSpeak，请求参数:{'groupCode': '196F0b9C1b282Da069DA0488b64834C0'}
+2019-07-09 17:30:53,121 - [testcase.py-->line:71] - INFO: -----测试用例：--更新最后发言时间updateLastGroupSpeak--已通过----
+2019-07-09 17:30:53,258 - [http_request.py-->line:25] - INFO: 正在发送请求，url:https://www.xuegean.com/xyxb/specialColumnCenter/editGroupKey，请求参数:{'courseCode': 'af95F5d44aDCe580BF1E65Aa84877272', 'status': 2, 'userCode': '48D393a5aBc510B0a9601e3C1A0c9C9A'}
+2019-07-09 17:30:53,370 - [testcase.py-->line:71] - INFO: -----测试用例：--修改核心小组成员状态editGroupKey--已通过----
+2019-07-09 17:30:53,507 - [http_request.py-->line:25] - INFO: 正在发送请求，url:https://www.xuegean.com/xyxb/groupCenter/updateLastGroupSpeak，请求参数:{'groupCode': '196F0b9C1b282Da069DA0488b64834C0'}
+2019-07-09 17:30:53,733 - [testcase.py-->line:71] - INFO: -----测试用例：--更新最后发言时间updateLastGroupSpeak--已通过----
+2019-07-09 17:30:53,879 - [http_request.py-->line:25] - INFO: 正在发送请求，url:https://www.xuegean.com/xyxb/specialColumnCenter/editGroupKey，请求参数:{'courseCode': 'af95F5d44aDCe580BF1E65Aa84877272', 'status': 0, 'userCode': '48D393a5aBc510B0a9601e3C1A0c9C9A'}
+2019-07-09 17:30:54,070 - [testcase.py-->line:71] - INFO: -----测试用例：--修改核心小组成员状态editGroupKey--已通过----
+2019-07-09 17:30:54,214 - [http_request.py-->line:25] - INFO: 正在发送请求，url:https://www.xuegean.com/xyxb/specialColumnCenter/quitGroupKey，请求参数:{'courseCode': 'af95F5d44aDCe580BF1E65Aa84877272', 'sort': 1}
+2019-07-09 17:30:54,405 - [testcase.py-->line:71] - INFO: -----测试用例：--退出核心小组quitGroupKey--已通过----
+2019-07-09 17:30:54,552 - [http_request.py-->line:25] - INFO: 正在发送请求，url:https://www.xuegean.com/xyxb/specialColumnCenter/editGroupKey，请求参数:{'courseCode': 'af95F5d44aDCe580BF1E65Aa84877272', 'status': 0}
+2019-07-09 17:30:54,717 - [testcase.py-->line:66] - ERROR: '200' != '400'
+- 200
+? ^
++ 400
+? ^
+
+2019-07-09 17:30:54,860 - [http_request.py-->line:25] - INFO: 正在发送请求，url:https://www.xuegean.com/xyxb/groupCenter/updateLastGroupSpeak，请求参数:{'groupCode': '196F0b9C1b282Da069DA0488b64834C0'}
+2019-07-09 17:30:55,023 - [testcase.py-->line:71] - INFO: -----测试用例：--更新最后发言时间updateLastGroupSpeak--已通过----
+2019-07-09 17:30:55,162 - [http_request.py-->line:25] - INFO: 正在发送请求，url:https://www.xuegean.com/xyxb/specialColumnCenter/setLiveStatus，请求参数:{'groupCode': '196F0b9C1b282Da069DA0488b64834C0', 'liveStatus': 0}
+2019-07-09 17:30:55,522 - [testcase.py-->line:71] - INFO: -----测试用例：--设置小组的直播状态setLiveStatus--已通过----
+2019-07-09 17:30:55,661 - [http_request.py-->line:25] - INFO: 正在发送请求，url:https://www.xuegean.com/xyxb/specialColumnCenter/userReckon，请求参数:{'groupCode': '196F0b9C1b282Da069DA0488b64834C0', 'duration': 471, 'courseCode': 'af95F5d44aDCe580BF1E65Aa84877272'}
+2019-07-09 17:30:55,834 - [testcase.py-->line:71] - INFO: -----测试用例：--用户督导计时登记userReckon--已通过----
+2019-07-09 17:30:55,972 - [http_request.py-->line:25] - INFO: 正在发送请求，url:https://www.xuegean.com/xyxb/groupCenter/updateLastGroupSpeak，请求参数:{'groupCode': '196F0b9C1b282Da069DA0488b64834C0'}
+2019-07-09 17:30:56,087 - [testcase.py-->line:71] - INFO: -----测试用例：--更新最后发言时间updateLastGroupSpeak--已通过----
+2019-07-09 17:30:56,256 - [testcase.py-->line:77] - INFO: 接口测试完毕
+2019-07-09 17:30:56,257 - [testcase.py-->line:78] - INFO: 					
+2019-07-09 17:31:54,718 - [http_request.py-->line:25] - INFO: 正在发送请求，url:https://www.xuegean.com/xyxb/userCenter/login，请求参数:{'deviceCode': '481D3629d2d7978388365460dC5F91D2', 'loginType': 1, 'networkType': 0, 'smsCode': '081588', 'userName': '8826'}
+2019-07-09 17:31:54,931 - [http_request.py-->line:25] - INFO: 正在发送请求，url:https://www.xuegean.com/xyxb/userCenter/login，请求参数:{'deviceCode': '481D3629d2d7978388365460dC5F91D2', 'loginType': 1, 'networkType': 0, 'smsCode': '081588', 'userName': '8830'}
+2019-07-09 17:31:55,108 - [http_request.py-->line:25] - INFO: 正在发送请求，url:https://www.xuegean.com/xyxb/specialColumnCenter/setLiveStatus，请求参数:{'groupCode': '196F0b9C1b282Da069DA0488b64834C0', 'liveStatus': 1}
+2019-07-09 17:31:55,555 - [testcase.py-->line:43] - INFO: 2019-07-09 17:31:54
+2019-07-09 17:31:55,555 - [testcase.py-->line:44] - INFO: 					
+2019-07-09 17:31:55,555 - [http_request.py-->line:25] - INFO: 正在发送请求，url:https://www.xuegean.com/xyxb/specialColumnCenter/getStudyFinish，请求参数:{'groupCode': '196F0b9C1b282Da069DA0488b64834C0'}
+2019-07-09 17:31:55,665 - [testcase.py-->line:71] - INFO: -----测试用例：--用户有无未认证学时getStudyFinish--已通过----
+2019-07-09 17:31:55,831 - [http_request.py-->line:25] - INFO: 正在发送请求，url:https://www.xuegean.com/xyxb/groupCenter/groupDetail，请求参数:{'groupCode': '196F0b9C1b282Da069DA0488b64834C0'}
+2019-07-09 17:31:55,981 - [testcase.py-->line:66] - ERROR: '200' != '400'
+- 200
+? ^
++ 400
+? ^
+
+2019-07-09 17:31:56,160 - [http_request.py-->line:25] - INFO: 正在发送请求，url:https://www.xuegean.com/xyxb/groupCenter/updateLastGroupSpeak，请求参数:{'groupCode': '196F0b9C1b282Da069DA0488b64834C0'}
+2019-07-09 17:31:56,343 - [testcase.py-->line:71] - INFO: -----测试用例：--更新最后发言时间updateLastGroupSpeak--已通过----
+2019-07-09 17:31:56,478 - [http_request.py-->line:25] - INFO: 正在发送请求，url:https://www.xuegean.com/xyxb/specialColumnCenter/listGroupKey，请求参数:{'courseCode': 'D68f550832f6ca8E4120432117057093'}
+2019-07-09 17:31:56,652 - [testcase.py-->line:71] - INFO: -----测试用例：--查询核心小组listGroupKey--已通过----
+2019-07-09 17:31:56,812 - [http_request.py-->line:25] - INFO: 正在发送请求，url:https://www.xuegean.com/xyxb/specialColumnCenter/listQuestion，请求参数:{'groupCode': '196F0b9C1b282Da069DA0488b64834C0'}
+2019-07-09 17:31:56,942 - [testcase.py-->line:71] - INFO: -----测试用例：--获取直播提问列表listQuestion--已通过----
+2019-07-09 17:31:57,105 - [http_request.py-->line:25] - INFO: 正在发送请求，url:https://www.xuegean.com/xyxb/specialColumnCenter/startSupervisor，请求参数:{'groupCode': '196F0b9C1b282Da069DA0488b64834C0'}
+2019-07-09 17:31:57,276 - [testcase.py-->line:71] - INFO: -----测试用例：--开启督导课程计时startSupervisor--已通过----
+2019-07-09 17:31:57,415 - [http_request.py-->line:25] - INFO: 正在发送请求，url:https://www.xuegean.com/xyxb/specialColumnCenter/userReckon，请求参数:{'duration': 180, 'groupCode': '196F0b9C1b282Da069DA0488b64834C0', 'courseCode': 'D68f550832f6ca8E4120432117057093'}
+2019-07-09 17:31:57,547 - [testcase.py-->line:71] - INFO: -----测试用例：--用户督导计时登记userReckon--已通过----
+2019-07-09 17:31:57,701 - [http_request.py-->line:25] - INFO: 正在发送请求，url:https://www.xuegean.com/xyxb/specialColumnCenter/listGroupKey，请求参数:{'courseCode': 'D68f550832f6ca8E4120432117057093'}
+2019-07-09 17:31:57,830 - [testcase.py-->line:71] - INFO: -----测试用例：--查询核心小组listGroupKey--已通过----
+2019-07-09 17:31:57,962 - [http_request.py-->line:25] - INFO: 正在发送请求，url:https://www.xuegean.com/xyxb/specialColumnCenter/getStudyFinish，请求参数:{'groupCode': '196F0b9C1b282Da069DA0488b64834C0'}
+2019-07-09 17:31:58,107 - [testcase.py-->line:71] - INFO: -----测试用例：--用户有无未认证学时getStudyFinish--已通过----
+2019-07-09 17:31:58,280 - [http_request.py-->line:25] - INFO: 正在发送请求，url:https://www.xuegean.com/xyxb/specialColumnCenter/groupDetail，请求参数:{'groupCode': '196F0b9C1b282Da069DA0488b64834C0'}
+2019-07-09 17:31:58,531 - [testcase.py-->line:71] - INFO: -----测试用例：--小组明细信息接口groupDetail--已通过----
+2019-07-09 17:31:58,688 - [http_request.py-->line:25] - INFO: 正在发送请求，url:https://www.xuegean.com/xyxb/groupLiveTicket/isUseTicket，请求参数:{'useType': 2, 'groupCode': '196F0b9C1b282Da069DA0488b64834C0'}
+2019-07-09 17:31:58,926 - [testcase.py-->line:71] - INFO: -----测试用例：--直播卷-查使用状态isUseTicket--已通过----
+2019-07-09 17:31:59,057 - [http_request.py-->line:25] - INFO: 正在发送请求，url:https://www.xuegean.com/xyxb/specialColumnCenter/listQuestion，请求参数:{'groupCode': '196F0b9C1b282Da069DA0488b64834C0'}
+2019-07-09 17:31:59,235 - [testcase.py-->line:71] - INFO: -----测试用例：--获取直播提问列表listQuestion--已通过----
+2019-07-09 17:31:59,362 - [http_request.py-->line:25] - INFO: 正在发送请求，url:https://www.xuegean.com/xyxb/specialColumnCenter/listGroupKey，请求参数:{'courseCode': 'D68f550832f6ca8E4120432117057093'}
+2019-07-09 17:31:59,530 - [testcase.py-->line:71] - INFO: -----测试用例：--查询核心小组listGroupKey--已通过----
+2019-07-09 17:31:59,664 - [http_request.py-->line:25] - INFO: 正在发送请求，url:https://www.xuegean.com/xyxb/specialColumnCenter/addGroupKey，请求参数:{'sort': 1, 'courseCode': 'D68f550832f6ca8E4120432117057093'}
+2019-07-09 17:31:59,857 - [testcase.py-->line:66] - ERROR: '200' != '400'
+- 200
+? ^
++ 400
+? ^
+
+2019-07-09 17:31:59,987 - [http_request.py-->line:25] - INFO: 正在发送请求，url:https://www.xuegean.com/xyxb/groupCenter/updateLastGroupSpeak，请求参数:{'groupCode': '196F0b9C1b282Da069DA0488b64834C0'}
+2019-07-09 17:32:00,117 - [testcase.py-->line:71] - INFO: -----测试用例：--更新最后发言时间updateLastGroupSpeak--已通过----
+2019-07-09 17:32:00,268 - [http_request.py-->line:25] - INFO: 正在发送请求，url:https://www.xuegean.com/xyxb/specialColumnCenter/editGroupKey，请求参数:{'status': 1, 'courseCode': 'D68f550832f6ca8E4120432117057093'}
+2019-07-09 17:32:00,406 - [testcase.py-->line:71] - INFO: -----测试用例：--加入核心小组editGroupKey--已通过----
+2019-07-09 17:32:00,546 - [http_request.py-->line:25] - INFO: 正在发送请求，url:https://www.xuegean.com/xyxb/groupCenter/updateLastGroupSpeak，请求参数:{'groupCode': '196F0b9C1b282Da069DA0488b64834C0'}
+2019-07-09 17:32:00,729 - [testcase.py-->line:71] - INFO: -----测试用例：--更新最后发言时间updateLastGroupSpeak--已通过----
+2019-07-09 17:32:00,865 - [http_request.py-->line:25] - INFO: 正在发送请求，url:https://www.xuegean.com/xyxb/specialColumnCenter/editGroupKey，请求参数:{'courseCode': 'D68f550832f6ca8E4120432117057093', 'status': 2, 'userCode': '48D393a5aBc510B0a9601e3C1A0c9C9A'}
+2019-07-09 17:32:01,026 - [testcase.py-->line:71] - INFO: -----测试用例：--修改核心小组成员状态editGroupKey--已通过----
+2019-07-09 17:32:01,174 - [http_request.py-->line:25] - INFO: 正在发送请求，url:https://www.xuegean.com/xyxb/groupCenter/updateLastGroupSpeak，请求参数:{'groupCode': '196F0b9C1b282Da069DA0488b64834C0'}
+2019-07-09 17:32:01,380 - [testcase.py-->line:71] - INFO: -----测试用例：--更新最后发言时间updateLastGroupSpeak--已通过----
+2019-07-09 17:32:01,508 - [http_request.py-->line:25] - INFO: 正在发送请求，url:https://www.xuegean.com/xyxb/specialColumnCenter/editGroupKey，请求参数:{'courseCode': 'D68f550832f6ca8E4120432117057093', 'status': 0, 'userCode': '48D393a5aBc510B0a9601e3C1A0c9C9A'}
+2019-07-09 17:32:01,633 - [testcase.py-->line:71] - INFO: -----测试用例：--修改核心小组成员状态editGroupKey--已通过----
+2019-07-09 17:32:01,770 - [http_request.py-->line:25] - INFO: 正在发送请求，url:https://www.xuegean.com/xyxb/specialColumnCenter/quitGroupKey，请求参数:{'courseCode': 'D68f550832f6ca8E4120432117057093', 'sort': 1}
+2019-07-09 17:32:01,912 - [testcase.py-->line:71] - INFO: -----测试用例：--退出核心小组quitGroupKey--已通过----
+2019-07-09 17:32:02,044 - [http_request.py-->line:25] - INFO: 正在发送请求，url:https://www.xuegean.com/xyxb/specialColumnCenter/editGroupKey，请求参数:{'courseCode': 'D68f550832f6ca8E4120432117057093', 'status': 0}
+2019-07-09 17:32:02,240 - [testcase.py-->line:66] - ERROR: '200' != '400'
+- 200
+? ^
++ 400
+? ^
+
+2019-07-09 17:32:02,377 - [http_request.py-->line:25] - INFO: 正在发送请求，url:https://www.xuegean.com/xyxb/groupCenter/updateLastGroupSpeak，请求参数:{'groupCode': '196F0b9C1b282Da069DA0488b64834C0'}
+2019-07-09 17:32:02,484 - [testcase.py-->line:71] - INFO: -----测试用例：--更新最后发言时间updateLastGroupSpeak--已通过----
+2019-07-09 17:32:02,636 - [http_request.py-->line:25] - INFO: 正在发送请求，url:https://www.xuegean.com/xyxb/specialColumnCenter/setLiveStatus，请求参数:{'groupCode': '196F0b9C1b282Da069DA0488b64834C0', 'liveStatus': 0}
+2019-07-09 17:32:02,971 - [testcase.py-->line:71] - INFO: -----测试用例：--设置小组的直播状态setLiveStatus--已通过----
+2019-07-09 17:32:03,097 - [http_request.py-->line:25] - INFO: 正在发送请求，url:https://www.xuegean.com/xyxb/specialColumnCenter/userReckon，请求参数:{'groupCode': '196F0b9C1b282Da069DA0488b64834C0', 'duration': 471, 'courseCode': 'D68f550832f6ca8E4120432117057093'}
+2019-07-09 17:32:03,227 - [testcase.py-->line:71] - INFO: -----测试用例：--用户督导计时登记userReckon--已通过----
+2019-07-09 17:32:03,359 - [http_request.py-->line:25] - INFO: 正在发送请求，url:https://www.xuegean.com/xyxb/groupCenter/updateLastGroupSpeak，请求参数:{'groupCode': '196F0b9C1b282Da069DA0488b64834C0'}
+2019-07-09 17:32:03,474 - [testcase.py-->line:71] - INFO: -----测试用例：--更新最后发言时间updateLastGroupSpeak--已通过----
+2019-07-09 17:32:03,608 - [testcase.py-->line:77] - INFO: 接口测试完毕
+2019-07-09 17:32:03,609 - [testcase.py-->line:78] - INFO: 					
+2019-07-09 17:32:38,471 - [http_request.py-->line:25] - INFO: 正在发送请求，url:https://www.xuegean.com/xyxb/userCenter/login，请求参数:{'deviceCode': '481D3629d2d7978388365460dC5F91D2', 'loginType': 1, 'networkType': 0, 'smsCode': '081588', 'userName': '8826'}
+2019-07-09 17:32:38,683 - [http_request.py-->line:25] - INFO: 正在发送请求，url:https://www.xuegean.com/xyxb/userCenter/login，请求参数:{'deviceCode': '481D3629d2d7978388365460dC5F91D2', 'loginType': 1, 'networkType': 0, 'smsCode': '081588', 'userName': '8830'}
+2019-07-09 17:32:38,838 - [http_request.py-->line:25] - INFO: 正在发送请求，url:https://www.xuegean.com/xyxb/specialColumnCenter/setLiveStatus，请求参数:{'groupCode': '196F0b9C1b282Da069DA0488b64834C0', 'liveStatus': 1}
+2019-07-09 17:32:39,228 - [testcase.py-->line:43] - INFO: 2019-07-09 17:32:38
+2019-07-09 17:32:39,228 - [testcase.py-->line:44] - INFO: 					
+2019-07-09 17:32:39,229 - [http_request.py-->line:25] - INFO: 正在发送请求，url:https://www.xuegean.com/xyxb/specialColumnCenter/getStudyFinish，请求参数:{'groupCode': '196F0b9C1b282Da069DA0488b64834C0'}
+2019-07-09 17:32:39,340 - [testcase.py-->line:71] - INFO: -----测试用例：--用户有无未认证学时getStudyFinish--已通过----
+2019-07-09 17:32:39,498 - [http_request.py-->line:25] - INFO: 正在发送请求，url:https://www.xuegean.com/xyxb/groupCenter/groupDetail，请求参数:{'groupCode': '196F0b9C1b282Da069DA0488b64834C0'}
+2019-07-09 17:32:39,662 - [testcase.py-->line:66] - ERROR: '200' != '400'
+- 200
+? ^
++ 400
+? ^
+
+2019-07-09 17:32:39,809 - [http_request.py-->line:25] - INFO: 正在发送请求，url:https://www.xuegean.com/xyxb/groupCenter/updateLastGroupSpeak，请求参数:{'groupCode': '196F0b9C1b282Da069DA0488b64834C0'}
+2019-07-09 17:32:39,944 - [testcase.py-->line:71] - INFO: -----测试用例：--更新最后发言时间updateLastGroupSpeak--已通过----
+2019-07-09 17:32:40,080 - [http_request.py-->line:25] - INFO: 正在发送请求，url:https://www.xuegean.com/xyxb/specialColumnCenter/listGroupKey，请求参数:{'courseCode': '9fDD98151C1fDDafE5d8FBBF94d4470e'}
+2019-07-09 17:32:40,203 - [testcase.py-->line:71] - INFO: -----测试用例：--查询核心小组listGroupKey--已通过----
+2019-07-09 17:32:40,375 - [http_request.py-->line:25] - INFO: 正在发送请求，url:https://www.xuegean.com/xyxb/specialColumnCenter/listQuestion，请求参数:{'groupCode': '196F0b9C1b282Da069DA0488b64834C0'}
+2019-07-09 17:32:40,557 - [testcase.py-->line:71] - INFO: -----测试用例：--获取直播提问列表listQuestion--已通过----
+2019-07-09 17:32:40,741 - [http_request.py-->line:25] - INFO: 正在发送请求，url:https://www.xuegean.com/xyxb/specialColumnCenter/startSupervisor，请求参数:{'groupCode': '196F0b9C1b282Da069DA0488b64834C0'}
+2019-07-09 17:32:40,864 - [testcase.py-->line:71] - INFO: -----测试用例：--开启督导课程计时startSupervisor--已通过----
+2019-07-09 17:32:41,010 - [http_request.py-->line:25] - INFO: 正在发送请求，url:https://www.xuegean.com/xyxb/specialColumnCenter/userReckon，请求参数:{'duration': 180, 'groupCode': '196F0b9C1b282Da069DA0488b64834C0', 'courseCode': '9fDD98151C1fDDafE5d8FBBF94d4470e'}
+2019-07-09 17:32:41,140 - [testcase.py-->line:71] - INFO: -----测试用例：--用户督导计时登记userReckon--已通过----
+2019-07-09 17:32:41,289 - [http_request.py-->line:25] - INFO: 正在发送请求，url:https://www.xuegean.com/xyxb/specialColumnCenter/listGroupKey，请求参数:{'courseCode': '9fDD98151C1fDDafE5d8FBBF94d4470e'}
+2019-07-09 17:32:41,428 - [testcase.py-->line:71] - INFO: -----测试用例：--查询核心小组listGroupKey--已通过----
+2019-07-09 17:32:41,593 - [http_request.py-->line:25] - INFO: 正在发送请求，url:https://www.xuegean.com/xyxb/specialColumnCenter/getStudyFinish，请求参数:{'groupCode': '196F0b9C1b282Da069DA0488b64834C0'}
+2019-07-09 17:32:41,720 - [testcase.py-->line:71] - INFO: -----测试用例：--用户有无未认证学时getStudyFinish--已通过----
+2019-07-09 17:32:41,883 - [http_request.py-->line:25] - INFO: 正在发送请求，url:https://www.xuegean.com/xyxb/specialColumnCenter/groupDetail，请求参数:{'groupCode': '196F0b9C1b282Da069DA0488b64834C0'}
+2019-07-09 17:32:42,082 - [testcase.py-->line:71] - INFO: -----测试用例：--小组明细信息接口groupDetail--已通过----
+2019-07-09 17:32:42,216 - [http_request.py-->line:25] - INFO: 正在发送请求，url:https://www.xuegean.com/xyxb/groupLiveTicket/isUseTicket，请求参数:{'useType': 2, 'groupCode': '196F0b9C1b282Da069DA0488b64834C0'}
+2019-07-09 17:32:42,447 - [testcase.py-->line:71] - INFO: -----测试用例：--直播卷-查使用状态isUseTicket--已通过----
+2019-07-09 17:32:42,762 - [http_request.py-->line:25] - INFO: 正在发送请求，url:https://www.xuegean.com/xyxb/specialColumnCenter/listQuestion，请求参数:{'groupCode': '196F0b9C1b282Da069DA0488b64834C0'}
+2019-07-09 17:32:42,931 - [testcase.py-->line:71] - INFO: -----测试用例：--获取直播提问列表listQuestion--已通过----
+2019-07-09 17:32:43,066 - [http_request.py-->line:25] - INFO: 正在发送请求，url:https://www.xuegean.com/xyxb/specialColumnCenter/listGroupKey，请求参数:{'courseCode': '9fDD98151C1fDDafE5d8FBBF94d4470e'}
+2019-07-09 17:32:43,217 - [testcase.py-->line:71] - INFO: -----测试用例：--查询核心小组listGroupKey--已通过----
+2019-07-09 17:32:43,378 - [http_request.py-->line:25] - INFO: 正在发送请求，url:https://www.xuegean.com/xyxb/specialColumnCenter/addGroupKey，请求参数:{'sort': 1, 'courseCode': '9fDD98151C1fDDafE5d8FBBF94d4470e'}
+2019-07-09 17:32:43,462 - [testcase.py-->line:66] - ERROR: '200' != '400'
+- 200
+? ^
++ 400
+? ^
+
+2019-07-09 17:32:43,631 - [http_request.py-->line:25] - INFO: 正在发送请求，url:https://www.xuegean.com/xyxb/groupCenter/updateLastGroupSpeak，请求参数:{'groupCode': '196F0b9C1b282Da069DA0488b64834C0'}
+2019-07-09 17:32:43,787 - [testcase.py-->line:71] - INFO: -----测试用例：--更新最后发言时间updateLastGroupSpeak--已通过----
+2019-07-09 17:32:43,934 - [http_request.py-->line:25] - INFO: 正在发送请求，url:https://www.xuegean.com/xyxb/specialColumnCenter/editGroupKey，请求参数:{'status': 1, 'courseCode': '9fDD98151C1fDDafE5d8FBBF94d4470e'}
+2019-07-09 17:32:44,047 - [testcase.py-->line:71] - INFO: -----测试用例：--加入核心小组editGroupKey--已通过----
+2019-07-09 17:32:44,191 - [http_request.py-->line:25] - INFO: 正在发送请求，url:https://www.xuegean.com/xyxb/groupCenter/updateLastGroupSpeak，请求参数:{'groupCode': '196F0b9C1b282Da069DA0488b64834C0'}
+2019-07-09 17:32:44,348 - [testcase.py-->line:71] - INFO: -----测试用例：--更新最后发言时间updateLastGroupSpeak--已通过----
+2019-07-09 17:32:44,494 - [http_request.py-->line:25] - INFO: 正在发送请求，url:https://www.xuegean.com/xyxb/specialColumnCenter/editGroupKey，请求参数:{'courseCode': '9fDD98151C1fDDafE5d8FBBF94d4470e', 'status': 2, 'userCode': '48D393a5aBc510B0a9601e3C1A0c9C9A'}
+2019-07-09 17:32:44,704 - [testcase.py-->line:71] - INFO: -----测试用例：--修改核心小组成员状态editGroupKey--已通过----
+2019-07-09 17:32:44,838 - [http_request.py-->line:25] - INFO: 正在发送请求，url:https://www.xuegean.com/xyxb/groupCenter/updateLastGroupSpeak，请求参数:{'groupCode': '196F0b9C1b282Da069DA0488b64834C0'}
+2019-07-09 17:32:44,959 - [testcase.py-->line:71] - INFO: -----测试用例：--更新最后发言时间updateLastGroupSpeak--已通过----
+2019-07-09 17:32:45,107 - [http_request.py-->line:25] - INFO: 正在发送请求，url:https://www.xuegean.com/xyxb/specialColumnCenter/editGroupKey，请求参数:{'courseCode': '9fDD98151C1fDDafE5d8FBBF94d4470e', 'status': 0, 'userCode': '48D393a5aBc510B0a9601e3C1A0c9C9A'}
+2019-07-09 17:32:45,244 - [testcase.py-->line:71] - INFO: -----测试用例：--修改核心小组成员状态editGroupKey--已通过----
+2019-07-09 17:32:45,391 - [http_request.py-->line:25] - INFO: 正在发送请求，url:https://www.xuegean.com/xyxb/specialColumnCenter/quitGroupKey，请求参数:{'courseCode': '9fDD98151C1fDDafE5d8FBBF94d4470e', 'sort': 1}
+2019-07-09 17:32:45,522 - [testcase.py-->line:71] - INFO: -----测试用例：--退出核心小组quitGroupKey--已通过----
+2019-07-09 17:32:45,670 - [http_request.py-->line:25] - INFO: 正在发送请求，url:https://www.xuegean.com/xyxb/specialColumnCenter/editGroupKey，请求参数:{'courseCode': '9fDD98151C1fDDafE5d8FBBF94d4470e', 'status': 0}
+2019-07-09 17:32:45,795 - [testcase.py-->line:66] - ERROR: '200' != '400'
+- 200
+? ^
++ 400
+? ^
+
+2019-07-09 17:32:45,947 - [http_request.py-->line:25] - INFO: 正在发送请求，url:https://www.xuegean.com/xyxb/groupCenter/updateLastGroupSpeak，请求参数:{'groupCode': '196F0b9C1b282Da069DA0488b64834C0'}
+2019-07-09 17:32:46,092 - [testcase.py-->line:71] - INFO: -----测试用例：--更新最后发言时间updateLastGroupSpeak--已通过----
+2019-07-09 17:32:46,243 - [http_request.py-->line:25] - INFO: 正在发送请求，url:https://www.xuegean.com/xyxb/specialColumnCenter/setLiveStatus，请求参数:{'groupCode': '196F0b9C1b282Da069DA0488b64834C0', 'liveStatus': 0}
+2019-07-09 17:32:46,523 - [testcase.py-->line:71] - INFO: -----测试用例：--设置小组的直播状态setLiveStatus--已通过----
+2019-07-09 17:32:46,657 - [http_request.py-->line:25] - INFO: 正在发送请求，url:https://www.xuegean.com/xyxb/specialColumnCenter/userReckon，请求参数:{'groupCode': '196F0b9C1b282Da069DA0488b64834C0', 'duration': 471, 'courseCode': '9fDD98151C1fDDafE5d8FBBF94d4470e'}
+2019-07-09 17:32:46,820 - [testcase.py-->line:71] - INFO: -----测试用例：--用户督导计时登记userReckon--已通过----
+2019-07-09 17:32:46,959 - [http_request.py-->line:25] - INFO: 正在发送请求，url:https://www.xuegean.com/xyxb/groupCenter/updateLastGroupSpeak，请求参数:{'groupCode': '196F0b9C1b282Da069DA0488b64834C0'}
+2019-07-09 17:32:47,072 - [testcase.py-->line:71] - INFO: -----测试用例：--更新最后发言时间updateLastGroupSpeak--已通过----
+2019-07-09 17:32:47,203 - [testcase.py-->line:77] - INFO: 接口测试完毕
+2019-07-09 17:32:47,203 - [testcase.py-->line:78] - INFO: 					
+2019-07-09 17:34:26,804 - [http_request.py-->line:25] - INFO: 正在发送请求，url:https://www.xuegean.com/xyxb/userCenter/login，请求参数:{'deviceCode': '481D3629d2d7978388365460dC5F91D2', 'loginType': 1, 'networkType': 0, 'smsCode': '081588', 'userName': '8826'}
+2019-07-09 17:34:27,023 - [http_request.py-->line:25] - INFO: 正在发送请求，url:https://www.xuegean.com/xyxb/userCenter/login，请求参数:{'deviceCode': '481D3629d2d7978388365460dC5F91D2', 'loginType': 1, 'networkType': 0, 'smsCode': '081588', 'userName': '8830'}
+2019-07-09 17:34:27,158 - [http_request.py-->line:25] - INFO: 正在发送请求，url:https://www.xuegean.com/xyxb/specialColumnCenter/setLiveStatus，请求参数:{'groupCode': '196F0b9C1b282Da069DA0488b64834C0', 'liveStatus': 1}
+2019-07-09 17:34:27,546 - [testcase.py-->line:43] - INFO: 2019-07-09 17:34:26
+2019-07-09 17:34:27,546 - [testcase.py-->line:44] - INFO: 					
+2019-07-09 17:34:27,546 - [http_request.py-->line:25] - INFO: 正在发送请求，url:https://www.xuegean.com/xyxb/specialColumnCenter/getStudyFinish，请求参数:{'groupCode': '196F0b9C1b282Da069DA0488b64834C0'}
+2019-07-09 17:34:27,712 - [testcase.py-->line:71] - INFO: -----测试用例：--用户有无未认证学时getStudyFinish--已通过----
+2019-07-09 17:34:27,957 - [http_request.py-->line:25] - INFO: 正在发送请求，url:https://www.xuegean.com/xyxb/groupCenter/groupDetail，请求参数:{'groupCode': '196F0b9C1b282Da069DA0488b64834C0'}
+2019-07-09 17:34:28,095 - [testcase.py-->line:66] - ERROR: '200' != '400'
+- 200
+? ^
++ 400
+? ^
+
+2019-07-09 17:34:28,327 - [http_request.py-->line:25] - INFO: 正在发送请求，url:https://www.xuegean.com/xyxb/groupCenter/updateLastGroupSpeak，请求参数:{'groupCode': '196F0b9C1b282Da069DA0488b64834C0'}
+2019-07-09 17:34:28,532 - [testcase.py-->line:71] - INFO: -----测试用例：--更新最后发言时间updateLastGroupSpeak--已通过----
+2019-07-09 17:34:28,670 - [http_request.py-->line:25] - INFO: 正在发送请求，url:https://www.xuegean.com/xyxb/specialColumnCenter/listGroupKey，请求参数:{'courseCode': 'A147B37bC97a22881A65e22997a3AF75'}
+2019-07-09 17:34:28,822 - [testcase.py-->line:71] - INFO: -----测试用例：--查询核心小组listGroupKey--已通过----
+2019-07-09 17:34:28,971 - [http_request.py-->line:25] - INFO: 正在发送请求，url:https://www.xuegean.com/xyxb/specialColumnCenter/listQuestion，请求参数:{'groupCode': '196F0b9C1b282Da069DA0488b64834C0'}
+2019-07-09 17:34:29,123 - [testcase.py-->line:71] - INFO: -----测试用例：--获取直播提问列表listQuestion--已通过----
+2019-07-09 17:34:29,290 - [http_request.py-->line:25] - INFO: 正在发送请求，url:https://www.xuegean.com/xyxb/specialColumnCenter/startSupervisor，请求参数:{'groupCode': '196F0b9C1b282Da069DA0488b64834C0'}
+2019-07-09 17:34:29,429 - [testcase.py-->line:71] - INFO: -----测试用例：--开启督导课程计时startSupervisor--已通过----
+2019-07-09 17:34:29,567 - [http_request.py-->line:25] - INFO: 正在发送请求，url:https://www.xuegean.com/xyxb/specialColumnCenter/userReckon，请求参数:{'duration': 180, 'groupCode': '196F0b9C1b282Da069DA0488b64834C0', 'courseCode': 'A147B37bC97a22881A65e22997a3AF75'}
+2019-07-09 17:34:29,767 - [testcase.py-->line:71] - INFO: -----测试用例：--用户督导计时登记userReckon--已通过----
+2019-07-09 17:34:29,901 - [http_request.py-->line:25] - INFO: 正在发送请求，url:https://www.xuegean.com/xyxb/specialColumnCenter/listGroupKey，请求参数:{'courseCode': 'A147B37bC97a22881A65e22997a3AF75'}
+2019-07-09 17:34:30,029 - [testcase.py-->line:71] - INFO: -----测试用例：--查询核心小组listGroupKey--已通过----
+2019-07-09 17:34:30,174 - [http_request.py-->line:25] - INFO: 正在发送请求，url:https://www.xuegean.com/xyxb/specialColumnCenter/getStudyFinish，请求参数:{'groupCode': '196F0b9C1b282Da069DA0488b64834C0'}
+2019-07-09 17:34:30,329 - [testcase.py-->line:71] - INFO: -----测试用例：--用户有无未认证学时getStudyFinish--已通过----
+2019-07-09 17:34:30,489 - [http_request.py-->line:25] - INFO: 正在发送请求，url:https://www.xuegean.com/xyxb/specialColumnCenter/groupDetail，请求参数:{'groupCode': '196F0b9C1b282Da069DA0488b64834C0'}
+2019-07-09 17:34:30,743 - [testcase.py-->line:71] - INFO: -----测试用例：--小组明细信息接口groupDetail--已通过----
+2019-07-09 17:34:31,049 - [http_request.py-->line:25] - INFO: 正在发送请求，url:https://www.xuegean.com/xyxb/groupLiveTicket/isUseTicket，请求参数:{'useType': 2, 'groupCode': '196F0b9C1b282Da069DA0488b64834C0'}
+2019-07-09 17:34:31,267 - [testcase.py-->line:71] - INFO: -----测试用例：--直播卷-查使用状态isUseTicket--已通过----
+2019-07-09 17:34:31,477 - [http_request.py-->line:25] - INFO: 正在发送请求，url:https://www.xuegean.com/xyxb/specialColumnCenter/listQuestion，请求参数:{'groupCode': '196F0b9C1b282Da069DA0488b64834C0'}
+2019-07-09 17:34:31,624 - [testcase.py-->line:71] - INFO: -----测试用例：--获取直播提问列表listQuestion--已通过----
+2019-07-09 17:34:31,852 - [http_request.py-->line:25] - INFO: 正在发送请求，url:https://www.xuegean.com/xyxb/specialColumnCenter/listGroupKey，请求参数:{'courseCode': 'A147B37bC97a22881A65e22997a3AF75'}
+2019-07-09 17:34:31,978 - [testcase.py-->line:71] - INFO: -----测试用例：--查询核心小组listGroupKey--已通过----
+2019-07-09 17:34:32,170 - [http_request.py-->line:25] - INFO: 正在发送请求，url:https://www.xuegean.com/xyxb/specialColumnCenter/addGroupKey，请求参数:{'sort': 1, 'courseCode': 'A147B37bC97a22881A65e22997a3AF75'}
+2019-07-09 17:34:32,324 - [testcase.py-->line:66] - ERROR: '200' != '400'
+- 200
+? ^
++ 400
+? ^
+
+2019-07-09 17:34:32,496 - [http_request.py-->line:25] - INFO: 正在发送请求，url:https://www.xuegean.com/xyxb/groupCenter/updateLastGroupSpeak，请求参数:{'groupCode': '196F0b9C1b282Da069DA0488b64834C0'}
+2019-07-09 17:34:32,636 - [testcase.py-->line:71] - INFO: -----测试用例：--更新最后发言时间updateLastGroupSpeak--已通过----
+2019-07-09 17:34:32,784 - [http_request.py-->line:25] - INFO: 正在发送请求，url:https://www.xuegean.com/xyxb/specialColumnCenter/editGroupKey，请求参数:{'status': 1, 'courseCode': 'A147B37bC97a22881A65e22997a3AF75'}
+2019-07-09 17:34:32,925 - [testcase.py-->line:71] - INFO: -----测试用例：--加入核心小组editGroupKey--已通过----
+2019-07-09 17:34:33,077 - [http_request.py-->line:25] - INFO: 正在发送请求，url:https://www.xuegean.com/xyxb/groupCenter/updateLastGroupSpeak，请求参数:{'groupCode': '196F0b9C1b282Da069DA0488b64834C0'}
+2019-07-09 17:34:33,225 - [testcase.py-->line:71] - INFO: -----测试用例：--更新最后发言时间updateLastGroupSpeak--已通过----
+2019-07-09 17:34:33,364 - [http_request.py-->line:25] - INFO: 正在发送请求，url:https://www.xuegean.com/xyxb/specialColumnCenter/editGroupKey，请求参数:{'courseCode': 'A147B37bC97a22881A65e22997a3AF75', 'status': 2, 'userCode': '48D393a5aBc510B0a9601e3C1A0c9C9A'}
+2019-07-09 17:34:33,524 - [testcase.py-->line:71] - INFO: -----测试用例：--修改核心小组成员状态editGroupKey--已通过----
+2019-07-09 17:34:33,662 - [http_request.py-->line:25] - INFO: 正在发送请求，url:https://www.xuegean.com/xyxb/groupCenter/updateLastGroupSpeak，请求参数:{'groupCode': '196F0b9C1b282Da069DA0488b64834C0'}
+2019-07-09 17:34:33,783 - [testcase.py-->line:71] - INFO: -----测试用例：--更新最后发言时间updateLastGroupSpeak--已通过----
+2019-07-09 17:34:33,927 - [http_request.py-->line:25] - INFO: 正在发送请求，url:https://www.xuegean.com/xyxb/specialColumnCenter/editGroupKey，请求参数:{'courseCode': 'A147B37bC97a22881A65e22997a3AF75', 'status': 0, 'userCode': '48D393a5aBc510B0a9601e3C1A0c9C9A'}
+2019-07-09 17:34:34,100 - [testcase.py-->line:71] - INFO: -----测试用例：--修改核心小组成员状态editGroupKey--已通过----
+2019-07-09 17:34:34,246 - [http_request.py-->line:25] - INFO: 正在发送请求，url:https://www.xuegean.com/xyxb/specialColumnCenter/quitGroupKey，请求参数:{'courseCode': 'A147B37bC97a22881A65e22997a3AF75', 'sort': 1}
+2019-07-09 17:34:34,388 - [testcase.py-->line:71] - INFO: -----测试用例：--退出核心小组quitGroupKey--已通过----
+2019-07-09 17:34:34,544 - [http_request.py-->line:25] - INFO: 正在发送请求，url:https://www.xuegean.com/xyxb/specialColumnCenter/editGroupKey，请求参数:{'courseCode': 'A147B37bC97a22881A65e22997a3AF75', 'status': 0}
+2019-07-09 17:34:34,731 - [testcase.py-->line:66] - ERROR: '200' != '400'
+- 200
+? ^
++ 400
+? ^
+
+2019-07-09 17:34:34,881 - [http_request.py-->line:25] - INFO: 正在发送请求，url:https://www.xuegean.com/xyxb/groupCenter/updateLastGroupSpeak，请求参数:{'groupCode': '196F0b9C1b282Da069DA0488b64834C0'}
+2019-07-09 17:34:35,031 - [testcase.py-->line:71] - INFO: -----测试用例：--更新最后发言时间updateLastGroupSpeak--已通过----
+2019-07-09 17:34:35,183 - [http_request.py-->line:25] - INFO: 正在发送请求，url:https://www.xuegean.com/xyxb/specialColumnCenter/setLiveStatus，请求参数:{'groupCode': '196F0b9C1b282Da069DA0488b64834C0', 'liveStatus': 0}
+2019-07-09 17:34:35,503 - [testcase.py-->line:71] - INFO: -----测试用例：--设置小组的直播状态setLiveStatus--已通过----
+2019-07-09 17:34:35,653 - [http_request.py-->line:25] - INFO: 正在发送请求，url:https://www.xuegean.com/xyxb/specialColumnCenter/userReckon，请求参数:{'groupCode': '196F0b9C1b282Da069DA0488b64834C0', 'duration': 471, 'courseCode': 'A147B37bC97a22881A65e22997a3AF75'}
+2019-07-09 17:34:35,829 - [testcase.py-->line:71] - INFO: -----测试用例：--用户督导计时登记userReckon--已通过----
+2019-07-09 17:34:35,998 - [http_request.py-->line:25] - INFO: 正在发送请求，url:https://www.xuegean.com/xyxb/groupCenter/updateLastGroupSpeak，请求参数:{'groupCode': '196F0b9C1b282Da069DA0488b64834C0'}
+2019-07-09 17:34:36,118 - [testcase.py-->line:71] - INFO: -----测试用例：--更新最后发言时间updateLastGroupSpeak--已通过----
+2019-07-09 17:34:36,269 - [testcase.py-->line:77] - INFO: 接口测试完毕
+2019-07-09 17:34:36,269 - [testcase.py-->line:78] - INFO: 					
+2019-07-09 17:37:07,156 - [http_request.py-->line:25] - INFO: 正在发送请求，url:https://www.xuegean.com/xyxb/userCenter/login，请求参数:{'deviceCode': '481D3629d2d7978388365460dC5F91D2', 'loginType': 1, 'networkType': 0, 'smsCode': '081588', 'userName': '8826'}
+2019-07-09 17:37:07,479 - [http_request.py-->line:25] - INFO: 正在发送请求，url:https://www.xuegean.com/xyxb/userCenter/login，请求参数:{'deviceCode': '481D3629d2d7978388365460dC5F91D2', 'loginType': 1, 'networkType': 0, 'smsCode': '081588', 'userName': '8830'}
+2019-07-09 17:37:07,617 - [http_request.py-->line:25] - INFO: 正在发送请求，url:https://www.xuegean.com/xyxb/specialColumnCenter/setLiveStatus，请求参数:{'groupCode': '196F0b9C1b282Da069DA0488b64834C0', 'liveStatus': 1}
+2019-07-09 17:37:08,020 - [testcase.py-->line:43] - INFO: 2019-07-09 17:37:06
+2019-07-09 17:37:08,020 - [testcase.py-->line:44] - INFO: 					
+2019-07-09 17:37:08,020 - [http_request.py-->line:25] - INFO: 正在发送请求，url:https://www.xuegean.com/xyxb/specialColumnCenter/getStudyFinish，请求参数:{'groupCode': '196F0b9C1b282Da069DA0488b64834C0'}
+2019-07-09 17:37:08,175 - [testcase.py-->line:71] - INFO: -----测试用例：--用户有无未认证学时getStudyFinish--已通过----
+2019-07-09 17:37:08,348 - [http_request.py-->line:25] - INFO: 正在发送请求，url:https://www.xuegean.com/xyxb/groupCenter/groupDetail，请求参数:{'groupCode': '196F0b9C1b282Da069DA0488b64834C0'}
+2019-07-09 17:37:08,464 - [testcase.py-->line:66] - ERROR: '200' != '400'
+- 200
+? ^
++ 400
+? ^
+
+2019-07-09 17:37:08,628 - [http_request.py-->line:25] - INFO: 正在发送请求，url:https://www.xuegean.com/xyxb/groupCenter/updateLastGroupSpeak，请求参数:{'groupCode': '196F0b9C1b282Da069DA0488b64834C0'}
+2019-07-09 17:37:08,771 - [testcase.py-->line:71] - INFO: -----测试用例：--更新最后发言时间updateLastGroupSpeak--已通过----
+2019-07-09 17:37:08,935 - [http_request.py-->line:25] - INFO: 正在发送请求，url:https://www.xuegean.com/xyxb/specialColumnCenter/listGroupKey，请求参数:{'courseCode': 'b2973dD00B633E9b9d797ce9fC77b7D3'}
+2019-07-09 17:37:09,055 - [testcase.py-->line:71] - INFO: -----测试用例：--查询核心小组listGroupKey--已通过----
+2019-07-09 17:37:09,224 - [http_request.py-->line:25] - INFO: 正在发送请求，url:https://www.xuegean.com/xyxb/specialColumnCenter/listQuestion，请求参数:{'groupCode': '196F0b9C1b282Da069DA0488b64834C0'}
+2019-07-09 17:37:09,375 - [testcase.py-->line:71] - INFO: -----测试用例：--获取直播提问列表listQuestion--已通过----
+2019-07-09 17:37:09,543 - [http_request.py-->line:25] - INFO: 正在发送请求，url:https://www.xuegean.com/xyxb/specialColumnCenter/startSupervisor，请求参数:{'groupCode': '196F0b9C1b282Da069DA0488b64834C0'}
+2019-07-09 17:37:09,723 - [testcase.py-->line:71] - INFO: -----测试用例：--开启督导课程计时startSupervisor--已通过----
+2019-07-09 17:37:09,858 - [http_request.py-->line:25] - INFO: 正在发送请求，url:https://www.xuegean.com/xyxb/specialColumnCenter/userReckon，请求参数:{'duration': 180, 'groupCode': '196F0b9C1b282Da069DA0488b64834C0', 'courseCode': 'b2973dD00B633E9b9d797ce9fC77b7D3'}
+2019-07-09 17:37:10,013 - [testcase.py-->line:71] - INFO: -----测试用例：--用户督导计时登记userReckon--已通过----
+2019-07-09 17:37:10,164 - [http_request.py-->line:25] - INFO: 正在发送请求，url:https://www.xuegean.com/xyxb/specialColumnCenter/listGroupKey，请求参数:{'courseCode': 'b2973dD00B633E9b9d797ce9fC77b7D3'}
+2019-07-09 17:37:10,376 - [testcase.py-->line:71] - INFO: -----测试用例：--查询核心小组listGroupKey--已通过----
+2019-07-09 17:37:10,535 - [http_request.py-->line:25] - INFO: 正在发送请求，url:https://www.xuegean.com/xyxb/specialColumnCenter/getStudyFinish，请求参数:{'groupCode': '196F0b9C1b282Da069DA0488b64834C0'}
+2019-07-09 17:37:10,681 - [testcase.py-->line:71] - INFO: -----测试用例：--用户有无未认证学时getStudyFinish--已通过----
+2019-07-09 17:37:10,822 - [http_request.py-->line:25] - INFO: 正在发送请求，url:https://www.xuegean.com/xyxb/specialColumnCenter/groupDetail，请求参数:{'groupCode': '196F0b9C1b282Da069DA0488b64834C0'}
+2019-07-09 17:37:11,020 - [testcase.py-->line:71] - INFO: -----测试用例：--小组明细信息接口groupDetail--已通过----
+2019-07-09 17:37:11,164 - [http_request.py-->line:25] - INFO: 正在发送请求，url:https://www.xuegean.com/xyxb/groupLiveTicket/isUseTicket，请求参数:{'useType': 2, 'groupCode': '196F0b9C1b282Da069DA0488b64834C0'}
+2019-07-09 17:37:11,364 - [testcase.py-->line:71] - INFO: -----测试用例：--直播卷-查使用状态isUseTicket--已通过----
+2019-07-09 17:37:11,491 - [http_request.py-->line:25] - INFO: 正在发送请求，url:https://www.xuegean.com/xyxb/specialColumnCenter/listQuestion，请求参数:{'groupCode': '196F0b9C1b282Da069DA0488b64834C0'}
+2019-07-09 17:37:11,638 - [testcase.py-->line:71] - INFO: -----测试用例：--获取直播提问列表listQuestion--已通过----
+2019-07-09 17:37:11,772 - [http_request.py-->line:25] - INFO: 正在发送请求，url:https://www.xuegean.com/xyxb/specialColumnCenter/listGroupKey，请求参数:{'courseCode': 'b2973dD00B633E9b9d797ce9fC77b7D3'}
+2019-07-09 17:37:11,901 - [testcase.py-->line:71] - INFO: -----测试用例：--查询核心小组listGroupKey--已通过----
+2019-07-09 17:37:12,027 - [http_request.py-->line:25] - INFO: 正在发送请求，url:https://www.xuegean.com/xyxb/specialColumnCenter/addGroupKey，请求参数:{'sort': 1, 'courseCode': 'b2973dD00B633E9b9d797ce9fC77b7D3'}
+2019-07-09 17:37:12,171 - [testcase.py-->line:66] - ERROR: '200' != '400'
+- 200
+? ^
++ 400
+? ^
+
+2019-07-09 17:37:12,310 - [http_request.py-->line:25] - INFO: 正在发送请求，url:https://www.xuegean.com/xyxb/groupCenter/updateLastGroupSpeak，请求参数:{'groupCode': '196F0b9C1b282Da069DA0488b64834C0'}
+2019-07-09 17:37:12,429 - [testcase.py-->line:71] - INFO: -----测试用例：--更新最后发言时间updateLastGroupSpeak--已通过----
+2019-07-09 17:37:12,559 - [http_request.py-->line:25] - INFO: 正在发送请求，url:https://www.xuegean.com/xyxb/specialColumnCenter/editGroupKey，请求参数:{'status': 1, 'courseCode': 'b2973dD00B633E9b9d797ce9fC77b7D3'}
+2019-07-09 17:37:12,681 - [testcase.py-->line:71] - INFO: -----测试用例：--加入核心小组editGroupKey--已通过----
+2019-07-09 17:37:12,814 - [http_request.py-->line:25] - INFO: 正在发送请求，url:https://www.xuegean.com/xyxb/groupCenter/updateLastGroupSpeak，请求参数:{'groupCode': '196F0b9C1b282Da069DA0488b64834C0'}
+2019-07-09 17:37:12,937 - [testcase.py-->line:71] - INFO: -----测试用例：--更新最后发言时间updateLastGroupSpeak--已通过----
+2019-07-09 17:37:13,091 - [http_request.py-->line:25] - INFO: 正在发送请求，url:https://www.xuegean.com/xyxb/specialColumnCenter/editGroupKey，请求参数:{'courseCode': 'b2973dD00B633E9b9d797ce9fC77b7D3', 'status': 2, 'userCode': '48D393a5aBc510B0a9601e3C1A0c9C9A'}
+2019-07-09 17:37:13,218 - [testcase.py-->line:71] - INFO: -----测试用例：--修改核心小组成员状态editGroupKey--已通过----
+2019-07-09 17:37:13,352 - [http_request.py-->line:25] - INFO: 正在发送请求，url:https://www.xuegean.com/xyxb/groupCenter/updateLastGroupSpeak，请求参数:{'groupCode': '196F0b9C1b282Da069DA0488b64834C0'}
+2019-07-09 17:37:13,459 - [testcase.py-->line:71] - INFO: -----测试用例：--更新最后发言时间updateLastGroupSpeak--已通过----
+2019-07-09 17:37:13,596 - [http_request.py-->line:25] - INFO: 正在发送请求，url:https://www.xuegean.com/xyxb/specialColumnCenter/editGroupKey，请求参数:{'courseCode': 'b2973dD00B633E9b9d797ce9fC77b7D3', 'status': 0, 'userCode': '48D393a5aBc510B0a9601e3C1A0c9C9A'}
+2019-07-09 17:37:13,759 - [testcase.py-->line:71] - INFO: -----测试用例：--修改核心小组成员状态editGroupKey--已通过----
+2019-07-09 17:37:13,885 - [http_request.py-->line:25] - INFO: 正在发送请求，url:https://www.xuegean.com/xyxb/specialColumnCenter/quitGroupKey，请求参数:{'courseCode': 'b2973dD00B633E9b9d797ce9fC77b7D3', 'sort': 1}
+2019-07-09 17:37:14,088 - [testcase.py-->line:71] - INFO: -----测试用例：--退出核心小组quitGroupKey--已通过----
+2019-07-09 17:37:14,217 - [http_request.py-->line:25] - INFO: 正在发送请求，url:https://www.xuegean.com/xyxb/specialColumnCenter/editGroupKey，请求参数:{'courseCode': 'b2973dD00B633E9b9d797ce9fC77b7D3', 'status': 0}
+2019-07-09 17:37:14,374 - [testcase.py-->line:66] - ERROR: '200' != '400'
+- 200
+? ^
++ 400
+? ^
+
+2019-07-09 17:37:14,518 - [http_request.py-->line:25] - INFO: 正在发送请求，url:https://www.xuegean.com/xyxb/groupCenter/updateLastGroupSpeak，请求参数:{'groupCode': '196F0b9C1b282Da069DA0488b64834C0'}
+2019-07-09 17:37:14,618 - [testcase.py-->line:71] - INFO: -----测试用例：--更新最后发言时间updateLastGroupSpeak--已通过----
+2019-07-09 17:37:14,762 - [http_request.py-->line:25] - INFO: 正在发送请求，url:https://www.xuegean.com/xyxb/specialColumnCenter/setLiveStatus，请求参数:{'groupCode': '196F0b9C1b282Da069DA0488b64834C0', 'liveStatus': 0}
+2019-07-09 17:37:15,038 - [testcase.py-->line:71] - INFO: -----测试用例：--设置小组的直播状态setLiveStatus--已通过----
+2019-07-09 17:37:15,168 - [http_request.py-->line:25] - INFO: 正在发送请求，url:https://www.xuegean.com/xyxb/specialColumnCenter/userReckon，请求参数:{'groupCode': '196F0b9C1b282Da069DA0488b64834C0', 'duration': 471, 'courseCode': 'b2973dD00B633E9b9d797ce9fC77b7D3'}
+2019-07-09 17:37:15,288 - [testcase.py-->line:71] - INFO: -----测试用例：--用户督导计时登记userReckon--已通过----
+2019-07-09 17:37:15,416 - [http_request.py-->line:25] - INFO: 正在发送请求，url:https://www.xuegean.com/xyxb/groupCenter/updateLastGroupSpeak，请求参数:{'groupCode': '196F0b9C1b282Da069DA0488b64834C0'}
+2019-07-09 17:37:15,565 - [testcase.py-->line:71] - INFO: -----测试用例：--更新最后发言时间updateLastGroupSpeak--已通过----
+2019-07-09 17:37:15,703 - [testcase.py-->line:77] - INFO: 接口测试完毕
+2019-07-09 17:37:15,703 - [testcase.py-->line:78] - INFO: 					
+2019-07-09 17:38:07,594 - [http_request.py-->line:25] - INFO: 正在发送请求，url:https://www.xuegean.com/xyxb/userCenter/login，请求参数:{'deviceCode': '481D3629d2d7978388365460dC5F91D2', 'loginType': 1, 'networkType': 0, 'smsCode': '081588', 'userName': '8826'}
+2019-07-09 17:38:08,053 - [http_request.py-->line:25] - INFO: 正在发送请求，url:https://www.xuegean.com/xyxb/userCenter/login，请求参数:{'deviceCode': '481D3629d2d7978388365460dC5F91D2', 'loginType': 1, 'networkType': 0, 'smsCode': '081588', 'userName': '8830'}
+2019-07-09 17:38:08,209 - [http_request.py-->line:25] - INFO: 正在发送请求，url:https://www.xuegean.com/xyxb/specialColumnCenter/setLiveStatus，请求参数:{'groupCode': '196F0b9C1b282Da069DA0488b64834C0', 'liveStatus': 1}
+2019-07-09 17:38:08,657 - [testcase.py-->line:43] - INFO: 2019-07-09 17:38:07
+2019-07-09 17:38:08,657 - [testcase.py-->line:44] - INFO: 					
+2019-07-09 17:38:08,657 - [http_request.py-->line:25] - INFO: 正在发送请求，url:https://www.xuegean.com/xyxb/specialColumnCenter/getStudyFinish，请求参数:{'groupCode': '196F0b9C1b282Da069DA0488b64834C0'}
+2019-07-09 17:38:08,776 - [testcase.py-->line:71] - INFO: -----测试用例：--用户有无未认证学时getStudyFinish--已通过----
+2019-07-09 17:38:08,937 - [http_request.py-->line:25] - INFO: 正在发送请求，url:https://www.xuegean.com/xyxb/groupCenter/groupDetail，请求参数:{'groupCode': '196F0b9C1b282Da069DA0488b64834C0'}
+2019-07-09 17:38:09,123 - [testcase.py-->line:66] - ERROR: '200' != '400'
+- 200
+? ^
++ 400
+? ^
+
+2019-07-09 17:38:09,367 - [http_request.py-->line:25] - INFO: 正在发送请求，url:https://www.xuegean.com/xyxb/groupCenter/updateLastGroupSpeak，请求参数:{'groupCode': '196F0b9C1b282Da069DA0488b64834C0'}
+2019-07-09 17:38:09,548 - [testcase.py-->line:71] - INFO: -----测试用例：--更新最后发言时间updateLastGroupSpeak--已通过----
+2019-07-09 17:38:09,700 - [http_request.py-->line:25] - INFO: 正在发送请求，url:https://www.xuegean.com/xyxb/specialColumnCenter/listGroupKey，请求参数:{'courseCode': '98098D64ea538B87319d04004D5d1F82'}
+2019-07-09 17:38:09,847 - [testcase.py-->line:71] - INFO: -----测试用例：--查询核心小组listGroupKey--已通过----
+2019-07-09 17:38:10,004 - [http_request.py-->line:25] - INFO: 正在发送请求，url:https://www.xuegean.com/xyxb/specialColumnCenter/listQuestion，请求参数:{'groupCode': '196F0b9C1b282Da069DA0488b64834C0'}
+2019-07-09 17:38:10,168 - [testcase.py-->line:71] - INFO: -----测试用例：--获取直播提问列表listQuestion--已通过----
+2019-07-09 17:38:10,343 - [http_request.py-->line:25] - INFO: 正在发送请求，url:https://www.xuegean.com/xyxb/specialColumnCenter/startSupervisor，请求参数:{'groupCode': '196F0b9C1b282Da069DA0488b64834C0'}
+2019-07-09 17:38:10,548 - [testcase.py-->line:71] - INFO: -----测试用例：--开启督导课程计时startSupervisor--已通过----
+2019-07-09 17:38:10,699 - [http_request.py-->line:25] - INFO: 正在发送请求，url:https://www.xuegean.com/xyxb/specialColumnCenter/userReckon，请求参数:{'duration': 180, 'groupCode': '196F0b9C1b282Da069DA0488b64834C0', 'courseCode': '98098D64ea538B87319d04004D5d1F82'}
+2019-07-09 17:38:10,849 - [testcase.py-->line:71] - INFO: -----测试用例：--用户督导计时登记userReckon--已通过----
+2019-07-09 17:38:11,024 - [http_request.py-->line:25] - INFO: 正在发送请求，url:https://www.xuegean.com/xyxb/specialColumnCenter/listGroupKey，请求参数:{'courseCode': '98098D64ea538B87319d04004D5d1F82'}
+2019-07-09 17:38:11,182 - [testcase.py-->line:71] - INFO: -----测试用例：--查询核心小组listGroupKey--已通过----
+2019-07-09 17:38:11,312 - [http_request.py-->line:25] - INFO: 正在发送请求，url:https://www.xuegean.com/xyxb/specialColumnCenter/getStudyFinish，请求参数:{'groupCode': '196F0b9C1b282Da069DA0488b64834C0'}
+2019-07-09 17:38:11,490 - [testcase.py-->line:71] - INFO: -----测试用例：--用户有无未认证学时getStudyFinish--已通过----
+2019-07-09 17:38:11,628 - [http_request.py-->line:25] - INFO: 正在发送请求，url:https://www.xuegean.com/xyxb/specialColumnCenter/groupDetail，请求参数:{'groupCode': '196F0b9C1b282Da069DA0488b64834C0'}
+2019-07-09 17:38:11,841 - [testcase.py-->line:71] - INFO: -----测试用例：--小组明细信息接口groupDetail--已通过----
+2019-07-09 17:38:12,008 - [http_request.py-->line:25] - INFO: 正在发送请求，url:https://www.xuegean.com/xyxb/groupLiveTicket/isUseTicket，请求参数:{'useType': 2, 'groupCode': '196F0b9C1b282Da069DA0488b64834C0'}
+2019-07-09 17:38:12,220 - [testcase.py-->line:71] - INFO: -----测试用例：--直播卷-查使用状态isUseTicket--已通过----
+2019-07-09 17:38:12,355 - [http_request.py-->line:25] - INFO: 正在发送请求，url:https://www.xuegean.com/xyxb/specialColumnCenter/listQuestion，请求参数:{'groupCode': '196F0b9C1b282Da069DA0488b64834C0'}
+2019-07-09 17:38:12,469 - [testcase.py-->line:71] - INFO: -----测试用例：--获取直播提问列表listQuestion--已通过----
+2019-07-09 17:38:12,614 - [http_request.py-->line:25] - INFO: 正在发送请求，url:https://www.xuegean.com/xyxb/specialColumnCenter/listGroupKey，请求参数:{'courseCode': '98098D64ea538B87319d04004D5d1F82'}
+2019-07-09 17:38:12,728 - [testcase.py-->line:71] - INFO: -----测试用例：--查询核心小组listGroupKey--已通过----
+2019-07-09 17:38:12,891 - [http_request.py-->line:25] - INFO: 正在发送请求，url:https://www.xuegean.com/xyxb/specialColumnCenter/addGroupKey，请求参数:{'sort': 1, 'courseCode': '98098D64ea538B87319d04004D5d1F82'}
+2019-07-09 17:38:13,006 - [testcase.py-->line:66] - ERROR: '200' != '400'
+- 200
+? ^
++ 400
+? ^
+
+2019-07-09 17:38:13,172 - [http_request.py-->line:25] - INFO: 正在发送请求，url:https://www.xuegean.com/xyxb/groupCenter/updateLastGroupSpeak，请求参数:{'groupCode': '196F0b9C1b282Da069DA0488b64834C0'}
+2019-07-09 17:38:13,313 - [testcase.py-->line:71] - INFO: -----测试用例：--更新最后发言时间updateLastGroupSpeak--已通过----
+2019-07-09 17:38:13,468 - [http_request.py-->line:25] - INFO: 正在发送请求，url:https://www.xuegean.com/xyxb/specialColumnCenter/editGroupKey，请求参数:{'status': 1, 'courseCode': '98098D64ea538B87319d04004D5d1F82'}
+2019-07-09 17:38:13,612 - [testcase.py-->line:71] - INFO: -----测试用例：--加入核心小组editGroupKey--已通过----
+2019-07-09 17:38:13,741 - [http_request.py-->line:25] - INFO: 正在发送请求，url:https://www.xuegean.com/xyxb/groupCenter/updateLastGroupSpeak，请求参数:{'groupCode': '196F0b9C1b282Da069DA0488b64834C0'}
+2019-07-09 17:38:13,901 - [testcase.py-->line:71] - INFO: -----测试用例：--更新最后发言时间updateLastGroupSpeak--已通过----
+2019-07-09 17:38:14,047 - [http_request.py-->line:25] - INFO: 正在发送请求，url:https://www.xuegean.com/xyxb/specialColumnCenter/editGroupKey，请求参数:{'courseCode': '98098D64ea538B87319d04004D5d1F82', 'status': 2, 'userCode': '48D393a5aBc510B0a9601e3C1A0c9C9A'}
+2019-07-09 17:38:14,190 - [testcase.py-->line:71] - INFO: -----测试用例：--修改核心小组成员状态editGroupKey--已通过----
+2019-07-09 17:38:14,328 - [http_request.py-->line:25] - INFO: 正在发送请求，url:https://www.xuegean.com/xyxb/groupCenter/updateLastGroupSpeak，请求参数:{'groupCode': '196F0b9C1b282Da069DA0488b64834C0'}
+2019-07-09 17:38:14,463 - [testcase.py-->line:71] - INFO: -----测试用例：--更新最后发言时间updateLastGroupSpeak--已通过----
+2019-07-09 17:38:14,596 - [http_request.py-->line:25] - INFO: 正在发送请求，url:https://www.xuegean.com/xyxb/specialColumnCenter/editGroupKey，请求参数:{'courseCode': '98098D64ea538B87319d04004D5d1F82', 'status': 0, 'userCode': '48D393a5aBc510B0a9601e3C1A0c9C9A'}
+2019-07-09 17:38:14,715 - [testcase.py-->line:71] - INFO: -----测试用例：--修改核心小组成员状态editGroupKey--已通过----
+2019-07-09 17:38:14,853 - [http_request.py-->line:25] - INFO: 正在发送请求，url:https://www.xuegean.com/xyxb/specialColumnCenter/quitGroupKey，请求参数:{'courseCode': '98098D64ea538B87319d04004D5d1F82', 'sort': 1}
+2019-07-09 17:38:15,064 - [testcase.py-->line:71] - INFO: -----测试用例：--退出核心小组quitGroupKey--已通过----
+2019-07-09 17:38:15,195 - [http_request.py-->line:25] - INFO: 正在发送请求，url:https://www.xuegean.com/xyxb/specialColumnCenter/editGroupKey，请求参数:{'courseCode': '98098D64ea538B87319d04004D5d1F82', 'status': 0}
+2019-07-09 17:38:15,363 - [testcase.py-->line:66] - ERROR: '200' != '400'
+- 200
+? ^
++ 400
+? ^
+
+2019-07-09 17:38:15,501 - [http_request.py-->line:25] - INFO: 正在发送请求，url:https://www.xuegean.com/xyxb/groupCenter/updateLastGroupSpeak，请求参数:{'groupCode': '196F0b9C1b282Da069DA0488b64834C0'}
+2019-07-09 17:38:15,635 - [testcase.py-->line:71] - INFO: -----测试用例：--更新最后发言时间updateLastGroupSpeak--已通过----
+2019-07-09 17:38:15,780 - [http_request.py-->line:25] - INFO: 正在发送请求，url:https://www.xuegean.com/xyxb/specialColumnCenter/setLiveStatus，请求参数:{'groupCode': '196F0b9C1b282Da069DA0488b64834C0', 'liveStatus': 0}
+2019-07-09 17:38:16,073 - [testcase.py-->line:71] - INFO: -----测试用例：--设置小组的直播状态setLiveStatus--已通过----
+2019-07-09 17:38:16,212 - [http_request.py-->line:25] - INFO: 正在发送请求，url:https://www.xuegean.com/xyxb/specialColumnCenter/userReckon，请求参数:{'groupCode': '196F0b9C1b282Da069DA0488b64834C0', 'duration': 471, 'courseCode': '98098D64ea538B87319d04004D5d1F82'}
+2019-07-09 17:38:16,358 - [testcase.py-->line:71] - INFO: -----测试用例：--用户督导计时登记userReckon--已通过----
+2019-07-09 17:38:16,508 - [http_request.py-->line:25] - INFO: 正在发送请求，url:https://www.xuegean.com/xyxb/groupCenter/updateLastGroupSpeak，请求参数:{'groupCode': '196F0b9C1b282Da069DA0488b64834C0'}
+2019-07-09 17:38:16,674 - [testcase.py-->line:71] - INFO: -----测试用例：--更新最后发言时间updateLastGroupSpeak--已通过----
+2019-07-09 17:38:16,801 - [testcase.py-->line:77] - INFO: 接口测试完毕
+2019-07-09 17:38:16,801 - [testcase.py-->line:78] - INFO: 					
+2019-07-09 18:06:55,663 - [http_request.py-->line:25] - INFO: 正在发送请求，url:https://www.xuegean.com/xyxb/userCenter/login，请求参数:{'deviceCode': '481D3629d2d7978388365460dC5F91D2', 'loginType': 1, 'networkType': 0, 'smsCode': '081588', 'userName': '8826'}
+2019-07-09 18:06:56,001 - [http_request.py-->line:25] - INFO: 正在发送请求，url:https://www.xuegean.com/xyxb/userCenter/login，请求参数:{'deviceCode': '481D3629d2d7978388365460dC5F91D2', 'loginType': 1, 'networkType': 0, 'smsCode': '081588', 'userName': '8830'}
+2019-07-09 18:06:56,158 - [http_request.py-->line:25] - INFO: 正在发送请求，url:https://www.xuegean.com/xyxb/specialColumnCenter/setLiveStatus，请求参数:{'groupCode': '196F0b9C1b282Da069DA0488b64834C0', 'liveStatus': 1}
+2019-07-09 18:06:56,599 - [testcase.py-->line:43] - INFO: 2019-07-09 18:06:54
+2019-07-09 18:06:56,599 - [testcase.py-->line:44] - INFO: 					
+2019-07-09 18:06:56,599 - [http_request.py-->line:25] - INFO: 正在发送请求，url:https://www.xuegean.com/xyxb/specialColumnCenter/getStudyFinish，请求参数:{'groupCode': '196F0b9C1b282Da069DA0488b64834C0'}
+2019-07-09 18:06:56,754 - [testcase.py-->line:71] - INFO: -----测试用例：--用户有无未认证学时getStudyFinish--已通过----
+2019-07-09 18:06:56,938 - [http_request.py-->line:25] - INFO: 正在发送请求，url:https://www.xuegean.com/xyxb/groupCenter/groupDetail，请求参数:{'groupCode': '196F0b9C1b282Da069DA0488b64834C0'}
+2019-07-09 18:06:57,135 - [testcase.py-->line:66] - ERROR: '200' != '400'
+- 200
+? ^
++ 400
+? ^
+
+2019-07-09 18:06:57,374 - [http_request.py-->line:25] - INFO: 正在发送请求，url:https://www.xuegean.com/xyxb/groupCenter/updateLastGroupSpeak，请求参数:{'groupCode': '196F0b9C1b282Da069DA0488b64834C0'}
+2019-07-09 18:06:57,556 - [testcase.py-->line:71] - INFO: -----测试用例：--更新最后发言时间updateLastGroupSpeak--已通过----
+2019-07-09 18:06:57,712 - [http_request.py-->line:25] - INFO: 正在发送请求，url:https://www.xuegean.com/xyxb/specialColumnCenter/listGroupKey，请求参数:{'courseCode': '4F9B7Ca5B4616d8642BF8Fa321f82271'}
+2019-07-09 18:06:57,890 - [testcase.py-->line:71] - INFO: -----测试用例：--查询核心小组listGroupKey--已通过----
+2019-07-09 18:06:58,054 - [http_request.py-->line:25] - INFO: 正在发送请求，url:https://www.xuegean.com/xyxb/specialColumnCenter/listQuestion，请求参数:{'groupCode': '196F0b9C1b282Da069DA0488b64834C0'}
+2019-07-09 18:06:58,186 - [testcase.py-->line:71] - INFO: -----测试用例：--获取直播提问列表listQuestion--已通过----
+2019-07-09 18:06:58,366 - [http_request.py-->line:25] - INFO: 正在发送请求，url:https://www.xuegean.com/xyxb/specialColumnCenter/startSupervisor，请求参数:{'groupCode': '196F0b9C1b282Da069DA0488b64834C0'}
+2019-07-09 18:06:58,530 - [testcase.py-->line:71] - INFO: -----测试用例：--开启督导课程计时startSupervisor--已通过----
+2019-07-09 18:06:58,695 - [http_request.py-->line:25] - INFO: 正在发送请求，url:https://www.xuegean.com/xyxb/specialColumnCenter/userReckon，请求参数:{'duration': 180, 'groupCode': '196F0b9C1b282Da069DA0488b64834C0', 'courseCode': '4F9B7Ca5B4616d8642BF8Fa321f82271'}
+2019-07-09 18:06:58,814 - [testcase.py-->line:71] - INFO: -----测试用例：--用户督导计时登记userReckon--已通过----
+2019-07-09 18:06:58,966 - [http_request.py-->line:25] - INFO: 正在发送请求，url:https://www.xuegean.com/xyxb/specialColumnCenter/listGroupKey，请求参数:{'courseCode': '4F9B7Ca5B4616d8642BF8Fa321f82271'}
+2019-07-09 18:06:59,139 - [testcase.py-->line:71] - INFO: -----测试用例：--查询核心小组listGroupKey--已通过----
+2019-07-09 18:06:59,285 - [http_request.py-->line:25] - INFO: 正在发送请求，url:https://www.xuegean.com/xyxb/specialColumnCenter/getStudyFinish，请求参数:{'groupCode': '196F0b9C1b282Da069DA0488b64834C0'}
+2019-07-09 18:06:59,424 - [testcase.py-->line:71] - INFO: -----测试用例：--用户有无未认证学时getStudyFinish--已通过----
+2019-07-09 18:06:59,568 - [http_request.py-->line:25] - INFO: 正在发送请求，url:https://www.xuegean.com/xyxb/specialColumnCenter/groupDetail，请求参数:{'groupCode': '196F0b9C1b282Da069DA0488b64834C0'}
+2019-07-09 18:06:59,799 - [testcase.py-->line:71] - INFO: -----测试用例：--小组明细信息接口groupDetail--已通过----
+2019-07-09 18:06:59,935 - [http_request.py-->line:25] - INFO: 正在发送请求，url:https://www.xuegean.com/xyxb/groupLiveTicket/isUseTicket，请求参数:{'useType': 2, 'groupCode': '196F0b9C1b282Da069DA0488b64834C0'}
+2019-07-09 18:07:00,169 - [testcase.py-->line:71] - INFO: -----测试用例：--直播卷-查使用状态isUseTicket--已通过----
+2019-07-09 18:07:00,321 - [http_request.py-->line:25] - INFO: 正在发送请求，url:https://www.xuegean.com/xyxb/specialColumnCenter/listQuestion，请求参数:{'groupCode': '196F0b9C1b282Da069DA0488b64834C0'}
+2019-07-09 18:07:00,481 - [testcase.py-->line:71] - INFO: -----测试用例：--获取直播提问列表listQuestion--已通过----
+2019-07-09 18:07:00,641 - [http_request.py-->line:25] - INFO: 正在发送请求，url:https://www.xuegean.com/xyxb/specialColumnCenter/listGroupKey，请求参数:{'courseCode': '4F9B7Ca5B4616d8642BF8Fa321f82271'}
+2019-07-09 18:07:00,810 - [testcase.py-->line:71] - INFO: -----测试用例：--查询核心小组listGroupKey--已通过----
+2019-07-09 18:07:00,968 - [http_request.py-->line:25] - INFO: 正在发送请求，url:https://www.xuegean.com/xyxb/specialColumnCenter/addGroupKey，请求参数:{'sort': 1, 'courseCode': '4F9B7Ca5B4616d8642BF8Fa321f82271'}
+2019-07-09 18:07:01,074 - [testcase.py-->line:66] - ERROR: '200' != '400'
+- 200
+? ^
++ 400
+? ^
+
+2019-07-09 18:07:01,251 - [http_request.py-->line:25] - INFO: 正在发送请求，url:https://www.xuegean.com/xyxb/groupCenter/updateLastGroupSpeak，请求参数:{'groupCode': '196F0b9C1b282Da069DA0488b64834C0'}
+2019-07-09 18:07:01,403 - [testcase.py-->line:71] - INFO: -----测试用例：--更新最后发言时间updateLastGroupSpeak--已通过----
+2019-07-09 18:07:01,566 - [http_request.py-->line:25] - INFO: 正在发送请求，url:https://www.xuegean.com/xyxb/specialColumnCenter/editGroupKey，请求参数:{'status': 1, 'courseCode': '4F9B7Ca5B4616d8642BF8Fa321f82271'}
+2019-07-09 18:07:01,698 - [testcase.py-->line:71] - INFO: -----测试用例：--加入核心小组editGroupKey--已通过----
+2019-07-09 18:07:01,874 - [http_request.py-->line:25] - INFO: 正在发送请求，url:https://www.xuegean.com/xyxb/groupCenter/updateLastGroupSpeak，请求参数:{'groupCode': '196F0b9C1b282Da069DA0488b64834C0'}
+2019-07-09 18:07:02,064 - [testcase.py-->line:71] - INFO: -----测试用例：--更新最后发言时间updateLastGroupSpeak--已通过----
+2019-07-09 18:07:02,225 - [http_request.py-->line:25] - INFO: 正在发送请求，url:https://www.xuegean.com/xyxb/specialColumnCenter/editGroupKey，请求参数:{'courseCode': '4F9B7Ca5B4616d8642BF8Fa321f82271', 'status': 2, 'userCode': '48D393a5aBc510B0a9601e3C1A0c9C9A'}
+2019-07-09 18:07:02,374 - [testcase.py-->line:71] - INFO: -----测试用例：--修改核心小组成员状态editGroupKey--已通过----
+2019-07-09 18:07:02,526 - [http_request.py-->line:25] - INFO: 正在发送请求，url:https://www.xuegean.com/xyxb/groupCenter/updateLastGroupSpeak，请求参数:{'groupCode': '196F0b9C1b282Da069DA0488b64834C0'}
+2019-07-09 18:07:02,697 - [testcase.py-->line:71] - INFO: -----测试用例：--更新最后发言时间updateLastGroupSpeak--已通过----
+2019-07-09 18:07:02,934 - [http_request.py-->line:25] - INFO: 正在发送请求，url:https://www.xuegean.com/xyxb/specialColumnCenter/editGroupKey，请求参数:{'courseCode': '4F9B7Ca5B4616d8642BF8Fa321f82271', 'status': 0, 'userCode': '48D393a5aBc510B0a9601e3C1A0c9C9A'}
+2019-07-09 18:07:03,131 - [testcase.py-->line:71] - INFO: -----测试用例：--修改核心小组成员状态editGroupKey--已通过----
+2019-07-09 18:07:03,322 - [http_request.py-->line:25] - INFO: 正在发送请求，url:https://www.xuegean.com/xyxb/specialColumnCenter/quitGroupKey，请求参数:{'courseCode': '4F9B7Ca5B4616d8642BF8Fa321f82271', 'sort': 1}
+2019-07-09 18:07:03,474 - [testcase.py-->line:71] - INFO: -----测试用例：--退出核心小组quitGroupKey--已通过----
+2019-07-09 18:07:03,661 - [http_request.py-->line:25] - INFO: 正在发送请求，url:https://www.xuegean.com/xyxb/specialColumnCenter/editGroupKey，请求参数:{'courseCode': '4F9B7Ca5B4616d8642BF8Fa321f82271', 'status': 0}
+2019-07-09 18:07:03,909 - [testcase.py-->line:66] - ERROR: '200' != '400'
+- 200
+? ^
++ 400
+? ^
+
+2019-07-09 18:07:04,049 - [http_request.py-->line:25] - INFO: 正在发送请求，url:https://www.xuegean.com/xyxb/groupCenter/updateLastGroupSpeak，请求参数:{'groupCode': '196F0b9C1b282Da069DA0488b64834C0'}
+2019-07-09 18:07:04,210 - [testcase.py-->line:71] - INFO: -----测试用例：--更新最后发言时间updateLastGroupSpeak--已通过----
+2019-07-09 18:07:04,351 - [http_request.py-->line:25] - INFO: 正在发送请求，url:https://www.xuegean.com/xyxb/specialColumnCenter/setLiveStatus，请求参数:{'groupCode': '196F0b9C1b282Da069DA0488b64834C0', 'liveStatus': 0}
+2019-07-09 18:07:04,687 - [testcase.py-->line:71] - INFO: -----测试用例：--设置小组的直播状态setLiveStatus--已通过----
+2019-07-09 18:07:04,845 - [http_request.py-->line:25] - INFO: 正在发送请求，url:https://www.xuegean.com/xyxb/specialColumnCenter/userReckon，请求参数:{'groupCode': '196F0b9C1b282Da069DA0488b64834C0', 'duration': 471, 'courseCode': '4F9B7Ca5B4616d8642BF8Fa321f82271'}
+2019-07-09 18:07:05,000 - [testcase.py-->line:71] - INFO: -----测试用例：--用户督导计时登记userReckon--已通过----
+2019-07-09 18:07:05,148 - [http_request.py-->line:25] - INFO: 正在发送请求，url:https://www.xuegean.com/xyxb/groupCenter/updateLastGroupSpeak，请求参数:{'groupCode': '196F0b9C1b282Da069DA0488b64834C0'}
+2019-07-09 18:07:05,265 - [testcase.py-->line:71] - INFO: -----测试用例：--更新最后发言时间updateLastGroupSpeak--已通过----
+2019-07-09 18:07:05,417 - [testcase.py-->line:77] - INFO: 接口测试完毕
+2019-07-09 18:07:05,417 - [testcase.py-->line:78] - INFO: 					
+2019-07-09 18:08:01,435 - [http_request.py-->line:25] - INFO: 正在发送请求，url:https://www.xuegean.com/xyxb/userCenter/login，请求参数:{'deviceCode': '481D3629d2d7978388365460dC5F91D2', 'loginType': 1, 'networkType': 0, 'smsCode': '081588', 'userName': '8826'}
+2019-07-09 18:08:01,697 - [http_request.py-->line:25] - INFO: 正在发送请求，url:https://www.xuegean.com/xyxb/userCenter/login，请求参数:{'deviceCode': '481D3629d2d7978388365460dC5F91D2', 'loginType': 1, 'networkType': 0, 'smsCode': '081588', 'userName': '8830'}
+2019-07-09 18:08:01,860 - [http_request.py-->line:25] - INFO: 正在发送请求，url:https://www.xuegean.com/xyxb/specialColumnCenter/setLiveStatus，请求参数:{'groupCode': '196F0b9C1b282Da069DA0488b64834C0', 'liveStatus': 1}
+2019-07-09 18:08:02,292 - [testcase.py-->line:43] - INFO: 2019-07-09 18:08:01
+2019-07-09 18:08:02,293 - [testcase.py-->line:44] - INFO: 					
+2019-07-09 18:08:02,294 - [http_request.py-->line:25] - INFO: 正在发送请求，url:https://www.xuegean.com/xyxb/specialColumnCenter/getStudyFinish，请求参数:{'groupCode': '196F0b9C1b282Da069DA0488b64834C0'}
+2019-07-09 18:08:02,468 - [testcase.py-->line:71] - INFO: -----测试用例：--用户有无未认证学时getStudyFinish--已通过----
+2019-07-09 18:08:03,725 - [http_request.py-->line:25] - INFO: 正在发送请求，url:https://www.xuegean.com/xyxb/groupCenter/groupDetail，请求参数:{'groupCode': '196F0b9C1b282Da069DA0488b64834C0'}
+2019-07-09 18:08:04,068 - [testcase.py-->line:66] - ERROR: '200' != '400'
+- 200
+? ^
++ 400
+? ^
+
+2019-07-09 18:08:04,326 - [http_request.py-->line:25] - INFO: 正在发送请求，url:https://www.xuegean.com/xyxb/groupCenter/updateLastGroupSpeak，请求参数:{'groupCode': '196F0b9C1b282Da069DA0488b64834C0'}
+2019-07-09 18:08:04,868 - [testcase.py-->line:71] - INFO: -----测试用例：--更新最后发言时间updateLastGroupSpeak--已通过----
+2019-07-09 18:08:04,996 - [http_request.py-->line:25] - INFO: 正在发送请求，url:https://www.xuegean.com/xyxb/specialColumnCenter/listGroupKey，请求参数:{'courseCode': 'd40b811cf1a4a8B6629f7d79Cc17E900'}
+2019-07-09 18:08:05,234 - [testcase.py-->line:71] - INFO: -----测试用例：--查询核心小组listGroupKey--已通过----
+2019-07-09 18:08:05,742 - [http_request.py-->line:25] - INFO: 正在发送请求，url:https://www.xuegean.com/xyxb/specialColumnCenter/listQuestion，请求参数:{'groupCode': '196F0b9C1b282Da069DA0488b64834C0'}
+2019-07-09 18:08:05,946 - [testcase.py-->line:71] - INFO: -----测试用例：--获取直播提问列表listQuestion--已通过----
+2019-07-09 18:08:06,350 - [http_request.py-->line:25] - INFO: 正在发送请求，url:https://www.xuegean.com/xyxb/specialColumnCenter/startSupervisor，请求参数:{'groupCode': '196F0b9C1b282Da069DA0488b64834C0'}
+2019-07-09 18:08:06,511 - [testcase.py-->line:71] - INFO: -----测试用例：--开启督导课程计时startSupervisor--已通过----
+2019-07-09 18:08:06,736 - [http_request.py-->line:25] - INFO: 正在发送请求，url:https://www.xuegean.com/xyxb/specialColumnCenter/userReckon，请求参数:{'duration': 180, 'groupCode': '196F0b9C1b282Da069DA0488b64834C0', 'courseCode': 'd40b811cf1a4a8B6629f7d79Cc17E900'}
+2019-07-09 18:08:06,911 - [testcase.py-->line:71] - INFO: -----测试用例：--用户督导计时登记userReckon--已通过----
+2019-07-09 18:08:07,115 - [http_request.py-->line:25] - INFO: 正在发送请求，url:https://www.xuegean.com/xyxb/specialColumnCenter/listGroupKey，请求参数:{'courseCode': 'd40b811cf1a4a8B6629f7d79Cc17E900'}
+2019-07-09 18:08:07,321 - [testcase.py-->line:71] - INFO: -----测试用例：--查询核心小组listGroupKey--已通过----
+2019-07-09 18:08:07,478 - [http_request.py-->line:25] - INFO: 正在发送请求，url:https://www.xuegean.com/xyxb/specialColumnCenter/getStudyFinish，请求参数:{'groupCode': '196F0b9C1b282Da069DA0488b64834C0'}
+2019-07-09 18:08:07,714 - [testcase.py-->line:71] - INFO: -----测试用例：--用户有无未认证学时getStudyFinish--已通过----
+2019-07-09 18:08:07,869 - [http_request.py-->line:25] - INFO: 正在发送请求，url:https://www.xuegean.com/xyxb/specialColumnCenter/groupDetail，请求参数:{'groupCode': '196F0b9C1b282Da069DA0488b64834C0'}
+2019-07-09 18:08:08,079 - [testcase.py-->line:71] - INFO: -----测试用例：--小组明细信息接口groupDetail--已通过----
+2019-07-09 18:08:08,332 - [http_request.py-->line:25] - INFO: 正在发送请求，url:https://www.xuegean.com/xyxb/groupLiveTicket/isUseTicket，请求参数:{'useType': 2, 'groupCode': '196F0b9C1b282Da069DA0488b64834C0'}
+2019-07-09 18:08:08,594 - [testcase.py-->line:71] - INFO: -----测试用例：--直播卷-查使用状态isUseTicket--已通过----
+2019-07-09 18:08:08,732 - [http_request.py-->line:25] - INFO: 正在发送请求，url:https://www.xuegean.com/xyxb/specialColumnCenter/listQuestion，请求参数:{'groupCode': '196F0b9C1b282Da069DA0488b64834C0'}
+2019-07-09 18:08:10,994 - [testcase.py-->line:71] - INFO: -----测试用例：--获取直播提问列表listQuestion--已通过----
+2019-07-09 18:08:11,147 - [http_request.py-->line:25] - INFO: 正在发送请求，url:https://www.xuegean.com/xyxb/specialColumnCenter/listGroupKey，请求参数:{'courseCode': 'd40b811cf1a4a8B6629f7d79Cc17E900'}
+2019-07-09 18:08:11,440 - [testcase.py-->line:71] - INFO: -----测试用例：--查询核心小组listGroupKey--已通过----
+2019-07-09 18:08:11,657 - [http_request.py-->line:25] - INFO: 正在发送请求，url:https://www.xuegean.com/xyxb/specialColumnCenter/addGroupKey，请求参数:{'sort': 1, 'courseCode': 'd40b811cf1a4a8B6629f7d79Cc17E900'}
+2019-07-09 18:08:11,765 - [testcase.py-->line:66] - ERROR: '200' != '400'
+- 200
+? ^
++ 400
+? ^
+
+2019-07-09 18:08:11,996 - [http_request.py-->line:25] - INFO: 正在发送请求，url:https://www.xuegean.com/xyxb/groupCenter/updateLastGroupSpeak，请求参数:{'groupCode': '196F0b9C1b282Da069DA0488b64834C0'}
+2019-07-09 18:08:12,182 - [testcase.py-->line:71] - INFO: -----测试用例：--更新最后发言时间updateLastGroupSpeak--已通过----
+2019-07-09 18:08:12,501 - [http_request.py-->line:25] - INFO: 正在发送请求，url:https://www.xuegean.com/xyxb/specialColumnCenter/editGroupKey，请求参数:{'status': 1, 'courseCode': 'd40b811cf1a4a8B6629f7d79Cc17E900'}
+2019-07-09 18:08:12,641 - [testcase.py-->line:71] - INFO: -----测试用例：--加入核心小组editGroupKey--已通过----
+2019-07-09 18:08:12,838 - [http_request.py-->line:25] - INFO: 正在发送请求，url:https://www.xuegean.com/xyxb/groupCenter/updateLastGroupSpeak，请求参数:{'groupCode': '196F0b9C1b282Da069DA0488b64834C0'}
+2019-07-09 18:08:12,996 - [testcase.py-->line:71] - INFO: -----测试用例：--更新最后发言时间updateLastGroupSpeak--已通过----
+2019-07-09 18:08:13,160 - [http_request.py-->line:25] - INFO: 正在发送请求，url:https://www.xuegean.com/xyxb/specialColumnCenter/editGroupKey，请求参数:{'courseCode': 'd40b811cf1a4a8B6629f7d79Cc17E900', 'status': 2, 'userCode': '48D393a5aBc510B0a9601e3C1A0c9C9A'}
+2019-07-09 18:08:13,313 - [testcase.py-->line:71] - INFO: -----测试用例：--修改核心小组成员状态editGroupKey--已通过----
+2019-07-09 18:08:13,540 - [http_request.py-->line:25] - INFO: 正在发送请求，url:https://www.xuegean.com/xyxb/groupCenter/updateLastGroupSpeak，请求参数:{'groupCode': '196F0b9C1b282Da069DA0488b64834C0'}
+2019-07-09 18:08:13,750 - [testcase.py-->line:71] - INFO: -----测试用例：--更新最后发言时间updateLastGroupSpeak--已通过----
+2019-07-09 18:08:13,915 - [http_request.py-->line:25] - INFO: 正在发送请求，url:https://www.xuegean.com/xyxb/specialColumnCenter/editGroupKey，请求参数:{'courseCode': 'd40b811cf1a4a8B6629f7d79Cc17E900', 'status': 0, 'userCode': '48D393a5aBc510B0a9601e3C1A0c9C9A'}
+2019-07-09 18:08:14,131 - [testcase.py-->line:71] - INFO: -----测试用例：--修改核心小组成员状态editGroupKey--已通过----
+2019-07-09 18:08:14,267 - [http_request.py-->line:25] - INFO: 正在发送请求，url:https://www.xuegean.com/xyxb/specialColumnCenter/quitGroupKey，请求参数:{'courseCode': 'd40b811cf1a4a8B6629f7d79Cc17E900', 'sort': 1}
+2019-07-09 18:08:14,492 - [testcase.py-->line:71] - INFO: -----测试用例：--退出核心小组quitGroupKey--已通过----
+2019-07-09 18:08:14,724 - [http_request.py-->line:25] - INFO: 正在发送请求，url:https://www.xuegean.com/xyxb/specialColumnCenter/editGroupKey，请求参数:{'courseCode': 'd40b811cf1a4a8B6629f7d79Cc17E900', 'status': 0}
+2019-07-09 18:08:14,918 - [testcase.py-->line:66] - ERROR: '200' != '400'
+- 200
+? ^
++ 400
+? ^
+
+2019-07-09 18:08:15,088 - [http_request.py-->line:25] - INFO: 正在发送请求，url:https://www.xuegean.com/xyxb/groupCenter/updateLastGroupSpeak，请求参数:{'groupCode': '196F0b9C1b282Da069DA0488b64834C0'}
+2019-07-09 18:08:15,273 - [testcase.py-->line:71] - INFO: -----测试用例：--更新最后发言时间updateLastGroupSpeak--已通过----
+2019-07-09 18:08:15,450 - [http_request.py-->line:25] - INFO: 正在发送请求，url:https://www.xuegean.com/xyxb/specialColumnCenter/setLiveStatus，请求参数:{'groupCode': '196F0b9C1b282Da069DA0488b64834C0', 'liveStatus': 0}
+2019-07-09 18:08:15,850 - [testcase.py-->line:71] - INFO: -----测试用例：--设置小组的直播状态setLiveStatus--已通过----
+2019-07-09 18:08:16,039 - [http_request.py-->line:25] - INFO: 正在发送请求，url:https://www.xuegean.com/xyxb/specialColumnCenter/userReckon，请求参数:{'groupCode': '196F0b9C1b282Da069DA0488b64834C0', 'duration': 471, 'courseCode': 'd40b811cf1a4a8B6629f7d79Cc17E900'}
+2019-07-09 18:08:16,218 - [testcase.py-->line:71] - INFO: -----测试用例：--用户督导计时登记userReckon--已通过----
+2019-07-09 18:08:16,460 - [http_request.py-->line:25] - INFO: 正在发送请求，url:https://www.xuegean.com/xyxb/groupCenter/updateLastGroupSpeak，请求参数:{'groupCode': '196F0b9C1b282Da069DA0488b64834C0'}
+2019-07-09 18:08:16,607 - [testcase.py-->line:71] - INFO: -----测试用例：--更新最后发言时间updateLastGroupSpeak--已通过----
+2019-07-09 18:08:17,212 - [testcase.py-->line:77] - INFO: 接口测试完毕
+2019-07-09 18:08:17,212 - [testcase.py-->line:78] - INFO: 					
+2019-07-09 18:12:00,245 - [http_request.py-->line:25] - INFO: 正在发送请求，url:https://www.xuegean.com/xyxb/userCenter/login，请求参数:{'deviceCode': '481D3629d2d7978388365460dC5F91D2', 'loginType': 1, 'networkType': 0, 'smsCode': '081588', 'userName': '8826'}
+2019-07-09 18:12:00,492 - [http_request.py-->line:25] - INFO: 正在发送请求，url:https://www.xuegean.com/xyxb/userCenter/login，请求参数:{'deviceCode': '481D3629d2d7978388365460dC5F91D2', 'loginType': 1, 'networkType': 0, 'smsCode': '081588', 'userName': '8830'}
+2019-07-09 18:12:00,653 - [http_request.py-->line:25] - INFO: 正在发送请求，url:https://www.xuegean.com/xyxb/specialColumnCenter/setLiveStatus，请求参数:{'groupCode': '196F0b9C1b282Da069DA0488b64834C0', 'liveStatus': 1}
+2019-07-09 18:12:01,066 - [testcase.py-->line:43] - INFO: 2019-07-09 18:12:00
+2019-07-09 18:12:01,066 - [testcase.py-->line:44] - INFO: 					
+2019-07-09 18:12:01,067 - [http_request.py-->line:25] - INFO: 正在发送请求，url:https://www.xuegean.com/xyxb/specialColumnCenter/getStudyFinish，请求参数:{'groupCode': '196F0b9C1b282Da069DA0488b64834C0'}
+2019-07-09 18:12:01,208 - [testcase.py-->line:71] - INFO: -----测试用例：--用户有无未认证学时getStudyFinish--已通过----
+2019-07-09 18:12:01,361 - [http_request.py-->line:25] - INFO: 正在发送请求，url:https://www.xuegean.com/xyxb/groupCenter/groupDetail，请求参数:{'groupCode': '196F0b9C1b282Da069DA0488b64834C0'}
+2019-07-09 18:12:01,556 - [testcase.py-->line:66] - ERROR: '200' != '400'
+- 200
+? ^
++ 400
+? ^
+
+2019-07-09 18:12:01,815 - [http_request.py-->line:25] - INFO: 正在发送请求，url:https://www.xuegean.com/xyxb/groupCenter/updateLastGroupSpeak，请求参数:{'groupCode': '196F0b9C1b282Da069DA0488b64834C0'}
+2019-07-09 18:12:01,957 - [testcase.py-->line:71] - INFO: -----测试用例：--更新最后发言时间updateLastGroupSpeak--已通过----
+2019-07-09 18:12:02,110 - [http_request.py-->line:25] - INFO: 正在发送请求，url:https://www.xuegean.com/xyxb/specialColumnCenter/listGroupKey，请求参数:{'courseCode': '76Ac2596CC7583A843Ec31b459264Ad2'}
+2019-07-09 18:12:02,256 - [testcase.py-->line:71] - INFO: -----测试用例：--查询核心小组listGroupKey--已通过----
+2019-07-09 18:12:02,423 - [http_request.py-->line:25] - INFO: 正在发送请求，url:https://www.xuegean.com/xyxb/specialColumnCenter/listQuestion，请求参数:{'groupCode': '196F0b9C1b282Da069DA0488b64834C0'}
+2019-07-09 18:12:02,563 - [testcase.py-->line:71] - INFO: -----测试用例：--获取直播提问列表listQuestion--已通过----
+2019-07-09 18:12:02,801 - [http_request.py-->line:25] - INFO: 正在发送请求，url:https://www.xuegean.com/xyxb/specialColumnCenter/startSupervisor，请求参数:{'groupCode': '196F0b9C1b282Da069DA0488b64834C0'}
+2019-07-09 18:12:02,985 - [testcase.py-->line:71] - INFO: -----测试用例：--开启督导课程计时startSupervisor--已通过----
+2019-07-09 18:12:03,119 - [http_request.py-->line:25] - INFO: 正在发送请求，url:https://www.xuegean.com/xyxb/specialColumnCenter/userReckon，请求参数:{'duration': 180, 'groupCode': '196F0b9C1b282Da069DA0488b64834C0', 'courseCode': '76Ac2596CC7583A843Ec31b459264Ad2'}
+2019-07-09 18:12:03,292 - [testcase.py-->line:71] - INFO: -----测试用例：--用户督导计时登记userReckon--已通过----
+2019-07-09 18:12:03,451 - [http_request.py-->line:25] - INFO: 正在发送请求，url:https://www.xuegean.com/xyxb/specialColumnCenter/listGroupKey，请求参数:{'courseCode': '76Ac2596CC7583A843Ec31b459264Ad2'}
+2019-07-09 18:12:03,542 - [testcase.py-->line:71] - INFO: -----测试用例：--查询核心小组listGroupKey--已通过----
+2019-07-09 18:12:03,681 - [http_request.py-->line:25] - INFO: 正在发送请求，url:https://www.xuegean.com/xyxb/specialColumnCenter/getStudyFinish，请求参数:{'groupCode': '196F0b9C1b282Da069DA0488b64834C0'}
+2019-07-09 18:12:03,866 - [testcase.py-->line:71] - INFO: -----测试用例：--用户有无未认证学时getStudyFinish--已通过----
+2019-07-09 18:12:04,006 - [http_request.py-->line:25] - INFO: 正在发送请求，url:https://www.xuegean.com/xyxb/specialColumnCenter/groupDetail，请求参数:{'groupCode': '196F0b9C1b282Da069DA0488b64834C0'}
+2019-07-09 18:12:04,289 - [testcase.py-->line:71] - INFO: -----测试用例：--小组明细信息接口groupDetail--已通过----
+2019-07-09 18:12:04,416 - [http_request.py-->line:25] - INFO: 正在发送请求，url:https://www.xuegean.com/xyxb/groupLiveTicket/isUseTicket，请求参数:{'useType': 2, 'groupCode': '196F0b9C1b282Da069DA0488b64834C0'}
+2019-07-09 18:12:04,635 - [testcase.py-->line:71] - INFO: -----测试用例：--直播卷-查使用状态isUseTicket--已通过----
+2019-07-09 18:12:04,772 - [http_request.py-->line:25] - INFO: 正在发送请求，url:https://www.xuegean.com/xyxb/specialColumnCenter/listQuestion，请求参数:{'groupCode': '196F0b9C1b282Da069DA0488b64834C0'}
+2019-07-09 18:12:04,918 - [testcase.py-->line:71] - INFO: -----测试用例：--获取直播提问列表listQuestion--已通过----
+2019-07-09 18:12:05,051 - [http_request.py-->line:25] - INFO: 正在发送请求，url:https://www.xuegean.com/xyxb/specialColumnCenter/listGroupKey，请求参数:{'courseCode': '76Ac2596CC7583A843Ec31b459264Ad2'}
+2019-07-09 18:12:05,223 - [testcase.py-->line:71] - INFO: -----测试用例：--查询核心小组listGroupKey--已通过----
+2019-07-09 18:12:05,351 - [http_request.py-->line:25] - INFO: 正在发送请求，url:https://www.xuegean.com/xyxb/specialColumnCenter/addGroupKey，请求参数:{'sort': 1, 'courseCode': '76Ac2596CC7583A843Ec31b459264Ad2'}
+2019-07-09 18:12:05,543 - [testcase.py-->line:66] - ERROR: '200' != '400'
+- 200
+? ^
++ 400
+? ^
+
+2019-07-09 18:12:05,686 - [http_request.py-->line:25] - INFO: 正在发送请求，url:https://www.xuegean.com/xyxb/groupCenter/updateLastGroupSpeak，请求参数:{'groupCode': '196F0b9C1b282Da069DA0488b64834C0'}
+2019-07-09 18:12:05,849 - [testcase.py-->line:71] - INFO: -----测试用例：--更新最后发言时间updateLastGroupSpeak--已通过----
+2019-07-09 18:12:05,993 - [http_request.py-->line:25] - INFO: 正在发送请求，url:https://www.xuegean.com/xyxb/specialColumnCenter/editGroupKey，请求参数:{'status': 1, 'courseCode': '76Ac2596CC7583A843Ec31b459264Ad2'}
+2019-07-09 18:12:06,113 - [testcase.py-->line:71] - INFO: -----测试用例：--加入核心小组editGroupKey--已通过----
+2019-07-09 18:12:06,278 - [http_request.py-->line:25] - INFO: 正在发送请求，url:https://www.xuegean.com/xyxb/groupCenter/updateLastGroupSpeak，请求参数:{'groupCode': '196F0b9C1b282Da069DA0488b64834C0'}
+2019-07-09 18:12:06,485 - [testcase.py-->line:71] - INFO: -----测试用例：--更新最后发言时间updateLastGroupSpeak--已通过----
+2019-07-09 18:12:06,693 - [http_request.py-->line:25] - INFO: 正在发送请求，url:https://www.xuegean.com/xyxb/specialColumnCenter/editGroupKey，请求参数:{'courseCode': '76Ac2596CC7583A843Ec31b459264Ad2', 'status': 2, 'userCode': '48D393a5aBc510B0a9601e3C1A0c9C9A'}
+2019-07-09 18:12:06,799 - [testcase.py-->line:71] - INFO: -----测试用例：--修改核心小组成员状态editGroupKey--已通过----
+2019-07-09 18:12:06,989 - [http_request.py-->line:25] - INFO: 正在发送请求，url:https://www.xuegean.com/xyxb/groupCenter/updateLastGroupSpeak，请求参数:{'groupCode': '196F0b9C1b282Da069DA0488b64834C0'}
+2019-07-09 18:12:07,122 - [testcase.py-->line:71] - INFO: -----测试用例：--更新最后发言时间updateLastGroupSpeak--已通过----
+2019-07-09 18:12:07,294 - [http_request.py-->line:25] - INFO: 正在发送请求，url:https://www.xuegean.com/xyxb/specialColumnCenter/editGroupKey，请求参数:{'courseCode': '76Ac2596CC7583A843Ec31b459264Ad2', 'status': 0, 'userCode': '48D393a5aBc510B0a9601e3C1A0c9C9A'}
+2019-07-09 18:12:07,423 - [testcase.py-->line:71] - INFO: -----测试用例：--修改核心小组成员状态editGroupKey--已通过----
+2019-07-09 18:12:07,609 - [http_request.py-->line:25] - INFO: 正在发送请求，url:https://www.xuegean.com/xyxb/specialColumnCenter/quitGroupKey，请求参数:{'courseCode': '76Ac2596CC7583A843Ec31b459264Ad2', 'sort': 1}
+2019-07-09 18:12:07,755 - [testcase.py-->line:71] - INFO: -----测试用例：--退出核心小组quitGroupKey--已通过----
+2019-07-09 18:12:07,942 - [http_request.py-->line:25] - INFO: 正在发送请求，url:https://www.xuegean.com/xyxb/specialColumnCenter/editGroupKey，请求参数:{'courseCode': '76Ac2596CC7583A843Ec31b459264Ad2', 'status': 0}
+2019-07-09 18:12:08,104 - [testcase.py-->line:66] - ERROR: '200' != '400'
+- 200
+? ^
++ 400
+? ^
+
+2019-07-09 18:12:08,234 - [http_request.py-->line:25] - INFO: 正在发送请求，url:https://www.xuegean.com/xyxb/groupCenter/updateLastGroupSpeak，请求参数:{'groupCode': '196F0b9C1b282Da069DA0488b64834C0'}
+2019-07-09 18:12:08,349 - [testcase.py-->line:71] - INFO: -----测试用例：--更新最后发言时间updateLastGroupSpeak--已通过----
+2019-07-09 18:12:08,496 - [http_request.py-->line:25] - INFO: 正在发送请求，url:https://www.xuegean.com/xyxb/specialColumnCenter/setLiveStatus，请求参数:{'groupCode': '196F0b9C1b282Da069DA0488b64834C0', 'liveStatus': 0}
+2019-07-09 18:12:08,889 - [testcase.py-->line:71] - INFO: -----测试用例：--设置小组的直播状态setLiveStatus--已通过----
+2019-07-09 18:12:09,017 - [http_request.py-->line:25] - INFO: 正在发送请求，url:https://www.xuegean.com/xyxb/specialColumnCenter/userReckon，请求参数:{'groupCode': '196F0b9C1b282Da069DA0488b64834C0', 'duration': 471, 'courseCode': '76Ac2596CC7583A843Ec31b459264Ad2'}
+2019-07-09 18:12:09,151 - [testcase.py-->line:71] - INFO: -----测试用例：--用户督导计时登记userReckon--已通过----
+2019-07-09 18:12:09,285 - [http_request.py-->line:25] - INFO: 正在发送请求，url:https://www.xuegean.com/xyxb/groupCenter/updateLastGroupSpeak，请求参数:{'groupCode': '196F0b9C1b282Da069DA0488b64834C0'}
+2019-07-09 18:12:09,401 - [testcase.py-->line:71] - INFO: -----测试用例：--更新最后发言时间updateLastGroupSpeak--已通过----
+2019-07-09 18:12:09,535 - [testcase.py-->line:77] - INFO: 接口测试完毕
+2019-07-09 18:12:09,535 - [testcase.py-->line:78] - INFO: 					
+2019-07-09 18:14:02,462 - [http_request.py-->line:25] - INFO: 正在发送请求，url:https://www.xuegean.com/xyxb/userCenter/login，请求参数:{'deviceCode': '481D3629d2d7978388365460dC5F91D2', 'loginType': 1, 'networkType': 0, 'smsCode': '081588', 'userName': '8826'}
+2019-07-09 18:14:02,740 - [http_request.py-->line:25] - INFO: 正在发送请求，url:https://www.xuegean.com/xyxb/userCenter/login，请求参数:{'deviceCode': '481D3629d2d7978388365460dC5F91D2', 'loginType': 1, 'networkType': 0, 'smsCode': '081588', 'userName': '8830'}
+2019-07-09 18:14:02,924 - [http_request.py-->line:25] - INFO: 正在发送请求，url:https://www.xuegean.com/xyxb/specialColumnCenter/setLiveStatus，请求参数:{'groupCode': '196F0b9C1b282Da069DA0488b64834C0', 'liveStatus': 1}
+2019-07-09 18:14:03,286 - [testcase.py-->line:43] - INFO: 2019-07-09 18:14:02
+2019-07-09 18:14:03,287 - [testcase.py-->line:44] - INFO: 					
+2019-07-09 18:14:03,287 - [http_request.py-->line:25] - INFO: 正在发送请求，url:https://www.xuegean.com/xyxb/specialColumnCenter/getStudyFinish，请求参数:{'groupCode': '196F0b9C1b282Da069DA0488b64834C0'}
+2019-07-09 18:14:03,439 - [testcase.py-->line:71] - INFO: -----测试用例：--用户有无未认证学时getStudyFinish--已通过----
+2019-07-09 18:14:03,844 - [http_request.py-->line:25] - INFO: 正在发送请求，url:https://www.xuegean.com/xyxb/groupCenter/groupDetail，请求参数:{'groupCode': '196F0b9C1b282Da069DA0488b64834C0'}
+2019-07-09 18:14:03,997 - [testcase.py-->line:66] - ERROR: '200' != '400'
+- 200
+? ^
++ 400
+? ^
+
+2019-07-09 18:14:04,319 - [http_request.py-->line:25] - INFO: 正在发送请求，url:https://www.xuegean.com/xyxb/groupCenter/updateLastGroupSpeak，请求参数:{'groupCode': '196F0b9C1b282Da069DA0488b64834C0'}
+2019-07-09 18:14:04,480 - [testcase.py-->line:71] - INFO: -----测试用例：--更新最后发言时间updateLastGroupSpeak--已通过----
+2019-07-09 18:14:04,715 - [http_request.py-->line:25] - INFO: 正在发送请求，url:https://www.xuegean.com/xyxb/specialColumnCenter/listGroupKey，请求参数:{'courseCode': '732bAD01E55897bd3241fDaE72882cd0'}
+2019-07-09 18:14:04,837 - [testcase.py-->line:71] - INFO: -----测试用例：--查询核心小组listGroupKey--已通过----
+2019-07-09 18:14:05,224 - [http_request.py-->line:25] - INFO: 正在发送请求，url:https://www.xuegean.com/xyxb/specialColumnCenter/listQuestion，请求参数:{'groupCode': '196F0b9C1b282Da069DA0488b64834C0'}
+2019-07-09 18:14:05,417 - [testcase.py-->line:71] - INFO: -----测试用例：--获取直播提问列表listQuestion--已通过----
+2019-07-09 18:14:05,598 - [http_request.py-->line:25] - INFO: 正在发送请求，url:https://www.xuegean.com/xyxb/specialColumnCenter/startSupervisor，请求参数:{'groupCode': '196F0b9C1b282Da069DA0488b64834C0'}
+2019-07-09 18:14:05,752 - [testcase.py-->line:71] - INFO: -----测试用例：--开启督导课程计时startSupervisor--已通过----
+2019-07-09 18:14:05,950 - [http_request.py-->line:25] - INFO: 正在发送请求，url:https://www.xuegean.com/xyxb/specialColumnCenter/userReckon，请求参数:{'duration': 180, 'groupCode': '196F0b9C1b282Da069DA0488b64834C0', 'courseCode': '732bAD01E55897bd3241fDaE72882cd0'}
+2019-07-09 18:14:06,080 - [testcase.py-->line:71] - INFO: -----测试用例：--用户督导计时登记userReckon--已通过----
+2019-07-09 18:14:06,292 - [http_request.py-->line:25] - INFO: 正在发送请求，url:https://www.xuegean.com/xyxb/specialColumnCenter/listGroupKey，请求参数:{'courseCode': '732bAD01E55897bd3241fDaE72882cd0'}
+2019-07-09 18:14:06,462 - [testcase.py-->line:71] - INFO: -----测试用例：--查询核心小组listGroupKey--已通过----
+2019-07-09 18:14:06,641 - [http_request.py-->line:25] - INFO: 正在发送请求，url:https://www.xuegean.com/xyxb/specialColumnCenter/getStudyFinish，请求参数:{'groupCode': '196F0b9C1b282Da069DA0488b64834C0'}
+2019-07-09 18:14:06,806 - [testcase.py-->line:71] - INFO: -----测试用例：--用户有无未认证学时getStudyFinish--已通过----
+2019-07-09 18:14:06,967 - [http_request.py-->line:25] - INFO: 正在发送请求，url:https://www.xuegean.com/xyxb/specialColumnCenter/groupDetail，请求参数:{'groupCode': '196F0b9C1b282Da069DA0488b64834C0'}
+2019-07-09 18:14:07,161 - [testcase.py-->line:71] - INFO: -----测试用例：--小组明细信息接口groupDetail--已通过----
+2019-07-09 18:14:07,338 - [http_request.py-->line:25] - INFO: 正在发送请求，url:https://www.xuegean.com/xyxb/groupLiveTicket/isUseTicket，请求参数:{'useType': 2, 'groupCode': '196F0b9C1b282Da069DA0488b64834C0'}
+2019-07-09 18:14:07,545 - [testcase.py-->line:71] - INFO: -----测试用例：--直播卷-查使用状态isUseTicket--已通过----
+2019-07-09 18:14:07,693 - [http_request.py-->line:25] - INFO: 正在发送请求，url:https://www.xuegean.com/xyxb/specialColumnCenter/listQuestion，请求参数:{'groupCode': '196F0b9C1b282Da069DA0488b64834C0'}
+2019-07-09 18:14:07,868 - [testcase.py-->line:71] - INFO: -----测试用例：--获取直播提问列表listQuestion--已通过----
+2019-07-09 18:14:08,054 - [http_request.py-->line:25] - INFO: 正在发送请求，url:https://www.xuegean.com/xyxb/specialColumnCenter/listGroupKey，请求参数:{'courseCode': '732bAD01E55897bd3241fDaE72882cd0'}
+2019-07-09 18:14:08,231 - [testcase.py-->line:71] - INFO: -----测试用例：--查询核心小组listGroupKey--已通过----
+2019-07-09 18:14:08,390 - [http_request.py-->line:25] - INFO: 正在发送请求，url:https://www.xuegean.com/xyxb/specialColumnCenter/addGroupKey，请求参数:{'sort': 1, 'courseCode': '732bAD01E55897bd3241fDaE72882cd0'}
+2019-07-09 18:14:08,497 - [testcase.py-->line:66] - ERROR: '200' != '400'
+- 200
+? ^
++ 400
+? ^
+
+2019-07-09 18:14:08,661 - [http_request.py-->line:25] - INFO: 正在发送请求，url:https://www.xuegean.com/xyxb/groupCenter/updateLastGroupSpeak，请求参数:{'groupCode': '196F0b9C1b282Da069DA0488b64834C0'}
+2019-07-09 18:14:08,859 - [testcase.py-->line:71] - INFO: -----测试用例：--更新最后发言时间updateLastGroupSpeak--已通过----
+2019-07-09 18:14:09,013 - [http_request.py-->line:25] - INFO: 正在发送请求，url:https://www.xuegean.com/xyxb/specialColumnCenter/editGroupKey，请求参数:{'status': 1, 'courseCode': '732bAD01E55897bd3241fDaE72882cd0'}
+2019-07-09 18:14:09,191 - [testcase.py-->line:71] - INFO: -----测试用例：--加入核心小组editGroupKey--已通过----
+2019-07-09 18:14:09,331 - [http_request.py-->line:25] - INFO: 正在发送请求，url:https://www.xuegean.com/xyxb/groupCenter/updateLastGroupSpeak，请求参数:{'groupCode': '196F0b9C1b282Da069DA0488b64834C0'}
+2019-07-09 18:14:09,468 - [testcase.py-->line:71] - INFO: -----测试用例：--更新最后发言时间updateLastGroupSpeak--已通过----
+2019-07-09 18:14:09,611 - [http_request.py-->line:25] - INFO: 正在发送请求，url:https://www.xuegean.com/xyxb/specialColumnCenter/editGroupKey，请求参数:{'courseCode': '732bAD01E55897bd3241fDaE72882cd0', 'status': 2, 'userCode': '48D393a5aBc510B0a9601e3C1A0c9C9A'}
+2019-07-09 18:14:09,730 - [testcase.py-->line:71] - INFO: -----测试用例：--修改核心小组成员状态editGroupKey--已通过----
+2019-07-09 18:14:09,895 - [http_request.py-->line:25] - INFO: 正在发送请求，url:https://www.xuegean.com/xyxb/groupCenter/updateLastGroupSpeak，请求参数:{'groupCode': '196F0b9C1b282Da069DA0488b64834C0'}
+2019-07-09 18:14:10,046 - [testcase.py-->line:71] - INFO: -----测试用例：--更新最后发言时间updateLastGroupSpeak--已通过----
+2019-07-09 18:14:10,209 - [http_request.py-->line:25] - INFO: 正在发送请求，url:https://www.xuegean.com/xyxb/specialColumnCenter/editGroupKey，请求参数:{'courseCode': '732bAD01E55897bd3241fDaE72882cd0', 'status': 0, 'userCode': '48D393a5aBc510B0a9601e3C1A0c9C9A'}
+2019-07-09 18:14:10,333 - [testcase.py-->line:71] - INFO: -----测试用例：--修改核心小组成员状态editGroupKey--已通过----
+2019-07-09 18:14:10,497 - [http_request.py-->line:25] - INFO: 正在发送请求，url:https://www.xuegean.com/xyxb/specialColumnCenter/quitGroupKey，请求参数:{'courseCode': '732bAD01E55897bd3241fDaE72882cd0', 'sort': 1}
+2019-07-09 18:14:10,670 - [testcase.py-->line:71] - INFO: -----测试用例：--退出核心小组quitGroupKey--已通过----
+2019-07-09 18:14:10,859 - [http_request.py-->line:25] - INFO: 正在发送请求，url:https://www.xuegean.com/xyxb/specialColumnCenter/editGroupKey，请求参数:{'courseCode': '732bAD01E55897bd3241fDaE72882cd0', 'status': 0}
+2019-07-09 18:14:11,113 - [testcase.py-->line:66] - ERROR: '200' != '400'
+- 200
+? ^
++ 400
+? ^
+
+2019-07-09 18:14:11,278 - [http_request.py-->line:25] - INFO: 正在发送请求，url:https://www.xuegean.com/xyxb/groupCenter/updateLastGroupSpeak，请求参数:{'groupCode': '196F0b9C1b282Da069DA0488b64834C0'}
+2019-07-09 18:14:11,531 - [testcase.py-->line:71] - INFO: -----测试用例：--更新最后发言时间updateLastGroupSpeak--已通过----
+2019-07-09 18:14:11,673 - [http_request.py-->line:25] - INFO: 正在发送请求，url:https://www.xuegean.com/xyxb/specialColumnCenter/setLiveStatus，请求参数:{'groupCode': '196F0b9C1b282Da069DA0488b64834C0', 'liveStatus': 0}
+2019-07-09 18:14:12,027 - [testcase.py-->line:71] - INFO: -----测试用例：--设置小组的直播状态setLiveStatus--已通过----
+2019-07-09 18:14:12,169 - [http_request.py-->line:25] - INFO: 正在发送请求，url:https://www.xuegean.com/xyxb/specialColumnCenter/userReckon，请求参数:{'groupCode': '196F0b9C1b282Da069DA0488b64834C0', 'duration': 471, 'courseCode': '732bAD01E55897bd3241fDaE72882cd0'}
+2019-07-09 18:14:12,339 - [testcase.py-->line:71] - INFO: -----测试用例：--用户督导计时登记userReckon--已通过----
+2019-07-09 18:14:12,511 - [http_request.py-->line:25] - INFO: 正在发送请求，url:https://www.xuegean.com/xyxb/groupCenter/updateLastGroupSpeak，请求参数:{'groupCode': '196F0b9C1b282Da069DA0488b64834C0'}
+2019-07-09 18:14:12,789 - [testcase.py-->line:71] - INFO: -----测试用例：--更新最后发言时间updateLastGroupSpeak--已通过----
+2019-07-09 18:14:12,927 - [testcase.py-->line:77] - INFO: 接口测试完毕
+2019-07-09 18:14:12,927 - [testcase.py-->line:78] - INFO: 					
+2019-07-09 18:17:31,610 - [http_request.py-->line:25] - INFO: 正在发送请求，url:https://www.xuegean.com/xyxb/userCenter/login，请求参数:{'deviceCode': '481D3629d2d7978388365460dC5F91D2', 'loginType': 1, 'networkType': 0, 'smsCode': '081588', 'userName': '8826'}
+2019-07-09 18:17:31,864 - [http_request.py-->line:25] - INFO: 正在发送请求，url:https://www.xuegean.com/xyxb/userCenter/login，请求参数:{'deviceCode': '481D3629d2d7978388365460dC5F91D2', 'loginType': 1, 'networkType': 0, 'smsCode': '081588', 'userName': '8830'}
+2019-07-09 18:17:32,032 - [http_request.py-->line:25] - INFO: 正在发送请求，url:https://www.xuegean.com/xyxb/specialColumnCenter/setLiveStatus，请求参数:{'groupCode': '196F0b9C1b282Da069DA0488b64834C0', 'liveStatus': 1}
+2019-07-09 18:17:32,409 - [testcase.py-->line:43] - INFO: 2019-07-09 18:17:31
+2019-07-09 18:17:32,409 - [testcase.py-->line:44] - INFO: 					
+2019-07-09 18:17:32,410 - [http_request.py-->line:25] - INFO: 正在发送请求，url:https://www.xuegean.com/xyxb/specialColumnCenter/getStudyFinish，请求参数:{'groupCode': '196F0b9C1b282Da069DA0488b64834C0'}
+2019-07-09 18:17:32,534 - [testcase.py-->line:70] - INFO: -----测试用例：--用户有无未认证学时getStudyFinish--已通过----
+2019-07-09 18:17:32,720 - [http_request.py-->line:25] - INFO: 正在发送请求，url:https://www.xuegean.com/xyxb/groupCenter/groupDetail，请求参数:{'groupCode': '196F0b9C1b282Da069DA0488b64834C0'}
+2019-07-09 18:17:32,952 - [testcase.py-->line:65] - ERROR: '200' != '400'
+- 200
+? ^
++ 400
+? ^
+
+2019-07-09 18:17:33,132 - [http_request.py-->line:25] - INFO: 正在发送请求，url:https://www.xuegean.com/xyxb/groupCenter/updateLastGroupSpeak，请求参数:{'groupCode': '196F0b9C1b282Da069DA0488b64834C0'}
+2019-07-09 18:17:33,295 - [testcase.py-->line:70] - INFO: -----测试用例：--更新最后发言时间updateLastGroupSpeak--已通过----
+2019-07-09 18:17:33,451 - [http_request.py-->line:25] - INFO: 正在发送请求，url:https://www.xuegean.com/xyxb/specialColumnCenter/listGroupKey，请求参数:{'courseCode': 'B8C462DE67cbED9A1472ed6d409131B8'}
+2019-07-09 18:17:33,611 - [testcase.py-->line:70] - INFO: -----测试用例：--查询核心小组listGroupKey--已通过----
+2019-07-09 18:17:33,752 - [http_request.py-->line:25] - INFO: 正在发送请求，url:https://www.xuegean.com/xyxb/specialColumnCenter/listQuestion，请求参数:{'groupCode': '196F0b9C1b282Da069DA0488b64834C0'}
+2019-07-09 18:17:33,933 - [testcase.py-->line:70] - INFO: -----测试用例：--获取直播提问列表listQuestion--已通过----
+2019-07-09 18:17:34,114 - [http_request.py-->line:25] - INFO: 正在发送请求，url:https://www.xuegean.com/xyxb/specialColumnCenter/startSupervisor，请求参数:{'groupCode': '196F0b9C1b282Da069DA0488b64834C0'}
+2019-07-09 18:17:34,315 - [testcase.py-->line:70] - INFO: -----测试用例：--开启督导课程计时startSupervisor--已通过----
+2019-07-09 18:17:34,460 - [http_request.py-->line:25] - INFO: 正在发送请求，url:https://www.xuegean.com/xyxb/specialColumnCenter/userReckon，请求参数:{'duration': 180, 'groupCode': '196F0b9C1b282Da069DA0488b64834C0', 'courseCode': 'B8C462DE67cbED9A1472ed6d409131B8'}
+2019-07-09 18:17:34,636 - [testcase.py-->line:70] - INFO: -----测试用例：--用户督导计时登记userReckon--已通过----
+2019-07-09 18:17:34,798 - [http_request.py-->line:25] - INFO: 正在发送请求，url:https://www.xuegean.com/xyxb/specialColumnCenter/listGroupKey，请求参数:{'courseCode': 'B8C462DE67cbED9A1472ed6d409131B8'}
+2019-07-09 18:17:34,965 - [testcase.py-->line:70] - INFO: -----测试用例：--查询核心小组listGroupKey--已通过----
+2019-07-09 18:17:35,101 - [http_request.py-->line:25] - INFO: 正在发送请求，url:https://www.xuegean.com/xyxb/specialColumnCenter/getStudyFinish，请求参数:{'groupCode': '196F0b9C1b282Da069DA0488b64834C0'}
+2019-07-09 18:17:35,286 - [testcase.py-->line:70] - INFO: -----测试用例：--用户有无未认证学时getStudyFinish--已通过----
+2019-07-09 18:17:35,446 - [http_request.py-->line:25] - INFO: 正在发送请求，url:https://www.xuegean.com/xyxb/specialColumnCenter/groupDetail，请求参数:{'groupCode': '196F0b9C1b282Da069DA0488b64834C0'}
+2019-07-09 18:17:35,696 - [testcase.py-->line:70] - INFO: -----测试用例：--小组明细信息接口groupDetail--已通过----
+2019-07-09 18:17:35,891 - [http_request.py-->line:25] - INFO: 正在发送请求，url:https://www.xuegean.com/xyxb/groupLiveTicket/isUseTicket，请求参数:{'useType': 2, 'groupCode': '196F0b9C1b282Da069DA0488b64834C0'}
+2019-07-09 18:17:36,096 - [testcase.py-->line:70] - INFO: -----测试用例：--直播卷-查使用状态isUseTicket--已通过----
+2019-07-09 18:17:36,314 - [http_request.py-->line:25] - INFO: 正在发送请求，url:https://www.xuegean.com/xyxb/specialColumnCenter/listQuestion，请求参数:{'groupCode': '196F0b9C1b282Da069DA0488b64834C0'}
+2019-07-09 18:17:36,559 - [testcase.py-->line:70] - INFO: -----测试用例：--获取直播提问列表listQuestion--已通过----
+2019-07-09 18:17:36,719 - [http_request.py-->line:25] - INFO: 正在发送请求，url:https://www.xuegean.com/xyxb/specialColumnCenter/listGroupKey，请求参数:{'courseCode': 'B8C462DE67cbED9A1472ed6d409131B8'}
+2019-07-09 18:17:36,888 - [testcase.py-->line:70] - INFO: -----测试用例：--查询核心小组listGroupKey--已通过----
+2019-07-09 18:17:37,045 - [http_request.py-->line:25] - INFO: 正在发送请求，url:https://www.xuegean.com/xyxb/specialColumnCenter/addGroupKey，请求参数:{'sort': 1, 'courseCode': 'B8C462DE67cbED9A1472ed6d409131B8'}
+2019-07-09 18:17:37,298 - [testcase.py-->line:65] - ERROR: '200' != '400'
+- 200
+? ^
++ 400
+? ^
+
+2019-07-09 18:17:37,562 - [http_request.py-->line:25] - INFO: 正在发送请求，url:https://www.xuegean.com/xyxb/groupCenter/updateLastGroupSpeak，请求参数:{'groupCode': '196F0b9C1b282Da069DA0488b64834C0'}
+2019-07-09 18:17:37,864 - [testcase.py-->line:70] - INFO: -----测试用例：--更新最后发言时间updateLastGroupSpeak--已通过----
+2019-07-09 18:17:38,034 - [http_request.py-->line:25] - INFO: 正在发送请求，url:https://www.xuegean.com/xyxb/specialColumnCenter/editGroupKey，请求参数:{'status': 1, 'courseCode': 'B8C462DE67cbED9A1472ed6d409131B8'}
+2019-07-09 18:17:38,234 - [testcase.py-->line:70] - INFO: -----测试用例：--加入核心小组editGroupKey--已通过----
+2019-07-09 18:17:38,375 - [http_request.py-->line:25] - INFO: 正在发送请求，url:https://www.xuegean.com/xyxb/groupCenter/updateLastGroupSpeak，请求参数:{'groupCode': '196F0b9C1b282Da069DA0488b64834C0'}
+2019-07-09 18:17:38,513 - [testcase.py-->line:70] - INFO: -----测试用例：--更新最后发言时间updateLastGroupSpeak--已通过----
+2019-07-09 18:17:38,684 - [http_request.py-->line:25] - INFO: 正在发送请求，url:https://www.xuegean.com/xyxb/specialColumnCenter/editGroupKey，请求参数:{'courseCode': 'B8C462DE67cbED9A1472ed6d409131B8', 'status': 2, 'userCode': '48D393a5aBc510B0a9601e3C1A0c9C9A'}
+2019-07-09 18:17:38,792 - [testcase.py-->line:70] - INFO: -----测试用例：--修改核心小组成员状态editGroupKey--已通过----
+2019-07-09 18:17:38,941 - [http_request.py-->line:25] - INFO: 正在发送请求，url:https://www.xuegean.com/xyxb/groupCenter/updateLastGroupSpeak，请求参数:{'groupCode': '196F0b9C1b282Da069DA0488b64834C0'}
+2019-07-09 18:17:39,096 - [testcase.py-->line:70] - INFO: -----测试用例：--更新最后发言时间updateLastGroupSpeak--已通过----
+2019-07-09 18:17:39,234 - [http_request.py-->line:25] - INFO: 正在发送请求，url:https://www.xuegean.com/xyxb/specialColumnCenter/editGroupKey，请求参数:{'courseCode': 'B8C462DE67cbED9A1472ed6d409131B8', 'status': 0, 'userCode': '48D393a5aBc510B0a9601e3C1A0c9C9A'}
+2019-07-09 18:17:39,388 - [testcase.py-->line:70] - INFO: -----测试用例：--修改核心小组成员状态editGroupKey--已通过----
+2019-07-09 18:17:39,540 - [http_request.py-->line:25] - INFO: 正在发送请求，url:https://www.xuegean.com/xyxb/specialColumnCenter/quitGroupKey，请求参数:{'courseCode': 'B8C462DE67cbED9A1472ed6d409131B8', 'sort': 1}
+2019-07-09 18:17:39,719 - [testcase.py-->line:70] - INFO: -----测试用例：--退出核心小组quitGroupKey--已通过----
+2019-07-09 18:17:39,866 - [http_request.py-->line:25] - INFO: 正在发送请求，url:https://www.xuegean.com/xyxb/specialColumnCenter/editGroupKey，请求参数:{'courseCode': 'B8C462DE67cbED9A1472ed6d409131B8', 'status': 0}
+2019-07-09 18:17:40,057 - [testcase.py-->line:65] - ERROR: '200' != '400'
+- 200
+? ^
++ 400
+? ^
+
+2019-07-09 18:17:40,214 - [http_request.py-->line:25] - INFO: 正在发送请求，url:https://www.xuegean.com/xyxb/groupCenter/updateLastGroupSpeak，请求参数:{'groupCode': '196F0b9C1b282Da069DA0488b64834C0'}
+2019-07-09 18:17:40,419 - [testcase.py-->line:70] - INFO: -----测试用例：--更新最后发言时间updateLastGroupSpeak--已通过----
+2019-07-09 18:17:40,580 - [http_request.py-->line:25] - INFO: 正在发送请求，url:https://www.xuegean.com/xyxb/specialColumnCenter/setLiveStatus，请求参数:{'groupCode': '196F0b9C1b282Da069DA0488b64834C0', 'liveStatus': 0}
+2019-07-09 18:17:40,882 - [testcase.py-->line:70] - INFO: -----测试用例：--设置小组的直播状态setLiveStatus--已通过----
+2019-07-09 18:17:41,134 - [http_request.py-->line:25] - INFO: 正在发送请求，url:https://www.xuegean.com/xyxb/specialColumnCenter/userReckon，请求参数:{'groupCode': '196F0b9C1b282Da069DA0488b64834C0', 'duration': 471, 'courseCode': 'B8C462DE67cbED9A1472ed6d409131B8'}
+2019-07-09 18:17:41,285 - [testcase.py-->line:70] - INFO: -----测试用例：--用户督导计时登记userReckon--已通过----
+2019-07-09 18:17:41,446 - [http_request.py-->line:25] - INFO: 正在发送请求，url:https://www.xuegean.com/xyxb/groupCenter/updateLastGroupSpeak，请求参数:{'groupCode': '196F0b9C1b282Da069DA0488b64834C0'}
+2019-07-09 18:17:41,599 - [testcase.py-->line:70] - INFO: -----测试用例：--更新最后发言时间updateLastGroupSpeak--已通过----
+2019-07-09 18:17:41,766 - [testcase.py-->line:76] - INFO: 接口测试完毕
+2019-07-09 18:17:41,766 - [testcase.py-->line:77] - INFO: 					

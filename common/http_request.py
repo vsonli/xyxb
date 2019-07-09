@@ -12,7 +12,7 @@ from common.logger import *
 
 class HTTPRequest(object):
     '''不记录cookies信息'''
-    def request(self,method,url,params=None,data=None,headers=None,cookies=None,json=None):
+    def request(self,method,url,params=None,data=None,headers=None,cookies=None,json=None,verify=False):
         method = method.lower() #转为小写
         print('传进来的参数：  ',data)
         # print('传进来的head：  ',headers)
@@ -20,13 +20,13 @@ class HTTPRequest(object):
             #判断post的参数是data还是json传参的
             if json:
                 my_log.info('正在发送请求，url:{}，请求参数:{}'.format(url, json))
-                return requests.post(url=url,headers=headers,json=json,cookies=cookies, timeout=60)
+                return requests.post(url=url,headers=headers,json=json,cookies=cookies, verify=False,timeout=60)
             else:
                 my_log.info('正在发送请求，url:{}，请求参数:{}'.format(url, data))
-                return requests.post(url=url, headers=headers, data=data, cookies=cookies, timeout=60)
+                return requests.post(url=url, headers=headers, data=data, cookies=cookies, verify=False, timeout=60)
         elif method == 'get':
             my_log.info('正在发送请求，url:{}，请求参数:{}'.format(url, params))
-            return requests.get(url=url,params=params,headers=headers,cookies=cookies, timeout=60)
+            return requests.get(url=url,params=params,headers=headers,cookies=cookies, verify=False, timeout=60)
 
     def get_head(self,url,uname,pwd):
         '''
@@ -60,7 +60,8 @@ class HTTPRequest(object):
         '''
         result = self.request(method='post',url=url,data=data,headers=head)
         try:
-            print(result.json()['data']['courseCode'])
+            courseCode = result.json()['data']['courseCode']
+            print('couseCode为'+str(courseCode))
             return result.json()['data']['courseCode']
         except Exception as e:
             print('直播已开启')
@@ -75,19 +76,19 @@ class HTTPRequestSession(object):
         #创建一个session对象
         self.session = requests.sessions.Session()
 
-    def request(self,method,url,params=None,data=None,headers=None,cookies=None,json=None):
+    def request(self,method,url,params=None,data=None,headers=None,cookies=None,json=None ,verify=False,):
         method = method.lower() #转为小写
         if method == 'post':
             #判断post的参数是data还是json传参的
             if json:
                 my_log.info('正在发送请求，url:{}，请求json参数:{}'.format(url, json))
-                return self.session.post(url=url,headers=headers,json=json,cookies=cookies, timeout=60)
+                return self.session.post(url=url,headers=headers,json=json,cookies=cookies,  verify=False,timeout=60)
             else:
                 my_log.info('正在发送请求，url:{}，请求data参数:{}'.format(url, data))
-                return self.session.post(url=url, headers=headers, data=data, cookies=cookies, timeout=60)
+                return self.session.post(url=url, headers=headers, data=data, cookies=cookies,  verify=False,timeout=60)
         elif method == 'get':
             my_log.info('正在发送请求，url:{}，请求params参数:{}'.format(url, params))
-            return self.session.get(url=url,params=params,headers=headers,cookies=cookies, timeout=60)
+            return self.session.get(url=url,params=params,headers=headers,cookies=cookies,  verify=False,timeout=60)
 
     def close(self):
         self.session.close()

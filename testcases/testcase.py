@@ -15,14 +15,6 @@ sheet_name = conf.get('excels','sheet_name')
 read_columns = conf.get('excels','row_num')
 
 
-def rand_phone():
-    phone = '134'
-    for i in range(8):
-        i = random.randint(0, 9)
-        phone += str(i)
-    return phone
-
-
 @ddt
 class RegisterTestCase(unittest.TestCase):
     wb = Read_r_excel(file_name, sheet_name)
@@ -69,7 +61,6 @@ class RegisterTestCase(unittest.TestCase):
         '''对比结果'''
         try:
             self.assertEqual(str(case.excepted),str(code))
-            print('当前行号：'+str(case_id))
         except AssertionError as e:
             my_log.error(e)
             self.wb.write_data(row=case_id, column=10, msg='error')
