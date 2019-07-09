@@ -71,6 +71,249 @@ class RegisterTestCase(unittest.TestCase):
             self.wb.write_data(row=case_id, column=10, msg='pass')
             self.wb.write_data(row=case_id, column=11, msg=response.text)
 
+    @data(*cases)
+    def test_02(self, case):
+        '''准备数据'''
+        url = str(conf.get('url', 'url')) + str(case.url)
+        case.data = replace(case.data)
+        case.head = replace(case.head)
+        case_id = case.case_id
+        case_id = case_id + 1
+
+        '''发送请求获取结果'''
+        response = self.request.request(method=case.method, url=url, headers=eval(case.head), data=eval(case.data))
+        print('返回的数据：' + str(response.text))
+        code = response.json()['code']
+
+        '''对比结果'''
+        try:
+            self.assertEqual(str(case.excepted), str(code))
+        except AssertionError as e:
+            my_log.error(e)
+            self.wb.write_data(row=case_id, column=10, msg='error')
+            self.wb.write_data(row=case_id, column=11, msg=response.text)
+            raise e
+        else:
+            my_log.info('-----测试用例：--{}--已通过----'.format(case.title))
+            self.wb.write_data(row=case_id, column=10, msg='pass')
+            self.wb.write_data(row=case_id, column=11, msg=response.text)
+
+    @data(*cases)
+    def test_03(self, case):
+        '''准备数据'''
+        url = str(conf.get('url', 'url')) + str(case.url)
+        case.data = replace(case.data)
+        case.head = replace(case.head)
+        case_id = case.case_id
+        case_id = case_id + 1
+
+        '''发送请求获取结果'''
+        response = self.request.request(method=case.method, url=url, headers=eval(case.head), data=eval(case.data))
+        print('返回的数据：' + str(response.text))
+        code = response.json()['code']
+
+        '''对比结果'''
+        try:
+            self.assertEqual(str(case.excepted), str(code))
+        except AssertionError as e:
+            my_log.error(e)
+            self.wb.write_data(row=case_id, column=10, msg='error')
+            self.wb.write_data(row=case_id, column=11, msg=response.text)
+            raise e
+        else:
+            my_log.info('-----测试用例：--{}--已通过----'.format(case.title))
+            self.wb.write_data(row=case_id, column=10, msg='pass')
+            self.wb.write_data(row=case_id, column=11, msg=response.text)
+
+    @data(*cases)
+    def test_04(self, case):
+        '''准备数据'''
+        url = str(conf.get('url', 'url')) + str(case.url)
+        case.data = replace(case.data)
+        case.head = replace(case.head)
+        case_id = case.case_id
+        case_id = case_id + 1
+
+        '''发送请求获取结果'''
+        response = self.request.request(method=case.method, url=url, headers=eval(case.head), data=eval(case.data))
+        print('返回的数据：' + str(response.text))
+        code = response.json()['code']
+
+        '''对比结果'''
+        try:
+            self.assertEqual(str(case.excepted), str(code))
+        except AssertionError as e:
+            my_log.error(e)
+            self.wb.write_data(row=case_id, column=10, msg='error')
+            self.wb.write_data(row=case_id, column=11, msg=response.text)
+            raise e
+        else:
+            my_log.info('-----测试用例：--{}--已通过----'.format(case.title))
+            self.wb.write_data(row=case_id, column=10, msg='pass')
+            self.wb.write_data(row=case_id, column=11, msg=response.text)
+
+    @data(*cases)
+    def test_05(self, case):
+        '''准备数据'''
+        url = str(conf.get('url', 'url')) + str(case.url)
+        case.data = replace(case.data)
+        case.head = replace(case.head)
+        case_id = case.case_id
+        case_id = case_id + 1
+
+        '''发送请求获取结果'''
+        response = self.request.request(method=case.method, url=url, headers=eval(case.head), data=eval(case.data))
+        print('返回的数据：' + str(response.text))
+        code = response.json()['code']
+
+        '''对比结果'''
+        try:
+            self.assertEqual(str(case.excepted), str(code))
+        except AssertionError as e:
+            my_log.error(e)
+            self.wb.write_data(row=case_id, column=10, msg='error')
+            self.wb.write_data(row=case_id, column=11, msg=response.text)
+            raise e
+        else:
+            my_log.info('-----测试用例：--{}--已通过----'.format(case.title))
+            self.wb.write_data(row=case_id, column=10, msg='pass')
+            self.wb.write_data(row=case_id, column=11, msg=response.text)
+
+    @data(*cases)
+    def test_06(self, case):
+        '''准备数据'''
+        url = str(conf.get('url', 'url')) + str(case.url)
+        case.data = replace(case.data)
+        case.head = replace(case.head)
+        case_id = case.case_id
+        case_id = case_id + 1
+
+        '''发送请求获取结果'''
+        response = self.request.request(method=case.method, url=url, headers=eval(case.head), data=eval(case.data))
+        print('返回的数据：' + str(response.text))
+        code = response.json()['code']
+
+        '''对比结果'''
+        try:
+            self.assertEqual(str(case.excepted), str(code))
+        except AssertionError as e:
+            my_log.error(e)
+            self.wb.write_data(row=case_id, column=10, msg='error')
+            self.wb.write_data(row=case_id, column=11, msg=response.text)
+            raise e
+        else:
+            my_log.info('-----测试用例：--{}--已通过----'.format(case.title))
+            self.wb.write_data(row=case_id, column=10, msg='pass')
+            self.wb.write_data(row=case_id, column=11, msg=response.text)
+
+    @data(*cases)
+    def test_07(self, case):
+        '''准备数据'''
+        url = str(conf.get('url', 'url')) + str(case.url)
+        case.data = replace(case.data)
+        case.head = replace(case.head)
+        case_id = case.case_id
+        case_id = case_id + 1
+
+        '''发送请求获取结果'''
+        response = self.request.request(method=case.method, url=url, headers=eval(case.head), data=eval(case.data))
+        print('返回的数据：' + str(response.text))
+        code = response.json()['code']
+
+        '''对比结果'''
+        try:
+            self.assertEqual(str(case.excepted), str(code))
+        except AssertionError as e:
+            my_log.error(e)
+            self.wb.write_data(row=case_id, column=10, msg='error')
+            self.wb.write_data(row=case_id, column=11, msg=response.text)
+            raise e
+        else:
+            my_log.info('-----测试用例：--{}--已通过----'.format(case.title))
+            self.wb.write_data(row=case_id, column=10, msg='pass')
+            self.wb.write_data(row=case_id, column=11, msg=response.text)
+
+    @data(*cases)
+    def test_08(self, case):
+        '''准备数据'''
+        url = str(conf.get('url', 'url')) + str(case.url)
+        case.data = replace(case.data)
+        case.head = replace(case.head)
+        case_id = case.case_id
+        case_id = case_id + 1
+
+        '''发送请求获取结果'''
+        response = self.request.request(method=case.method, url=url, headers=eval(case.head), data=eval(case.data))
+        print('返回的数据：' + str(response.text))
+        code = response.json()['code']
+
+        '''对比结果'''
+        try:
+            self.assertEqual(str(case.excepted), str(code))
+        except AssertionError as e:
+            my_log.error(e)
+            self.wb.write_data(row=case_id, column=10, msg='error')
+            self.wb.write_data(row=case_id, column=11, msg=response.text)
+            raise e
+        else:
+            my_log.info('-----测试用例：--{}--已通过----'.format(case.title))
+            self.wb.write_data(row=case_id, column=10, msg='pass')
+            self.wb.write_data(row=case_id, column=11, msg=response.text)
+
+    @data(*cases)
+    def test_09(self, case):
+        '''准备数据'''
+        url = str(conf.get('url', 'url')) + str(case.url)
+        case.data = replace(case.data)
+        case.head = replace(case.head)
+        case_id = case.case_id
+        case_id = case_id + 1
+
+        '''发送请求获取结果'''
+        response = self.request.request(method=case.method, url=url, headers=eval(case.head), data=eval(case.data))
+        print('返回的数据：' + str(response.text))
+        code = response.json()['code']
+
+        '''对比结果'''
+        try:
+            self.assertEqual(str(case.excepted), str(code))
+        except AssertionError as e:
+            my_log.error(e)
+            self.wb.write_data(row=case_id, column=10, msg='error')
+            self.wb.write_data(row=case_id, column=11, msg=response.text)
+            raise e
+        else:
+            my_log.info('-----测试用例：--{}--已通过----'.format(case.title))
+            self.wb.write_data(row=case_id, column=10, msg='pass')
+            self.wb.write_data(row=case_id, column=11, msg=response.text)
+
+    @data(*cases)
+    def test_10(self, case):
+        '''准备数据'''
+        url = str(conf.get('url', 'url')) + str(case.url)
+        case.data = replace(case.data)
+        case.head = replace(case.head)
+        case_id = case.case_id
+        case_id = case_id + 1
+
+        '''发送请求获取结果'''
+        response = self.request.request(method=case.method, url=url, headers=eval(case.head), data=eval(case.data))
+        print('返回的数据：' + str(response.text))
+        code = response.json()['code']
+
+        '''对比结果'''
+        try:
+            self.assertEqual(str(case.excepted), str(code))
+        except AssertionError as e:
+            my_log.error(e)
+            self.wb.write_data(row=case_id, column=10, msg='error')
+            self.wb.write_data(row=case_id, column=11, msg=response.text)
+            raise e
+        else:
+            my_log.info('-----测试用例：--{}--已通过----'.format(case.title))
+            self.wb.write_data(row=case_id, column=10, msg='pass')
+            self.wb.write_data(row=case_id, column=11, msg=response.text)
+
     @classmethod
     def tearDownClass(cls):
         my_log.info('接口测试完毕')

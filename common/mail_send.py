@@ -20,8 +20,8 @@ def send_email(path):
     host = conf.get('email', 'host')
     port = conf.get('email', 'port')
     msg = MIMEMultipart()
-    subject = "学个案接口测试报告"  # 主题
-    text_content = now_time+'测试结果已生成，详情请在附件中查看'
+    subject = conf.get('email','subject')
+    text_content = now_time+conf.get('email','text_content')
     text = MIMEText(text_content)
     msg.attach(text)
     if path:
