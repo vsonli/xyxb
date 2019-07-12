@@ -59,13 +59,13 @@ class HTTPRequest(object):
         :return:
         '''
         result = self.request(method='post',url=url,data=data,headers=head)
-        try:
-            courseCode = result.json()['data']['courseCode']
-            print('couseCode为'+str(courseCode))
-            return result.json()['data']['courseCode']
-        except Exception as e:
-            print('直播已开启')
-            return result.text
+        # try:
+        #     courseCode = result.json()['data']['courseCode']
+        #     print('couseCode为'+str(courseCode))
+        #     return result
+        # except Exception as e:
+        #     print('直播已开启')
+        return result.json()['code'],result.json()['data']['courseCode'],result.text
 
 
 
@@ -96,11 +96,47 @@ class HTTPRequestSession(object):
 
 if __name__ == '__main__':
     r = HTTPRequest()
-    head = r.get_head(url='http://www.xuegean.com/xyxb/userCenter/login',uname='8826',pwd='081588')
-    # print(head)
-    result = r.request(method='post',url='http://www.xuegean.com/xyxb/groupCenter/groupDetail',data={'groupCode':'196F0b9C1b282Da069DA0488b64834C0'},headers=head)
+    user = ['13011111110','13011111111','13011111112','13011111113','13011111114','13011111115','13011111116','13011111117','13011111118','13011111119']
+    head = r.get_head(url='http://192.168.0.105:8081/xyxb/userCenter/login',uname='8826',pwd='081588')
+    url = 'https://www.xuegean.com/xyxb/specialColumnCenter/startSupervisor'
+    # course_code = r.get_course_code(url='https://www.xuegean.com/xyxb/specialColumnCenter/setLiveStatus', head=head,
+    #                                           data={'groupCode': '196F0b9C1b282Da069DA0488b64834C0', 'liveStatus': 1})
+
+    response = r.request(method='post',url=url,headers=head,data={'groupCode':'196F0b9C1b282Da069DA0488b64834C0'})
+    # print(response.text)
+    for i in range(0,10):
+        data = {
+            'groupCode': '0987cb60ff3e31B149EDacB83AE651E2',
+            'phoneNums': user[i]
+        }
+        # data = {'userName':,'smsCode':''}
+
+        response = r.request(method='post',url='http://192.168.0.105:8081/xyxb/groupCenter/sysAddMember',data=data,headers=head)
+        print(response.text)
+        print(user[i])
+    # for i in range(0,10):
+    #     head = r.get_head(url='http://192.168.0.105:8081/xyxb/userCenter/login', uname=user[i], pwd='081588')
+    #     print(head)
+
+    '''http://192.168.0.105:8081/xyxb/groupCenter/sysAddMember
+    groupCode   0987cb60ff3e31B149EDacB83AE651E2
+    phoneNums   13059285936
+    '''
+
+
+
+
+
+
+
+
+
+
+
+
+    # result = r.request(method='post',url='http://www.xuegean.com/xyxb/groupCenter/groupDetail',data={'groupCode':'196F0b9C1b282Da069DA0488b64834C0'},headers=head)
     # print(result)
-    data = {'groupCode':'196F0b9C1b282Da069DA0488b64834C0','liveStatus':0}
-    course_code = r.get_course_code(url='http://www.xuegean.com/xyxb/specialColumnCenter/setLiveStatus',head=head,data=data)
-    print(course_code)
-    print(result.text)
+    # data = {'groupCode':'196F0b9C1b282Da069DA0488b64834C0','liveStatus':0}
+    # course_code = r.get_course_code(url='http://www.xuegean.com/xyxb/specialColumnCenter/setLiveStatus',head=head,data=data)
+    # print(course_code)
+    # print(result.text)

@@ -2,7 +2,7 @@
 # @Time   :2019/6/4 14:43
 # @File   :testcase.py
 # @Author :Vsonli
-import unittest,random,decimal
+import unittest,random,decimal,json
 from common.readExcel import Read_r_excel
 from librarys.ddt import ddt,data
 from common.http_request import *
@@ -33,13 +33,13 @@ class RegisterTestCase(unittest.TestCase):
         cls.url = conf.get('url','url')
         tea = cls.request.get_head(login_url, uname=tea_name, pwd=tea_pwd)
         stu = cls.request.get_head(login_url, uname=stu_name, pwd=stu_pwd)
-        course_code = cls.request.get_course_code(url=cls.url+'specialColumnCenter/setLiveStatus', head=tea, data={'groupCode':'196F0b9C1b282Da069DA0488b64834C0','liveStatus':1})
+        # course_code = cls.request.get_course_code(url=cls.url+'specialColumnCenter/setLiveStatus', head=tea, data={'groupCode':'196F0b9C1b282Da069DA0488b64834C0','liveStatus':1})
         setattr(ConText, 'tea', str(tea))
         setattr(ConText, 'stu', str(stu))
-        try:
-            setattr(ConText, 'course_code', str(course_code))
-        except Exception as e:
-            my_log.info('拿不到课程，结果为：', str(course_code))
+        # try:
+        #     setattr(ConText, 'course_code', str(course_code))
+        # except Exception as e:
+        #     my_log.info('拿不到课程，结果为：', str(course_code))
         my_log.info(NEW_TIME)
         my_log.info('\t\t\t\t\t')
 
@@ -52,11 +52,18 @@ class RegisterTestCase(unittest.TestCase):
         case.head = replace(case.head)
         case_id  = case.case_id
         case_id = case_id + 1
-
-        '''发送请求获取结果'''
-        response = self.request.request(method=case.method, url=url,headers=eval(case.head), data=eval(case.data))
-        print('返回的数据：'+str(response.text))
-        code = response.json()['code']
+        print(case.interface)
+        if case_id == 5:
+            code,course_code,res = self.request.get_course_code(url=url,head=eval(case.head),data=eval(case.data))
+            # course_code = response.json()['data']['courseCode']
+            setattr(ConText, 'course_code', str(course_code))
+            # code = course_code.json()['code']
+        else:
+            '''发送请求获取结果'''
+            response = self.request.request(method=case.method, url=url,headers=eval(case.head), data=eval(case.data))
+            print('返回的数据：'+str(response.text))
+            code = response.json()['code']
+            res = response.text
 
         '''对比结果'''
         try:
@@ -64,12 +71,12 @@ class RegisterTestCase(unittest.TestCase):
         except AssertionError as e:
             my_log.error(e)
             self.wb.write_data(row=case_id, column=10, msg='error')
-            self.wb.write_data(row=case_id, column=11, msg=response.text)
+            self.wb.write_data(row=case_id, column=11, msg=res)
             raise e
         else:
             my_log.info('-----测试用例：--{}--已通过----'.format(case.title))
             self.wb.write_data(row=case_id, column=10, msg='pass')
-            self.wb.write_data(row=case_id, column=11, msg=response.text)
+            self.wb.write_data(row=case_id, column=11, msg=res)
 
     @data(*cases)
     def test_02(self, case):
@@ -79,11 +86,18 @@ class RegisterTestCase(unittest.TestCase):
         case.head = replace(case.head)
         case_id = case.case_id
         case_id = case_id + 1
-
-        '''发送请求获取结果'''
-        response = self.request.request(method=case.method, url=url, headers=eval(case.head), data=eval(case.data))
-        print('返回的数据：' + str(response.text))
-        code = response.json()['code']
+        print(case.interface)
+        if case_id == 5:
+            code, course_code, res = self.request.get_course_code(url=url, head=eval(case.head), data=eval(case.data))
+            # course_code = response.json()['data']['courseCode']
+            setattr(ConText, 'course_code', str(course_code))
+            # code = course_code.json()['code']
+        else:
+            '''发送请求获取结果'''
+            response = self.request.request(method=case.method, url=url, headers=eval(case.head), data=eval(case.data))
+            print('返回的数据：' + str(response.text))
+            code = response.json()['code']
+            res = response.text
 
         '''对比结果'''
         try:
@@ -91,12 +105,12 @@ class RegisterTestCase(unittest.TestCase):
         except AssertionError as e:
             my_log.error(e)
             self.wb.write_data(row=case_id, column=10, msg='error')
-            self.wb.write_data(row=case_id, column=11, msg=response.text)
+            self.wb.write_data(row=case_id, column=11, msg=res)
             raise e
         else:
             my_log.info('-----测试用例：--{}--已通过----'.format(case.title))
             self.wb.write_data(row=case_id, column=10, msg='pass')
-            self.wb.write_data(row=case_id, column=11, msg=response.text)
+            self.wb.write_data(row=case_id, column=11, msg=res)
 
     @data(*cases)
     def test_03(self, case):
@@ -106,11 +120,18 @@ class RegisterTestCase(unittest.TestCase):
         case.head = replace(case.head)
         case_id = case.case_id
         case_id = case_id + 1
-
-        '''发送请求获取结果'''
-        response = self.request.request(method=case.method, url=url, headers=eval(case.head), data=eval(case.data))
-        print('返回的数据：' + str(response.text))
-        code = response.json()['code']
+        print(case.interface)
+        if case_id == 5:
+            code, course_code, res = self.request.get_course_code(url=url, head=eval(case.head), data=eval(case.data))
+            # course_code = response.json()['data']['courseCode']
+            setattr(ConText, 'course_code', str(course_code))
+            # code = course_code.json()['code']
+        else:
+            '''发送请求获取结果'''
+            response = self.request.request(method=case.method, url=url, headers=eval(case.head), data=eval(case.data))
+            print('返回的数据：' + str(response.text))
+            code = response.json()['code']
+            res = response.text
 
         '''对比结果'''
         try:
@@ -118,12 +139,12 @@ class RegisterTestCase(unittest.TestCase):
         except AssertionError as e:
             my_log.error(e)
             self.wb.write_data(row=case_id, column=10, msg='error')
-            self.wb.write_data(row=case_id, column=11, msg=response.text)
+            self.wb.write_data(row=case_id, column=11, msg=res)
             raise e
         else:
             my_log.info('-----测试用例：--{}--已通过----'.format(case.title))
             self.wb.write_data(row=case_id, column=10, msg='pass')
-            self.wb.write_data(row=case_id, column=11, msg=response.text)
+            self.wb.write_data(row=case_id, column=11, msg=res)
 
     @data(*cases)
     def test_04(self, case):
@@ -133,11 +154,18 @@ class RegisterTestCase(unittest.TestCase):
         case.head = replace(case.head)
         case_id = case.case_id
         case_id = case_id + 1
-
-        '''发送请求获取结果'''
-        response = self.request.request(method=case.method, url=url, headers=eval(case.head), data=eval(case.data))
-        print('返回的数据：' + str(response.text))
-        code = response.json()['code']
+        print(case.interface)
+        if case_id == 5:
+            code, course_code, res = self.request.get_course_code(url=url, head=eval(case.head), data=eval(case.data))
+            # course_code = response.json()['data']['courseCode']
+            setattr(ConText, 'course_code', str(course_code))
+            # code = course_code.json()['code']
+        else:
+            '''发送请求获取结果'''
+            response = self.request.request(method=case.method, url=url, headers=eval(case.head), data=eval(case.data))
+            print('返回的数据：' + str(response.text))
+            code = response.json()['code']
+            res = response.text
 
         '''对比结果'''
         try:
@@ -145,12 +173,12 @@ class RegisterTestCase(unittest.TestCase):
         except AssertionError as e:
             my_log.error(e)
             self.wb.write_data(row=case_id, column=10, msg='error')
-            self.wb.write_data(row=case_id, column=11, msg=response.text)
+            self.wb.write_data(row=case_id, column=11, msg=res)
             raise e
         else:
             my_log.info('-----测试用例：--{}--已通过----'.format(case.title))
             self.wb.write_data(row=case_id, column=10, msg='pass')
-            self.wb.write_data(row=case_id, column=11, msg=response.text)
+            self.wb.write_data(row=case_id, column=11, msg=res)
 
     @data(*cases)
     def test_05(self, case):
@@ -160,11 +188,18 @@ class RegisterTestCase(unittest.TestCase):
         case.head = replace(case.head)
         case_id = case.case_id
         case_id = case_id + 1
-
-        '''发送请求获取结果'''
-        response = self.request.request(method=case.method, url=url, headers=eval(case.head), data=eval(case.data))
-        print('返回的数据：' + str(response.text))
-        code = response.json()['code']
+        print(case.interface)
+        if case_id == 5:
+            code, course_code, res = self.request.get_course_code(url=url, head=eval(case.head), data=eval(case.data))
+            # course_code = response.json()['data']['courseCode']
+            setattr(ConText, 'course_code', str(course_code))
+            # code = course_code.json()['code']
+        else:
+            '''发送请求获取结果'''
+            response = self.request.request(method=case.method, url=url, headers=eval(case.head), data=eval(case.data))
+            print('返回的数据：' + str(response.text))
+            code = response.json()['code']
+            res = response.text
 
         '''对比结果'''
         try:
@@ -172,12 +207,12 @@ class RegisterTestCase(unittest.TestCase):
         except AssertionError as e:
             my_log.error(e)
             self.wb.write_data(row=case_id, column=10, msg='error')
-            self.wb.write_data(row=case_id, column=11, msg=response.text)
+            self.wb.write_data(row=case_id, column=11, msg=res)
             raise e
         else:
             my_log.info('-----测试用例：--{}--已通过----'.format(case.title))
             self.wb.write_data(row=case_id, column=10, msg='pass')
-            self.wb.write_data(row=case_id, column=11, msg=response.text)
+            self.wb.write_data(row=case_id, column=11, msg=res)
 
     @data(*cases)
     def test_06(self, case):
@@ -187,11 +222,18 @@ class RegisterTestCase(unittest.TestCase):
         case.head = replace(case.head)
         case_id = case.case_id
         case_id = case_id + 1
-
-        '''发送请求获取结果'''
-        response = self.request.request(method=case.method, url=url, headers=eval(case.head), data=eval(case.data))
-        print('返回的数据：' + str(response.text))
-        code = response.json()['code']
+        print(case.interface)
+        if case_id == 5:
+            code, course_code, res = self.request.get_course_code(url=url, head=eval(case.head), data=eval(case.data))
+            # course_code = response.json()['data']['courseCode']
+            setattr(ConText, 'course_code', str(course_code))
+            # code = course_code.json()['code']
+        else:
+            '''发送请求获取结果'''
+            response = self.request.request(method=case.method, url=url, headers=eval(case.head), data=eval(case.data))
+            print('返回的数据：' + str(response.text))
+            code = response.json()['code']
+            res = response.text
 
         '''对比结果'''
         try:
@@ -199,12 +241,12 @@ class RegisterTestCase(unittest.TestCase):
         except AssertionError as e:
             my_log.error(e)
             self.wb.write_data(row=case_id, column=10, msg='error')
-            self.wb.write_data(row=case_id, column=11, msg=response.text)
+            self.wb.write_data(row=case_id, column=11, msg=res)
             raise e
         else:
             my_log.info('-----测试用例：--{}--已通过----'.format(case.title))
             self.wb.write_data(row=case_id, column=10, msg='pass')
-            self.wb.write_data(row=case_id, column=11, msg=response.text)
+            self.wb.write_data(row=case_id, column=11, msg=res)
 
     @data(*cases)
     def test_07(self, case):
@@ -214,11 +256,18 @@ class RegisterTestCase(unittest.TestCase):
         case.head = replace(case.head)
         case_id = case.case_id
         case_id = case_id + 1
-
-        '''发送请求获取结果'''
-        response = self.request.request(method=case.method, url=url, headers=eval(case.head), data=eval(case.data))
-        print('返回的数据：' + str(response.text))
-        code = response.json()['code']
+        print(case.interface)
+        if case_id == 5:
+            code, course_code, res = self.request.get_course_code(url=url, head=eval(case.head), data=eval(case.data))
+            # course_code = response.json()['data']['courseCode']
+            setattr(ConText, 'course_code', str(course_code))
+            # code = course_code.json()['code']
+        else:
+            '''发送请求获取结果'''
+            response = self.request.request(method=case.method, url=url, headers=eval(case.head), data=eval(case.data))
+            print('返回的数据：' + str(response.text))
+            code = response.json()['code']
+            res = response.text
 
         '''对比结果'''
         try:
@@ -226,12 +275,12 @@ class RegisterTestCase(unittest.TestCase):
         except AssertionError as e:
             my_log.error(e)
             self.wb.write_data(row=case_id, column=10, msg='error')
-            self.wb.write_data(row=case_id, column=11, msg=response.text)
+            self.wb.write_data(row=case_id, column=11, msg=res)
             raise e
         else:
             my_log.info('-----测试用例：--{}--已通过----'.format(case.title))
             self.wb.write_data(row=case_id, column=10, msg='pass')
-            self.wb.write_data(row=case_id, column=11, msg=response.text)
+            self.wb.write_data(row=case_id, column=11, msg=res)
 
     @data(*cases)
     def test_08(self, case):
@@ -241,11 +290,18 @@ class RegisterTestCase(unittest.TestCase):
         case.head = replace(case.head)
         case_id = case.case_id
         case_id = case_id + 1
-
-        '''发送请求获取结果'''
-        response = self.request.request(method=case.method, url=url, headers=eval(case.head), data=eval(case.data))
-        print('返回的数据：' + str(response.text))
-        code = response.json()['code']
+        print(case.interface)
+        if case_id == 5:
+            code, course_code, res = self.request.get_course_code(url=url, head=eval(case.head), data=eval(case.data))
+            # course_code = response.json()['data']['courseCode']
+            setattr(ConText, 'course_code', str(course_code))
+            # code = course_code.json()['code']
+        else:
+            '''发送请求获取结果'''
+            response = self.request.request(method=case.method, url=url, headers=eval(case.head), data=eval(case.data))
+            print('返回的数据：' + str(response.text))
+            code = response.json()['code']
+            res = response.text
 
         '''对比结果'''
         try:
@@ -253,12 +309,12 @@ class RegisterTestCase(unittest.TestCase):
         except AssertionError as e:
             my_log.error(e)
             self.wb.write_data(row=case_id, column=10, msg='error')
-            self.wb.write_data(row=case_id, column=11, msg=response.text)
+            self.wb.write_data(row=case_id, column=11, msg=res)
             raise e
         else:
             my_log.info('-----测试用例：--{}--已通过----'.format(case.title))
             self.wb.write_data(row=case_id, column=10, msg='pass')
-            self.wb.write_data(row=case_id, column=11, msg=response.text)
+            self.wb.write_data(row=case_id, column=11, msg=res)
 
     @data(*cases)
     def test_09(self, case):
@@ -268,11 +324,18 @@ class RegisterTestCase(unittest.TestCase):
         case.head = replace(case.head)
         case_id = case.case_id
         case_id = case_id + 1
-
-        '''发送请求获取结果'''
-        response = self.request.request(method=case.method, url=url, headers=eval(case.head), data=eval(case.data))
-        print('返回的数据：' + str(response.text))
-        code = response.json()['code']
+        print(case.interface)
+        if case_id == 5:
+            code, course_code, res = self.request.get_course_code(url=url, head=eval(case.head), data=eval(case.data))
+            # course_code = response.json()['data']['courseCode']
+            setattr(ConText, 'course_code', str(course_code))
+            # code = course_code.json()['code']
+        else:
+            '''发送请求获取结果'''
+            response = self.request.request(method=case.method, url=url, headers=eval(case.head), data=eval(case.data))
+            print('返回的数据：' + str(response.text))
+            code = response.json()['code']
+            res = response.text
 
         '''对比结果'''
         try:
@@ -280,12 +343,12 @@ class RegisterTestCase(unittest.TestCase):
         except AssertionError as e:
             my_log.error(e)
             self.wb.write_data(row=case_id, column=10, msg='error')
-            self.wb.write_data(row=case_id, column=11, msg=response.text)
+            self.wb.write_data(row=case_id, column=11, msg=res)
             raise e
         else:
             my_log.info('-----测试用例：--{}--已通过----'.format(case.title))
             self.wb.write_data(row=case_id, column=10, msg='pass')
-            self.wb.write_data(row=case_id, column=11, msg=response.text)
+            self.wb.write_data(row=case_id, column=11, msg=res)
 
     @data(*cases)
     def test_10(self, case):
@@ -295,11 +358,18 @@ class RegisterTestCase(unittest.TestCase):
         case.head = replace(case.head)
         case_id = case.case_id
         case_id = case_id + 1
-
-        '''发送请求获取结果'''
-        response = self.request.request(method=case.method, url=url, headers=eval(case.head), data=eval(case.data))
-        print('返回的数据：' + str(response.text))
-        code = response.json()['code']
+        print(case.interface)
+        if case_id == 5:
+            code, course_code, res = self.request.get_course_code(url=url, head=eval(case.head), data=eval(case.data))
+            # course_code = response.json()['data']['courseCode']
+            setattr(ConText, 'course_code', str(course_code))
+            # code = course_code.json()['code']
+        else:
+            '''发送请求获取结果'''
+            response = self.request.request(method=case.method, url=url, headers=eval(case.head), data=eval(case.data))
+            print('返回的数据：' + str(response.text))
+            code = response.json()['code']
+            res = response.text
 
         '''对比结果'''
         try:
@@ -307,12 +377,12 @@ class RegisterTestCase(unittest.TestCase):
         except AssertionError as e:
             my_log.error(e)
             self.wb.write_data(row=case_id, column=10, msg='error')
-            self.wb.write_data(row=case_id, column=11, msg=response.text)
+            self.wb.write_data(row=case_id, column=11, msg=res)
             raise e
         else:
             my_log.info('-----测试用例：--{}--已通过----'.format(case.title))
             self.wb.write_data(row=case_id, column=10, msg='pass')
-            self.wb.write_data(row=case_id, column=11, msg=response.text)
+            self.wb.write_data(row=case_id, column=11, msg=res)
 
     @classmethod
     def tearDownClass(cls):
